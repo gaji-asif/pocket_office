@@ -1,0 +1,188 @@
+<div class="pages">
+    <!--getAppoinment-->
+    <div data-page="add_event" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divHeaderForAddEvent"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div id="divAddEvent" style="display: block;">
+                        <div class="Demo-table-container">
+                            <div class="contactform schdulejobp">
+                                <label id="lblAddEvent" style="display: none; color: Red;">
+                                </label>
+                                <div>
+                                    <label>
+                                        Title:<span class="red">*</span></label>
+                                    <input type="text" id="txtEventTitle" name="txtEventTitle" class="form_input form-control validation validate[required[Enter Title]]" />
+                                </div>
+                                <div>
+                                    <label>
+                                        Start Date:<span class="red">*</span></label>
+                                    <input type="text" class="form-control validation datestamp validate[funcCall[YYMMddDateFormat[Invalid Start Date Format]]]" id="txtEventStartDate" maxlength="10">
+                                </div>
+                                <div>
+                                    <label>
+                                        End Date:<span class="red">*</span></label>
+                                    <input type="text" class="form-control validation datestamp validate[funcCall[YYMMddDateFormat[Invalid End Date Format]]]" id="txtEventEndDate" maxlength="10">
+                                </div>
+                                <div>
+                                    <label>Start Time:</label>
+                                    <div id="ddlEventStartTime"></div>
+                                </div>
+                                <div>
+                                    <label>End Time:</label>
+                                    <div id="ddlEventEndTime"></div>
+                                </div>
+                                <div id="divAddNotifyGroup" style="display: block;">
+                                    <div>
+                                        <label style="float: left; width: 30%;">
+                                            Global:</label>
+                                        <input type="checkbox" name="chkEventGlobal" id="chkEventGlobal" style="float: left; margin-top: 11px;">
+                                    </div>
+                                    <div id="divEventUserGroup" style="display: none;">
+                                        <label>Notify Group(s):</label>
+                                        <select id="ddlUserGroup"></select>
+                                    </div>
+                                </div>
+                                <div id="divEditNotifyGroup" style="display: none;">
+                                    <div>
+                                        <label style="float: left; width: 30%;">
+                                            Global:</label>
+                                        <input type="checkbox" name="chkEditEventGlobal" id="chkEditEventGlobal" style="float: left; margin-top: 11px;">
+                                    </div>
+                                </div>
+                                <div id="divGuestInvitation" style="display: block; width: 75%; float: left;" class="edit_table">
+                                    <div class="user_inf">Send Invitation</div>
+                                    <div id="divAddGuestToList">
+                                        <label style="margin-left: 10px;">
+                                            Add Guest:
+                                        </label>
+                                        <input type="text" id="txtAddGuest" name="txtAddGuest" class="form_input form-control validation validate[required[Enter Email]] validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" style="width: 60% ! important; float: left; margin-left: 10px;" placeholder="Email Address"/>
+                                        <input type="submit" name="btnAddGuest" class="bulebtn_comn" id="btnAddGuest" value="Add" />
+                                    </div>
+                                    <div>
+                                        <div id="divInvitedGuestList">
+                                            <ul class="ulInvitedGuestList" id="ulInvitedGuestList" style="float: left; padding-left: 11px;"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label>
+                                        Description:<span class="red">*</span>
+                                    </label>
+                                    <textarea name="txtEventDesc" id="txtEventDesc" rows="5"  class="form-control validation validate[funcCall[validateTextArea[Enter Description]]]"></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit" name="Save" class="form_submit bulebtn_comn" id="btnSaveEvent" value="Save" />
+                                    <input type="button" name="Cancel" class="form_submit greybtn_comn" id="btnCancelEvent" value="Cancel" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divViewEventDetail" style="display: none;">
+                        <div class="Demo-table-container">
+                            <div class="contactform">
+                                <label id="lblviewEventDetail" style="display: none; color: Red;">
+                                </label>
+                                <div>
+                                    <table class="table">
+                                        <tr>
+                                            <td>Title:
+                                            </td>
+                                            <td>
+                                                <label id="lblEventTitle"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Creator:
+                                            </td>
+                                            <td>
+                                                <label id="lblEventCreator"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Start Date:
+                                            </td>
+                                            <td>
+                                                <label id="lblEventStartDt"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>End Date:
+                                            </td>
+                                            <td>
+                                                <label id="lblEventEndDt"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Start Time:
+                                            </td>
+                                            <td>
+                                                <label id="lblEventStartTime"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>End Time:
+                                            </td>
+                                            <td>
+                                                <label id="lblEventEndTime"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Global:
+                                            </td>
+                                            <td>
+                                                <label id="lblEventGlobal"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>User Groups:
+                                            </td>
+                                            <td>
+                                                <label id="lblUserGroups"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Description:
+                                            </td>
+                                            <td>
+                                                <label id="lblEventDesc"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="adjobrep">
+                                                <span id="tdEditEvent">
+                                                    <input type="submit" name="Edit" class="form_submit  bulebtn_comn "
+                                                        id="btnEditEventDetail" value="Edit" />
+                                                    <input type="submit" name="Remove" class="form_submit redbtn_comn "
+                                                        id="btnDelEventDetail" value="Remove" />
+                                                </span>
+                                                <input type="submit" name="Cancel" class="form_submit greybtn_comn"
+                                                    id="btnCancelEventDetail" value="Cancel" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+

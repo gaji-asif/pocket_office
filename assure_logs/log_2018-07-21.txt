@@ -1,0 +1,160 @@
+2018-07-21 0:19:23 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '812',
+    'journal_id' => '9196',
+  ),
+  4 => false,
+)
+2018-07-21 0:21:49 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '619',
+    'journal_id' => '9197',
+  ),
+  4 => false,
+)
+2018-07-21 0:23:35 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '619',
+    'journal_id' => '9198',
+  ),
+  4 => false,
+)
+2018-07-21 0:26:54 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '847',
+    'journal_id' => '9199',
+  ),
+  4 => false,
+)
+2018-07-21 0:29:57 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '907',
+    'journal_id' => '9200',
+  ),
+  4 => false,
+)
+2018-07-21 0:55:44 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '952',
+    'journal_id' => '9202',
+  ),
+  4 => false,
+)
+2018-07-21 0:57:19 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '953',
+    'journal_id' => '9203',
+  ),
+  4 => false,
+)
+2018-07-21 0:59:13 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '954',
+    'journal_id' => '9204',
+  ),
+  4 => false,
+)
+2018-07-21 10:45:57 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-07-21 10:46:55 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '847',
+    'journal_id' => '9205',
+  ),
+  4 => false,
+)
+2018-07-21 10:49:22 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-07-21 10:58:46 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-07-21 11:25:54 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '176',
+  3 => 
+  array (
+    'job_id' => '955',
+    'journal_id' => '9206',
+  ),
+  4 => false,
+)
+2018-07-21 12:07:49 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-07-21 12:54:54 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-07-21 13:10:57 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '146',
+  3 => 
+  array (
+    'job_id' => '948',
+    'journal_id' => '9207',
+  ),
+  4 => false,
+)
+2018-07-21 13:20:09 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '146',
+  3 => 
+  array (
+    'job_id' => '952',
+    'journal_id' => '9208',
+  ),
+  4 => false,
+)
+2018-07-21 13:57:10 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '146',
+  3 => 
+  array (
+    'job_id' => '953',
+    'journal_id' => '9209',
+  ),
+  4 => false,
+)
+2018-07-21 15:26:43 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-07-21 15:27:23 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '146',
+  3 => 
+  array (
+    'job_id' => '954',
+    'journal_id' => '9210',
+  ),
+  4 => false,
+)

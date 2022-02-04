@@ -1,0 +1,82 @@
+2017-10-31 3:51:42 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-31 3:54:37 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-31 3:54:37 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-10-31 4:00:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:00:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-10-31 4:00:40 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:04:24 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:21:41 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:21:54 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:05 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:05 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:07 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:08 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:09 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:10 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:11 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:12 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:13 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:14 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:15 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:16 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:17 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:18 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:20 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:21 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:22 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:23 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:24 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:22:25 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 4:59:40 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Failed database query - workflow_performance - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') order by field(j.job_id,)' at line 24 - SELECT distinct j.job_id,j.job_number,c.customer_id, concat(c.fname,' ',c.lname) as custName,c.address,jt.job_type, CASE WHEN c.nickname is null or c.nickname ='' THEN  concat(c.fname,' ',c.lname) ELSE c.nickname END as cname, 
+                CASE WHEN u.lname is null or u.lname ='' THEN  u.fname   ELSE concat(u.lname,',',substr(u.fname,1,1)) end as sname,
+                 j.stage_num,case when st.stage is null then '' else st.stage end as stagename,st.class,datediff(CURDATE(),j.timestamp) as Agedays,
+               datediff(CURDATE(),j.stage_date) as Stageage ,st.duration, 
+               CASE WHEN sh.status_id IS NOT NULL AND (sh.expires IS NULL OR sh.expires > CURDATE()) THEN 'clsHold' ELSE '' END AS IsHold,
+                case when (SELECT count(*)  FROM repairs r, fail_types ft WHERE r.job_id = j.job_id  AND r.fail_type = ft.fail_type_id ORDER BY r.timestamp DESC)=0 then '' else ',REPAIR' end as Repairs,
+                s.status_id, s.status, sh.timestamp, s.color, case when sh.expires is not null then DATE_FORMAT(sh.expires,'%m/%d/%y') else '' end as status_hold_expires
+             
+                from jobs j 
+                left join customers c on (j.customer_id=c.customer_id)
+                LEFT JOIN job_type jt ON (j.job_type = jt.job_type_id)
+                LEFT JOIN jurisdiction jur ON (j.jurisdiction = jur.jurisdiction_id)
+                LEFT JOIN permits p ON (j.job_id = p.job_id)
+                LEFT JOIN status_holds sh ON (sh.job_id = j.job_id)
+                LEFT JOIN status s ON (s.status_id = sh.status_id)
+                LEFT JOIN stages st ON (st.stage_num = j.stage_num and st.account_id = 1)
+                LEFT JOIN repairs r ON (r.job_id = j.job_id AND r.completed IS NULL)
+                LEFT JOIN subscribers sb ON (sb.job_id = j.job_id)
+                LEFT JOIN users u ON (u.user_id = j.salesman)
+                LEFT JOIN tasks t ON (t.job_id = j.job_id)
+                LEFT JOIN task_type tt ON (tt.task_type_id = t.task_type)
+                LEFT JOIN canvassers cv ON (cv.job_id = j.job_id)  
+               
+                where j.job_id IN () order by field(j.job_id,)
+2017-10-31 5:12:38 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:14:09 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:17:32 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Failed database query - workflow_performance - Field 'logo' doesn't have a default value - INSERT INTO accounts (account_name, primary_contact, email, phone, address, city, state, zip, job_unit, license_limit, reg_date, hash) VALUES ('Test1', '1231231231', 'upwork@gmail.com', '1112222212', 'Test', 'Test', 'AL', '11221', '10', '20', CURDATE(), '0b21586781fc80b19d1b1ccad0ccd750')
+2017-10-31 5:18:05 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Failed database query - workflow_performance - Field 'logo' doesn't have a default value - INSERT INTO accounts (account_name, primary_contact, email, phone, address, city, state, zip, job_unit, license_limit, reg_date, hash) VALUES ('Test1', '1231231231', 'upwork@gmail.com', '1112222212', 'Test', 'Test', 'AL', '11221', '10', '20', CURDATE(), 'a6a32fdb028dbd58484e40d6ed169239')
+2017-10-31 5:23:38 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:24:40 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 7:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:34:52 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:35:28 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:35:59 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:36:30 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:38:54 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:39:18 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:40:19 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:41:29 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:43:56 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:45:49 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:47:01 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 5:53:01 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 6:07:00 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 7:17:49 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 7:21:07 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 7:58:32 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database connection - Invalid connection variables: , , 
+2017-10-31 8:03:19 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database connection - Invalid connection variables: , , 
+2017-10-31 8:16:31 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Field 'journal' doesn't have a default value - INSERT INTO users (username, fname, lname, password, dba, email, phone, sms_carrier, level, reg_date, account_id, founder, notes, office_id)
+
+								  VALUES ('aa', 'aa', 'aa', 'aa', '', 'aa@aa.com', '1212121212', '0', '1', now(), '14', '1', '', '0')
+2017-10-31 8:52:22 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-10-31 8:52:22 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed login - Invalid credentials: ,, 
+2017-10-31 9:45:43 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com

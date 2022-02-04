@@ -1,0 +1,25 @@
+2020-01-16 19:59:10 - NOTICE -->/home/pocketoffice/public_html/xactbid/index.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 19:59:11 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 19:59:19 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 18:  Try database - assure - pocketofficepro.com
+2020-01-16 20:01:30 - NOTICE -->/home/pocketoffice/public_html/xactbid/dashboard.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:01:37 - NOTICE -->/home/pocketoffice/public_html/xactbid/index.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:01:37 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:01:39 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 18:  Try database - assure - pocketofficepro.com
+2020-01-16 20:01:39 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 42:  Failed login - Invalid credentials: , , 
+2020-01-16 20:01:45 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 18:  Try database - assure - pocketofficepro.com
+2020-01-16 20:04:48 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_today.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:04:49 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_announcements.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:04:50 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_inbox.php at Line 3:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:04:50 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_documents.php at Line 3:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:04:51 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_urgent.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:07:48 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_today.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:07:49 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_announcements.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:07:50 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_inbox.php at Line 3:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:07:51 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_documents.php at Line 3:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:07:51 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_urgent.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:10:48 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_today.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:10:49 - NOTICE -->/home/pocketoffice/public_html/xactbid/includes/ajax/widget_announcements.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:10:50 - NOTICE -->/home/pocketoffice/public_html/xactbid/dashboard.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:10:56 - NOTICE -->/home/pocketoffice/public_html/xactbid/index.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:10:57 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2020-01-16 20:11:01 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 18:  Try database - assure - pocketofficepro.com

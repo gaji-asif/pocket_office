@@ -1,0 +1,101 @@
+2017-11-03 0:01:53 - NOTICE -->/home/xactbid/public_html/workflow/index.php at Line 9:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-03 0:01:53 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-03 3:37:18 - NOTICE -->/home/xactbid/public_html/workflow/index.php at Line 9:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-03 3:37:19 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-03 3:37:22 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-03 3:37:22 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-11-03 3:58:37 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-03 3:59:30 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-03 3:59:40 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-03 3:59:40 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-11-03 4:00:10 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-03 4:57:00 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Incorrect integer value: '' for column 'account_id' at row 1 - INSERT INTO access (user_id, account_id, timestamp, ip_address)
+                VALUES ('131', '', now(), '27.251.107.42')
+2017-11-03 4:57:00 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Incorrect integer value: '' for column 'account_id' at row 1 - INSERT INTO message_history (type, to_email, subject, body, account_id, timestamp)
+				VALUES ('Email', 'sofikul.sardar@elagoon.org', 'Welcome to WorkFlow365!', 'Dear User,<br><br>An account has been created for you by <b></b> in WorkFlow365! Your login credentials are below. Please remember to <b>change your password</b> immediately upon your first login!<br><br><b>Login Credentials:</b><br>Account: <br>Username: d<br>Password: djj$20@14<br><br>To login, visit:<br><a href=\'http://xactbid.com/workflow\'>http://xactbid.com/workflow</a>', '', now())
+2017-11-03 4:57:32 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+   ' at line 9 - SELECT distinct n.navigation_id,CASE WHEN n.title =  'Leads & Jobs' THEN  'Jobs' ELSE n.title END AS title, n.source, n.icon
+
+                FROM navigation n, nav_access na
+
+                WHERE 
+
+                    na.account_id = 
+
+                    AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+                    ANd n.title!='Announcements' and n.title!='Customers' and n.title !='Reports'
+
+                ORDER BY n.order_num ASC
+2017-11-03 4:57:32 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-03 4:58:34 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-03 4:58:42 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-03 5:15:22 - NOTICE -->/home/xactbid/public_html/workflow/index.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2017-11-03 5:15:23 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 3:  Failed database connection - Invalid connection variables: , , 
+2017-11-03 5:15:42 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 5:15:58 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:16:25 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:16:34 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:16:36 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:16:43 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:16:44 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:16:44 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:16:44 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:16:44 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 5:17:48 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 5:26:20 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 7:05:17 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com
+2017-11-03 8:08:53 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 8:12:15 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 9:03:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 11:39:53 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 11:40:48 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 11:40:48 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-11-03 11:41:00 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 11:41:00 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-11-03 11:41:29 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 11:41:29 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-11-03 11:41:59 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 11:42:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 11:55:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-11-03 12:00:02 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - assure - xactbid.com

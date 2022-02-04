@@ -1,0 +1,146 @@
+<div class="pages">
+    <div data-page="job_materials" class="page toolbar-through no-navbar">
+        <div class="page-content">
+
+            <div class="navbarpages">
+                <div class="navbar_home_link"><a href="#" data-panel="left" class="open-panel">
+                    <img src="images/icons/white/user.png" alt="" title="" /></a></div>
+                <div class="navbar_page_center" id="divJobMatMainHeader"></div>
+                <div class="menu_open_icon_white"><a href="home.html">
+                    <img src="images/menu_open.png" alt="" title="" /></a></div>
+            </div>
+            <div id="pages_maincontent">
+           
+                <div id="divMainAddJobMatSheet" style="display: block;">
+                    <div class="Demo-table-container">
+                     <div  class="contactform schdulejobp">
+                        <label id="lblAddJobMatSheet" style="display: none; color: Red;"></label>
+                        <div id="divAddJobMatSheet">
+                            <div>
+                                <label>Label: *</label>
+                                <input type="text" id="txtMatSheetLbl" name="txtMatSheetLbl" class="form_input form-control validation validate[required[Enter Label]]" />
+                            </div>
+                            <div class="schedule_win">
+                                 <label>Job Size: *</label>
+                                <input type="text" id="txtMatSheetJobSize" name="txtMatSheetJobSize" class="form_input form-control validation validate[required[Enter Job Size]]" />&nbsp;
+                                <span id="lblmatjobsize"></span>
+                            </div>
+                            <div>
+                                <label>Supplier:</label>
+                                <select id="ddlJobMatSupplier"></select>
+                            </div>
+                            <div>
+                                <label>Notes:</label>
+                                <textarea name="txtJMSNotes" id="txtJMSNotes" style="width: 100%;" rows="5"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" name="Submit" class="form_submit Supplier_wid bulebtn_comn"
+                                            id="btnAddJobMatSheet" value="Submit" />
+                                <input type="submit" name="Submit" class="form_submit Supplier_wid bulebtn_comn greybtn_comn"
+                                            id="btnCancelJobMatSheet" value="Cancel" />
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="divEditJobMatSheet" class="contactform material_table">
+                <div id="divMainEditJobMatSheet" style="display: none;">
+                    <label id="lblMainEditJobMatSheet" style="display: none; color: Red;"></label>
+                    
+                        <div>
+                        <div>
+                            <label>Label:</label>
+                            <input type="text" id="txtEditMatSheetLbl" name="txtEditMatSheetLbl" class="form_input form-control validation validate[required[Enter Label]]"/>
+                        </div>
+                        <div class="smodify">
+                            <label>Job Size: </label>
+                            <label id="lblEditMatSheetJobSize"></label>
+                        </div>
+                        <div class="smodify">
+                            <label>Delivery Date:</label>
+                            <label id="lblEditDeleDate"></label>
+                                        <br />
+                            <input id="txtEditDeleDate"  name="txtEditDeleDate"  type="text" class="form-control validation datestamp validate[funcCall[YYMMddDateFormat[Invalid Date Format]]]" maxlength="10">
+                        </div>
+                        <div class="modify_ins">
+                            <label>Do Not Schedule: 
+                            
+                            
+                            </label>
+                            <input type="checkbox" name="chkDoNotSchedule" id="chkDoNotSchedule">
+                        </div>
+                        <div class="modify_ins">
+                            <label>Confirmed: 
+                             
+                            </label>
+                           <input type="checkbox" name="chkConfirmed" id="chkConfirmed">
+                            <label id="lbljobconfirmDt"></label>
+                        </div>
+                        <div>
+                             <label>Supplier:</label>
+                             <select id="ddlEditJobMatSupplier"></select>
+                        </div>
+                        <div id="trSupplierDetails" style="display:none;">
+                            <div id="divSupplierDetails"></div>
+                        </div>
+                        <div>
+                            <label>Notes:</label>
+                            <textarea name="txtEditJMSNotes" id="txtEditJMSNotes" style="width: 100%;" rows="5"></textarea>
+                        </div>
+                        </div>
+                        
+                        <div>
+                        <div id="divAddNewMatJobItems">
+                            <div>
+                                <label id="lblErrMsgAddMatSheet" style="display:none;"></label>
+                            </div>
+                            <div>
+                                <span><label><i class="icon icon-plus"></i></label></span>
+                               <span><select id="ddlMatCategory"></select></span>
+                            </div>    
+                            
+                            <div id="divMatSheetItems" style="display:none;">
+                                <select id="ddlMatSheetItems"></select>
+                            </div>
+                            
+                            <div id="divMatColors" style="display:none;">
+                                <div style="float:left; width:100%;" >
+                                    <span class="select_clr"><select id="ddlMatColors"></select></span>
+                                    <span class="select_clr"><input type="text" id="txtNoOfUnit" name="txtNoOfUnit" /></span>
+                                    <span class="select_clradd"><input type="submit" name="Add" class="form_submit bulebtn_comn"
+                                                id="btnAddJobMatItems" value="Add" /></span>
+                                </div>
+                                <div class="divMatUnit"><label id="lblUnit"></label>&nbsp;&nbsp;&nbsp;<label id="lblMatDesc" style="float:left;"></label></div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div >
+                            <label id="lblMatDetailMain" style="display:none;"></label>
+                            <div id="divbindMatDetails" class="table-responsive material_blk"></div>
+                        </div>
+                        <div>
+                            <input type="submit" name="All Material Sheets" class="form_submit Supplier_wid bulebtn_comn" id="btnAllMatModifyJMS" value="All Material Sheets" />
+                            <input type="submit" name="Print" class="form_submit Supplier_wid bulebtn_comn" id="btnPrintModifyJMS" value="View Order" />
+                            <input type="submit" name="Save" class="form_submit Supplier_wid bulebtn_comn" id="btnSaveModifyJMS" value="Save" />
+                            <input type="button" name="Cancle" class="form_submit Supplier_wid greybtn_comn" id="btnCancleModifyJMS" value="Cancel" />
+                            <input   type="submit" name="Print" class="form_submit Supplier_wid bulebtn_comn" id="btnviewpdf" value="Create PDF" />
+                            <input type="button" name="View Upload File" class="form_submit Supplier_wid bulebtn_comn" id="btnViewJobUploadFiles" value="View Upload File" />
+                        </div>
+                    </div>
+                    <div id="divBindAllMatSheet" style="display:none;">
+                        <div class="supplier_det"><a id="lnkBackToModifyMatSheet" class=" back_btn" href="javascript:;"></a></div>
+                        <label id="lblViewAllMatSheet" style="display:none;"></label>
+                        <div id="tblAllMatSheet" class="supplier_det" style="display:block;"></div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </div>
+</div>

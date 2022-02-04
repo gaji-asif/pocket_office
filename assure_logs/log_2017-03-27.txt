@@ -1,0 +1,7 @@
+2017-03-27 3:26:57 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-27 3:33:41 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-27 3:33:41 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-03-27 3:33:44 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-27 4:46:16 - NOTICE -->C:\xampp\htdocs\workflow\action-list.php at Line 51:  Failed database query - assure - Unknown column 'order_num' in 'order clause' - select * from job_actions order by order_num
+2017-03-27 4:46:19 - NOTICE -->C:\xampp\htdocs\workflow\action-list.php at Line 51:  Failed database query - assure - Unknown column 'order_num' in 'order clause' - select * from job_actions order by order_num
+2017-03-27 5:34:36 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost

@@ -1,0 +1,33 @@
+body
+{
+	padding-top: 20px;
+}
+
+.sidebar-nav
+{
+	padding: 9px 0px;
+}
+
+form.form-no-margin
+{
+	margin: 0;
+}
+
+.hero-unit
+{
+	&.maintenance
+	{
+		margin-top: 40px;
+		h1
+		{
+			margin-bottom: 10px;
+		}
+		p
+		{
+			span
+			{
+				color: #0086CC;
+			}
+		}
+	}
+}

@@ -1,0 +1,204 @@
+﻿<div class="pages">
+    <div data-page="get_repair" class="page toolbar-through no-navbar">
+        <div class="page-content">
+
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divGetRepairMainHeader"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div id="divMainAddRepair" style="display: block;">
+                    <div class="Demo-table-container">
+                 <div id="divAddRepair" class="contactform schdulejobp">
+                        <label id="lblAddRepair" style="display: none; color: Red;"></label>
+                        
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label>Fail Type: *</label>
+                                    </td>
+                                    <td>
+                                        <select id="ddlFallType" class=" validation validate[funcCall[selectval[Select Fail Type]]]">
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Priority: *</label>
+                                    </td>
+                                    <td>
+                                        <select id="ddlPriority" class=" validation validate[funcCall[selectval[Select Priority]]]">
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Contractor: *</label>
+                                    </td>
+                                    <td>
+                                        <select id="ddlContractor" class=" validation validate[funcCall[selectval[Select Contractor]]]">
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Notes:</label>
+                                    </td>
+                                    <td>
+                                        <textarea name="txtARNotes" id="txtARNotes" style="width: 100%;" rows="5"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="">
+                                        <input type="submit" name="Submit" class="form_submit Supplier_wid bulebtn_comn"
+                                            id="btnAddRepairJob" value="Submit" />
+                                        <input type="submit" name="Submit" class="form_submit Supplier_wid bulebtn_comn greybtn_comn"
+                                            id="btnCancelAddRepairJob" value="Cancel" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+               <div id="divMainEditRepair" style="display: none;">
+                    <label id="lblMainEditRepair" style="display: none; color: Red;"></label>
+                    <div id="divViewRepairDetail" class="">
+                        <div class="contactform"><table class="table">
+                            <tr id="trJobRepairCompleted" style="display: none;">
+                                <td>
+                                    <img id="imgJobComplete" src="images/icons/plus_32.png" />
+                                </td>
+                                <td>
+                                    <label id="lblCompletedTime"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fail Type:</td>
+                                <td>
+                                    <label id="lblViewFailType"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Priority: 	</td>
+                                <td>
+                                    <label id="lblViewPriority"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Creator: 	</td>
+                                <td>
+                                    <label id="lblViewCreator"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DOB: 	</td>
+                                <td>
+                                    <label id="lblViewDOB"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Contractor: 	</td>
+                                <td>
+                                    <label id="lblViewContractor"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DBA: 	</td>
+                                <td>
+                                    <label id="lblViewDBA"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Start Date: 	</td>
+                                <td>
+                                    <label id="lblViewStartDt"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Notes:</td>
+                                <td>
+                                    <label id="lblViewNotes"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="adjobrep">
+                                    <input type="submit" name="Submit" class="form_submit  bulebtn_comn "
+                                        id="btnEditRepairDetail" value="Edit" />
+                                    <input type="submit" name="Submit" class="form_submit redbtn_comn "
+                                        id="btnDelRepairDetail" value="Remove" />
+                                    <input type="submit" name="Submit" class="form_submit greybtn_comn"
+                                        id="btnCancelRepairDetail" value="Cancel" />
+                                </td>
+                            </tr>
+                        </table></div>
+                    </div>
+                    <div id="divEditRepairDetail" style="display: none;" class="contactform">
+                        <div>
+                            <label>Fail Type:</label>
+                            <select id="ddlEditFallType">
+                            </select>
+                        </div>
+                        <div>
+                            <label>Priority: </label>
+                            <select id="ddlEditPriority">
+                            </select>
+                        </div>
+                        <div>
+                            <label>Contractor:</label>
+                            <select id="ddlEditContractor">
+                            </select>
+                        </div>
+                        <div class="modify_ins">
+                            <label>
+                                Schedule:</label>
+                            <input type="checkbox" name="chkForSchedule" id="chkForSchedule">
+                        </div>
+                        <div id="divStartDate" style="display: none;">
+                            <label>Start Date:</label>
+                            <input type="text" class="form-control validation datestamp validate[funcCall[YYMMddDateFormat[Invalid Date Format]]]" id="txtJobStartDt" maxlength="10">
+                        </div>
+                        <div class="modify_ins">
+                            <label>
+                                Completed:</label>
+                            <input type="checkbox" name="chkComplete" id="chkForCompleted">
+                        </div>
+                        <div>
+                            <label>Notes:</label>
+                            <textarea name="txtRJEditNotes" id="txtRJEditNotes" style="width: 100%;" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" name="btnEditJobRepair" class="form_submit bulebtn_comn"
+                                id="btnEditJobRepair" value="Save" />
+                            <input type="submit" name="btnCancelRepairJob" class="form_submit greybtn_comn"
+                                id="btnCancelRepairJob" value="Cancel" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+

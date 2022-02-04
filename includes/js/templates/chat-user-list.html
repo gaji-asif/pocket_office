@@ -1,0 +1,11 @@
+{{#each users}}
+<li>
+    <a href="" rel="open-chat" data-user-id="{{ user_id }}">{{ fname }} {{ lname }}</a>
+    {{#if new}}
+    <span class="badge">{{ new }}</span>
+    {{/if}}
+</li>
+{{/each}}
+{{#unless users}}
+<li>No users online</li>
+{{/unless}}

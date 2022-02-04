@@ -1,0 +1,29 @@
+2021-02-15 0:09:07 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-15 0:09:08 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: 206.72.199.46, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-15 0:09:08 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-15 0:09:14 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-15 0:09:15 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: 206.72.199.46, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-15 0:09:15 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-15 0:10:10 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 0:10:11 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: 206.72.199.46, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-15 0:10:11 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-15 0:10:16 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 0:10:17 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: 206.72.199.46, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-15 0:10:17 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-15 0:40:22 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 0:40:23 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: 206.72.199.46, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-15 0:40:23 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-15 0:43:56 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 0:43:56 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: 206.72.199.48, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-15 0:43:56 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-15 0:44:01 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 0:44:01 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: 206.72.199.48, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-15 0:44:01 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-15 0:44:56 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 1:21:17 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 2:12:32 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 5:08:44 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 6:23:36 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 6:58:03 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 7:08:43 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-02-15 7:11:22 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com

@@ -1,0 +1,16 @@
+2017-12-26 15:11:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-12-26 15:59:15 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-12-26 16:00:12 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '130',
+  3 => 
+  array (
+    'job_id' => '100',
+    'journal_id' => '816',
+  ),
+  4 => false,
+)
+2017-12-26 17:49:53 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-12-26 17:54:21 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2017-12-26 18:42:16 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/delete_upload.php at Line 38:  Jessica Baker (ID: 130) deactivated upload ID: 94

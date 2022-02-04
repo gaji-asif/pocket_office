@@ -1,0 +1,2 @@
+2021-06-27 22:41:04 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-06-27 23:51:38 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/delete_upload.php at Line 38:  Darin Johnson (ID: 110) deactivated upload ID: 26347

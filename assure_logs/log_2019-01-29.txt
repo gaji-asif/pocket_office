@@ -1,0 +1,5 @@
+2019-01-29 10:52:50 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost
+2019-01-29 11:03:57 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost
+2019-01-29 11:04:11 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost
+2019-01-29 11:04:11 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 46:  Failed login - Invalid credentials: , , 
+2019-01-29 11:04:34 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost

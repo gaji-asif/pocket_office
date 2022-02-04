@@ -1,0 +1,33 @@
+2017-03-20 3:02:13 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 3:32:59 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 3:41:27 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 3:48:40 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 3:48:40 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-03-20 3:49:15 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 4:12:05 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 4:29:16 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 4:47:53 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 5:04:41 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 5:13:25 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-20 5:14:01 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-20 5:15:08 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-20 5:17:22 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-20 6:26:06 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-20 7:26:28 - NOTICE -->C:\xampp\htdocs\workflow\workflowservice.php at Line 7:  Try database - assure - localhost
+2017-03-20 7:47:55 - NOTICE -->C:\xampp\htdocs\workflow\workflowservice.php at Line 7:  Try database - assure - localhost

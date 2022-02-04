@@ -1,0 +1,72 @@
+﻿<div class="pages">
+    <div data-page="users" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <input type="hidden" id="hdnoffset" value="0">
+            <input type="hidden" id="hdntotalrecord" value="0">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">Users</div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div id="divUserFilter">
+                    <table border="0" cellspacing="0" cellpadding="0" class="main-view-table" width="100%">
+                        <tr align="right" id="divAddNewUser">
+                            <td colspan="4" >
+                                <span  title="Add User">
+                                     <a id="aAddUser" href="javascript:;" class="btn" style="font-weight: bold;">Add User</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr valign='middle' id="divUserSearch_Filter">
+                            <td colspan="2" class="user_blk_re user_input_width"> <span>Sort:&nbsp;&nbsp;</span>
+
+                                <select id="userSorting" class="list-filter-input user_list_input">
+                                    <option value=''>Last Name A-Z</option>
+                                    <option value='order by lname desc'>Last Name Z-A</option>
+                                    <option value='order by dba asc'>DBA A-Z</option>
+                                    <option value='order by dba desc'>DBA Z-A</option>
+                                    <option value='order by reg_date desc'>Newest First</option>
+                                    <option value='order by reg_date asc'>Oldest First</option>
+                                </select>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <!--<input type="button" value="Sort" class="reset-list-btn greybtn_comn" id="btnSort">-->
+                            </td>
+                           <td width="46%" class="text-right user_list_search" colspan="2">
+                           
+                                <input type="text" id="txt_UserSearch" class="list-filter-input" value="" placeholder="Search user here">
+                                <i class="icon-search search_user"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=" table-responsive table_hight" id="divUserList">
+
+                    <div><label id="lblMsgDetail" style="color:red; font-weight:bold;"></label></div>
+                    <div id="divDetailBack" style="display:none;">
+                            <a id="adetailBack" class="back_btn"></a>
+                    </div>
+                     
+                    <div id="divBindUserList" >
+                    </div>
+                    <div id="divUserPaging" class="next_privcenter">
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+

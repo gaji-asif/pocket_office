@@ -1,0 +1,304 @@
+<?php
+include '../common_lib.php';
+echo ViewUtil::loadView('doc-head');
+ModuleUtil::checkAccess('edit_users', TRUE);
+
+$myUser = new User(RequestUtil::get('id'));
+
+if(RequestUtil::get('is_deleted')) {
+    RequestUtil::set('is_deleted', 1);
+    FormUtil::update('users');
+?>
+
+<script>
+    Request.makeModal('<?=AJAX_DIR?>/get_userlist.php', 'userscontainer', true, true, true);
+</script>
+<?php
+    die();
+}
+
+$errors = array();
+if(RequestUtil::get('edit-user')) {
+    $phone = StrUtil::formatPhoneToSave(RequestUtil::get('phone'));
+    $fname = RequestUtil::get('fname');
+    $lname = RequestUtil::get('lname');
+    $email = RequestUtil::get('email');
+    $_POST['phone'] = $phone;
+    $_POST['is_active'] = RequestUtil::get('is_active') ? 1 : 0;
+    $_POST['founder'] = RequestUtil::get('founder') ? 1 : 0;
+
+
+    if(empty($fname) || empty($lname)) {
+        $errors[] = 'Must enter ALL required fields';
+    }
+    if($phone && (strlen($phone) != 10 || !ctype_digit($phone))) {
+        $errors[] = 'Phone incorrect format';
+    }
+    if(UserModel::phoneExists($phone) && $phone != $myUser->phone) {
+        $errors[] = 'Phone Number in use';
+    }
+    if(!ValidateUtil::validateEmail($email)) {
+        $errors[] = 'Email incorrect format';
+    }
+    if(UserModel::emailExists($email) && $email != $myUser->email) {
+        $errors[] = 'Email in use';
+    }
+    
+    if(!count($errors)) {
+        FormUtil::update('users');
+?>
+<script>
+    Request.makeModal('<?=AJAX_DIR?>/get_user.php?id=<?=$myUser->getUserID()?>', 'userscontainer', true, true, true);
+</script>
+<?php
+        die();
+    }
+}
+
+if(RequestUtil::get('edit-password')) {
+	$newPassword = RequestUtil::get('password');
+	$newPassword2 = RequestUtil::get('password_confirm');
+
+	if($newPassword != $newPassword2) {
+		$errors[] = 'Passwords do not match';
+	}
+	if(strlen($newPassword) < 7) {
+		$errors[] = 'New Password too short';
+	}
+
+	if(!count($errors)) {
+        FormUtil::update('users');
+?>
+<script>
+    Request.makeModal('<?=AJAX_DIR?>/get_user.php?id=<?=$myUser->getUserID()?>', 'userscontainer', true, true, true);
+</script>
+<?php
+        die();
+    }
+}
+
+?>
+<table class="data-table-header" cellpadding="0" cellspacing="0" border="0">
+    <tr valign="center">
+        <td>Edit <?=$myUser->getDisplayName()?></td>
+        <td align="right">
+            <i class="icon-remove grey btn-close-modal no-close" onclick="Request.makeModal('<?=AJAX_DIR?>/get_user.php?id=<?=$myUser->getUserID()?>', 'userscontainer', true, true, true)"></i>
+        </td>
+    </tr>
+</table>
+<?=AlertUtil::generate($errors)?>
+<div class="margins">
+<form method="post" action="?id=<?=$myUser->getMyId()?>">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td class="smcontainertitle">
+            User Information
+        </td>
+    </tr>
+    <tr>
+        <td class="infocontainernopadding">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="25%" class="listitemnoborder"><b>First Name:</b>&nbsp;<span class="red">*</span></td>
+                    <td class="listrownoborder"><input type="text" name="fname" value='<?=$myUser->fname?>'></td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>Last Name:</b>&nbsp;<span class="red">*</span></td>
+                    <td class="listrow"><input type="text" name="lname" value='<?=$myUser->lname?>'></td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>DBA:</b>&nbsp;<span class="red">*</span></td>
+                    <td class="listrow"><input type="text" name="dba" value='<?=$myUser->dba?>'></td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>Email:</b></td>
+                    <td class="listrow"><input type="text" name="email" value='<?=$myUser->email?>'></td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>Phone:</b></td>
+                    <td class="listrow"><input type="text" class="masked-phone" name="phone" value='<?=$myUser->phone?>'></td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>SMS Carrier:</b></td>
+                    <td class="listrow">
+                        <select name="sms_carrier">
+                            <option value="">No SMS</option>
+<?php
+$carriers = getAllSmsCarriers();
+foreach($carriers as $carrier) {
+?>
+                            <option value="<?=$carrier['sms_id']?>" <?=$myUser->sms_carrier == $carrier['sms_id'] ? 'selected' : ''?>><?=$carrier['carrier']?></option>
+<?php
+}
+?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>Access Level:</b></td>
+                    <td class="listrow">
+                        <select name="level">
+<?php
+$userLevels = UserModel::getAllLevels();
+foreach($userLevels as $userLevel) {
+?>
+                            <option value="<?=$userLevel['level_id']?>" <?=$myUser->getLevel() == $userLevel['level_id'] ? 'selected' : ''?>><?=$userLevel['level']?></option>
+<?php
+}
+?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>Office</b></td>
+                    <td class="listrow">
+                        <select name="office_id">
+                            <option value=''>Default</option>
+<?php
+$offices = AccountModel::getAllOffices();
+foreach($offices as $office) {
+?>
+                            <option value="<?=$office['office_id']?>" <?=$myUser->office_id == $office['office_id'] ? 'selected' : ''?>><?=$office['title']?></option>
+<?php
+}
+?>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>Founder</b></td>
+                    <td class="listrow">
+                        <input type="checkbox" value="1" name="founder" <?=$myUser->getFounder() == 1 ? 'checked' : ''?>>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listitem"><b>Active</b></td>
+                    <td class="listrow">
+                        <input type="checkbox" value="1" name="is_active" <?=$myUser->getIsActive() == 1 ? 'checked' : ''?>>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="listitem"><b>Notes:</b></td>
+                    <td class="listrow"><textarea rows=5 name="notes"><?=$myUser->notes?></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right" class="listrow" colspan="2">
+                        <input type="submit" name="edit-user" value="Save">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</form>
+    
+<?php
+if(ModuleUtil::checkAccess('edit_user_passwords')) {
+?>
+<br />
+<form method="post" action="?id=<?=$myUser->getUserID()?>">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td class="smcontainertitle">
+            Edit Password
+        </td>
+    </tr>
+    <tr>
+        <td class="infocontainernopadding">
+            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="listitem">
+                        <b>New Password:</b>
+                    </td>
+                    <td class="listrow">
+                        <input type="password" name="password"><br />
+                        <span class="smallnote">New Password must be at least 7 characters.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listitem">
+                        <b>Confirm New Password:</b>
+                    </td>
+                    <td class="listrow"><input type="password" name="password_confirm"></td>
+                </tr>
+                <tr>
+                    <td align="right" class="listrow" colspan="2">
+                        <input type="submit" name="edit-password" value="Save">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</form>
+<?php
+}
+?>
+
+<br />
+<form method="post" action="?id=<?=$myUser->getUserID()?>" onsubmit="return confirm('Are you sure?')">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td class="smcontainertitle">
+            Delete User
+        </td>
+    </tr>
+    <tr>
+        <td class="infocontainernopadding">
+            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="25%" class="listitemnoborder"><b>Delete User:</b></td>
+                    <td class="listrownoborder">
+                        <input type="submit" name="is_deleted" value="Delete">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</form>
+
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td class="smcontainertitle">
+            User Permissions
+        </td>
+    </tr>
+    <tr>
+        <td class='infocontainer' id='userpermissionscontainer'>
+        </td>
+    </tr>
+</table>
+
+<br />    
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td class="smcontainertitle">
+            Stage Advancement Access
+        </td>
+    </tr>
+    <tr>
+        <td class='infocontainer' id='user-stage-advancement-container'></td>
+    </tr>
+</table>
+
+<br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td class="smcontainertitle">
+            Stage Notifications
+        </td>
+    </tr>
+    <tr>
+        <td class="infocontainer" id="stagenotificationscontainer"></td>
+    </tr>
+</table>
+</div>
+<script>
+    Request.make('<?=AJAX_DIR?>/get_userpermissions.php?id=<?=$myUser->getUserID()?>', 'userpermissionscontainer', false, true);
+    Request.make('<?=AJAX_DIR?>/get_userstageadvancement.php?id=<?=$myUser->getUserID()?>', 'user-stage-advancement-container', true, true);
+    Request.make('<?=AJAX_DIR?>/edit_stagenotifications.php?id=<?=$myUser->getUserID()?>', 'stagenotificationscontainer', true, true);
+</script>
+</body>
+</html>

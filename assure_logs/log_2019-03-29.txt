@@ -1,0 +1,2 @@
+2019-03-29 19:52:23 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost
+2019-03-29 19:54:09 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost

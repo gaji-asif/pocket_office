@@ -1,0 +1,123 @@
+<div class="pages">
+    <div data-page="edit-document" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divEditDocumentHeader"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <label id="lblMainLabelForEditDocument" style="display: none;"></label>
+                <div class="page_single">
+                    <div>
+                        <div id="divDocument" style="display: block;">
+                        <div class="supplier_det">
+                                     <a id="aBackDocument" class="back_btn"></a>
+                                </div>
+                            <div class="Demo-table-container ">
+                                <div id="divDocDetail" class="">
+                                </div>
+                             
+                            </div>
+                               
+                        </div>
+                        <div id="divEditDocument" style="display: none;">
+                            <form enctype='multipart/form-data' action='?' method="post">
+                                <div class="Demo-table-container">
+                                    <label id="lblEditDocument" style="display: none;">
+                                    </label>
+                                    <div id="divEditDoc" style="display: none;">
+                                        <div class="contactform">
+                                            <!--<div>
+                                            <a class="button_full">Edit Document</a>
+                                        </div>-->
+                                            <div id="divuploadfile">
+                                                <label>
+                                                    File: *</label>
+                                                <input type="file" id="fludoc" name="document" class="form_input form-control validation validate[required[Enter Document File]]" style="height:auto !important;"/>
+                                            </div>
+                                            <div>
+                                                <label>
+                                                    Title: *</label>
+                                                <input type="text" id="txtTitle" name="txtTitle" class="form_input form-control validation validate[required[Enter Document Title]]" />
+                                            </div>
+                                            <div>
+                                                <label>
+                                                    Group:</label>
+                                                <select id="ddlGroup">
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label>
+                                                    Stage:</label>
+                                                <select id="ddlStage">
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label>
+                                                    Description: *</label>
+                                                <!--<input type="text" id="txtDescription" name="txtDescription" class="form_input form-control validation validate[required[Enter Description]]" />-->
+                                                <textarea id="txtDescription" class="edit_txtNotes validation  validate[funcCall[validateTextArea[Enter Description]]]" rows="5" name="txtDescription"></textarea>
+                                            </div>
+                                            <div>
+                                                 
+                                                <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                    id="btnUpdateDocument" value="Save" />
+                                                <input type="submit" name="Cancel" class="form_submit greybtn_comn"
+                                                    id="btnCancel" value="Cancel" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+         if (Checkaccess('view_documents')) 
+            {
+                BindDocumentDetails('MethodName=GetDetailsForDocuments&DocumentID=' + DocumentID);
+            }  
+           if(CheckmoduleOwnership('view_documents') )
+            {
+                $('#divEditDocument').css("display","block");
+                $('#lblMainLabelForEditDocument').css("");
+                $('#lblMainLabelForEditDocument').css("display","none");
+            }
+            else
+            {
+                $('#divEditDocument').css("display","none");
+                $('#lblMainLabelForEditDocument').css("Insufficient Rights");
+                $('#lblMainLabelForEditDocument').css("display","block");
+            }
+            if(Checkaccess('modify_documents') && (!CheckmoduleOwnership('modify_documents') || CheckmoduleOwnership('modify_documents')))
+            {
+                $('#aEditDocument').css("display","block"); 
+            }
+            else
+            {
+                $('#aEditDocument').css("display","none");
+            }
+            if(Checkaccess('delete_documents') && (!CheckmoduleOwnership('delete_documents') || CheckmoduleOwnership('delete_documents')))
+            {
+                $('#aDeleteDocument').css("display","block"); 
+            }
+            else
+            {
+                $('#aDeleteDocument').css("display","none");
+            }
+         -->
+    </div>
+</div>
+
+

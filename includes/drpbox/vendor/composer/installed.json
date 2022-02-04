@@ -1,0 +1,34 @@
+[
+    {
+        "name": "lukebaird/dropbox-v2-php-sdk",
+        "version": "1.1.8",
+        "version_normalized": "1.1.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/lukeb2014/Dropbox-v2-PHP-SDK.git",
+            "reference": "c4677dc4a504cc8fc5b81d54f387274904a14153"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/lukeb2014/Dropbox-v2-PHP-SDK/zipball/c4677dc4a504cc8fc5b81d54f387274904a14153",
+            "reference": "c4677dc4a504cc8fc5b81d54f387274904a14153",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.3 || ^7.0"
+        },
+        "time": "2018-04-14T02:42:56+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Dropbox\\": "sdk/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "A Dropbox SDK to work with the v2 API"
+    }
+]

@@ -1,0 +1,150 @@
+<div class="pages">
+
+    <div data-page="dashboard" class="page toolbar-through no-navbar">
+        <link rel="stylesheet" href="style.css" />
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">
+                    Dashboard
+                </div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div id="divtodaylist" style="display: none;">
+                    <h2 class="page_subtitle">Today</h2>
+                    <div class="page_single">
+                        <label id="lblTodayMsg" style="display: none;">
+                        </label>
+                        <div class="custom-accordion" id="divTodayAccordionPane">
+                            <div class="accordion-item" id="divRepairList">
+                                <div class="accordion-item-toggle">
+                                    <i class="icon icon-plus"></i><i class="icon icon-minus"></i><span>Repair List</span>
+                                </div>
+                                <div class="accordion-item-content">
+                                    <ul id="lstRepairs">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item" id="divTaskList">
+                                <div class="accordion-item-toggle">
+                                    <i class="icon icon-plus"></i><i class="icon icon-minus"></i><span>Task List</span>
+                                </div>
+                                <div class="accordion-item-content">
+                                    <ul id="lstTask">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item" id="divEventList">
+                                <div class="accordion-item-toggle">
+                                    <i class="icon icon-plus"></i><i class="icon icon-minus"></i><span>Event List</span>
+                                </div>
+                                <div class="accordion-item-content">
+                                    <ul id="lstEvent">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item" id="divApptList">
+                                <div class="accordion-item-toggle">
+                                    <i class="icon icon-plus"></i><i class="icon icon-minus"></i><span>Appointment List</span>
+                                </div>
+                                <div class="accordion-item-content">
+                                    <ul id="lstAppt">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item" id="divDeliList">
+                                <div class="accordion-item-toggle">
+                                    <i class="icon icon-plus"></i><i class="icon icon-minus"></i><span>Deliveries List</span>
+                                </div>
+                                <div class="accordion-item-content">
+                                    <ul id="lstDeli">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="divDashboardRecentDoc" style="display: none;">
+                    <h2 class="page_subtitle">Recent Documents</h2>
+                    <div class="page_single">
+                        <label id="lblRecDocMsg" style="display: none;">
+                        </label>
+                        <div class="custom-accordion accordion-list">
+                            <div class="accordion-item" id="divRctDoc">
+                                <div class="accordion-item-toggle">
+                                    <i class="icon icon-plus"></i><i class="icon icon-minus"></i><span>Recent Documents</span>
+                                </div>
+                                <div class="accordion-item-content">
+
+                                    <ul id="lstRctDoc">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="divDashboardInboxList" style="display: none;">
+                    <h2 class="page_subtitle">Inbox</h2>
+                    <div class="page_single">
+                        <label id="lblInboxMsg" style="display: none;">
+                        </label>
+                        <div class="custom-accordion accordion-list">
+                            <div class="accordion-item" id="divInbox">
+                                <div class="accordion-item-toggle">
+                                    <i class="icon icon-plus"></i><i class="icon icon-minus"></i><span>Inbox</span>
+                                </div>
+                                <div class="accordion-item-content">
+
+                                    <ul id="lstInbox">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="divDashboardUrgentJob" style="display: none;">
+                    <h2 class="page_subtitle">Urgent Jobs</h2>
+                    <div class="page_single">
+                        <label id="lblUrgentJobMsg" style="display: none;">
+                        </label>
+                        <div class="custom-accordion accordion-list">
+                            <div class="accordion-item" id="divUrgentJob">
+                                <div class="accordion-item-toggle">
+                                    <i class="icon icon-plus"></i><i class="icon icon-minus"></i><span>Urgent Jobs</span>
+                                </div>
+                                <div class="accordion-item-content">
+
+                                    <ul id="lsUrgentJob">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            if(Checkaccess('view_schedule'))
+            {   GetTodayList('MethodName=GetRepairList');   }
+           if(Checkaccess('view_jobs'))
+           {   GetUrgentJob('MethodName=GetUrgentJobList');   }
+           if(Checkaccess('view_documents'))
+           {   GetRecentDocument('MethodName=GetDocumentList');');   }
+       -->
+
+    </div>
+</div>
+
+
+
+
+
+

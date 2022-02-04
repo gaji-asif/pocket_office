@@ -1,0 +1,20 @@
+<div class="chat" data-user-id="{{ user_id }}">
+    <div class="title">
+        <a href="" rel="change-frame-location" data-url="users.php?id={{ user_id }}" data-type="user" data-id="{{ user_id }}">
+            {{ fname }} {{ lname }}
+        </a>
+        <i class="icon-remove pull-right grey" rel="close-chat"></i>
+    </div>
+    <ul>
+    {{#each messages}}
+        <li>
+            <div class="strong">{{getChatMessageName fname user_id}}:</div>
+            <div>{{ text }}</div>
+            <div class="timestamp">{{fromNow timestamp}}</div>
+        </li>
+    {{/each}}
+    </ul>
+    <div>
+        <input type="text" />
+    </div>
+</div>

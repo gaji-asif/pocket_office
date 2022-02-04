@@ -1,0 +1,96 @@
+    <div class="pages">
+        <div data-page="modoffices" class="page toolbar-through no-navbar">
+            <div class="page-content">
+                <div class="navbarpages">
+                    <div class="navbar_home_link">
+                        <a href="#" data-panel="left" class="open-panel">
+                            <img src="images/icons/white/user.png" alt="" title="" /></a></div>
+                    <div class="navbar_page_center" id="divOfficeHeaderText"></div>
+                    <div class="menu_open_icon_white">
+                        <a href="home.html">
+                            <img src="images/menu_open.png" alt="" title="" /></a></div>
+                </div>
+                <div id="pages_maincontent">
+                <div>
+                <a id="amodOfficeBack" class="back_btn pull-left"></a>
+                    <a id="aAddOffice" class="add_job pull-right" href="javascript:;" style="display:block; font-weight:bold; float:right; ">  Add Office</a>
+                </div>
+                  <div class="page_single">
+                        <div>
+                            <div id="divModOffice" style="display:block;">
+                                <div class=" table-responsive table_hight">
+                                    <div>
+                                        
+                                    </div>
+                                    <label id="lblModOffice" style="display: none;">
+                                    </label>
+                                    <div id="lstModOffice">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="divModifyModOffice" style="display:none;">
+                                <label id="lblModOfficeMainLbl" style="display: none; color:Red; font-weight:bold;"></label>
+                                <input id="hdnOfficeID" type="hidden" value="0" />
+                                <div id="divAddModOffice">
+                                    <div class="Demo-table-container ">
+                                    <div class="contactform">
+                                        <!--<div>
+                                            <label id="lblAddModOffice" style="display: none; color:Red; font-weight:bold;"></label>
+                                        </div>-->
+                                        <div>
+                                            <label>
+                                                Title:<span class="red">*</span></label>                              
+                                            <input type="text" id="txtOfficeTitle" name="txtOfficeTitle" class="form_input form-control validation validate[required[Enter Title]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Phone:<span class="red">*</span></label>
+                                            <input type="text" id="txtOfficePhone" name="txtOfficePhone" class="masked-phone form_input form-control validation validate[required[Enter Phone]] validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                               Fax:</label>
+                                                <input type="text" id="txtOfficeFax" name="txtOfficeFax" class="masked-phone form_input form-control validation validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Fax]]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Address:<span class="red">*</span></label>
+                                            <input type="text" id="txtOfficeAddress" name="txtOfficeAddress" class="form_input form-control validation validate[required[Enter Address]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                City:<span class="red">*</span>
+                                            </label>
+                                            <input type="text" id="txtOfficeCity" name="txtOfficeCity" class="form_input form-control validation validate[required[Enter City]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                State: </label>
+                                            <select id="ddlOfficeState">
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Zip:<span class="red">*</span>
+                                            </label>
+                                            <input type="text" id="txtOfficeZip" name="txtOfficeZip" class="form_input form-control validation validate[required[Enter Zip]], validate[funcCall[validateZipCode[Invalid Zip]]], validate[funcCall[Onlydigitsex0[Enter numbers only]]]" />
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                id="btnSaveOffice" value="Save" />
+                                            <input type="button" name="Cancel" class="form_submit greybtn_comn" id="btnCancelOffice"
+                                                value="Cancel" />
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+

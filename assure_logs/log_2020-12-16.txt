@@ -1,0 +1,19 @@
+2020-12-16 22:34:35 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-12-16 22:34:57 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-12-16 22:35:37 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 7:  Attempting to connect to database 'assure'
+2020-12-16 22:35:37 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 7:  Connected to database 'assure'
+2020-12-16 22:35:37 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 7:  Attempt to retrieve creds failed (0): SELECT users.user_id, users.username, users.password as pw, users.fname, users.lname, accounts.account_name as account
+                FROM users, accounts
+                WHERE users.email='s.sardar2011@gmail.com'
+                    AND accounts.account_name = 'undefined'
+                    AND accounts.account_id = users.account_id
+                    AND users.is_active = 1
+                    AND users.is_deleted <> 1
+                LIMIT 1
+2020-12-16 22:35:37 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 7:  Failed password recovery - empty database array
+2020-12-16 22:35:37 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 31:  Failed password recovery - Invalid credentials: undefined, s.sardar2011@gmail.com
+2020-12-16 22:37:30 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 7:  Attempting to connect to database 'assure'
+2020-12-16 22:37:30 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 7:  Connected to database 'assure'
+2020-12-16 22:42:41 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-12-16 22:54:12 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 7:  Attempting to connect to database 'assure'
+2020-12-16 22:54:12 - NOTICE -->/home/pocketoffice/public_html/xactbid7/includes/ajax/lost_password.php at Line 7:  Connected to database 'assure'

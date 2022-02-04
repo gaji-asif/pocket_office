@@ -1,0 +1,1 @@
+[{"jurisdiction_id":"11","account_id":"24","location":"Jacksonville, Florida","midroof":"0","midroof_timing":"","ladder":"0","permit_url":"","permit_days":"180"},{"jurisdiction_id":"1","account_id":"24","location":"Lakewood","midroof":"1","midroof_timing":"NO","ladder":"2","permit_url":"","permit_days":"180"}]

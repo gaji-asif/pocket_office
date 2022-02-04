@@ -1,0 +1,58 @@
+﻿ 
+    <div class="pages">
+        <div data-page="customers" class="page toolbar-through no-navbar">
+            <div class="page-content">
+                <input type="hidden" id="hdnoffset" value="0">
+                <input type="hidden" id="hdntotalrecord" value="0">
+                <div class="navbarpages">
+                    <div class="navbar_home_link">
+                        <a href="#" data-panel="left" class="open-panel">
+                            <img src="images/icons/white/user.png" alt="" title="" /></a>
+                    </div>
+                    <div class="navbar_page_center">Customer</div>
+                    <div class="menu_open_icon_white">
+                        <a href="home.html">
+                            <img src="images/menu_open.png" alt="" title="" /></a>
+                    </div>
+                </div>
+                <div id="pages_maincontent">
+      
+                    
+                    <div id="dvCustomerList">
+                        <table border="0" cellspacing="0" cellpadding="0" class="main-view-table">
+                            <tr valign='middle'>
+                                <td>
+                                    <select id="sort" class="list-filter-input cos_select_box">
+                                        <option value='order by c.lname asc'>Last Name A-Z</option>
+                                        <option value='order by c.lname desc'>Last Name Z-A</option>
+                                        <option value='order by c.timestamp desc'>Newest First</option>
+                                        <option value='order by c.timestamp asc'>Oldest First</option>
+                                    </select>&nbsp;
+           
+                    
+                                </td>
+                                <td class="text-right list-search">
+                                    <input type="text" id="txt_Search" class="list-filter-input" value="" >
+                                    <i class="costomer_search icon-search"></i>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                        </table>                        
+                    </div>
+                    <div class="Demo-table-container table-responsive table_hight">
+                        <div id="tblCustomer" class="next_privcenter">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+             
+        </div>
+  
+    
+        </div>
+
+
+

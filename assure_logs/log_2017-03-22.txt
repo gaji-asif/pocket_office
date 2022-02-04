@@ -1,0 +1,86 @@
+2017-03-22 2:50:04 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-22 3:52:25 - NOTICE -->C:\xampp\htdocs\workflow\system\switch-user.php at Line 81:  Failed database query - assure - Unknown column 'accounts.account_id' in 'where clause' - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level
+                WHERE accounts.account_id = '9'
+2017-03-22 3:53:43 - NOTICE -->C:\xampp\htdocs\workflow\system\switch-user.php at Line 81:  Failed database query - assure - Unknown column 'accounts.account_id' in 'where clause' - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level
+                WHERE accounts.account_id = '9'
+2017-03-22 3:53:46 - NOTICE -->C:\xampp\htdocs\workflow\system\switch-user.php at Line 81:  Failed database query - assure - Unknown column 'accounts.account_id' in 'where clause' - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level
+                WHERE accounts.account_id = '9'
+2017-03-22 3:54:22 - NOTICE -->C:\xampp\htdocs\workflow\system\switch-user.php at Line 81:  Failed database query - assure - Unknown column 'accounts.account_id' in 'where clause' - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level
+                WHERE accounts.account_id = '9'
+2017-03-22 3:54:24 - NOTICE -->C:\xampp\htdocs\workflow\system\switch-user.php at Line 81:  Failed database query - assure - Unknown column 'accounts.account_id' in 'where clause' - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level
+                WHERE accounts.account_id = '9'
+2017-03-22 3:54:50 - NOTICE -->C:\xampp\htdocs\workflow\system\switch-user.php at Line 81:  Failed database query - assure - Unknown column 'accounts.account_id' in 'where clause' - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level
+                WHERE accounts.account_id = '9'
+2017-03-22 6:02:34 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-22 6:17:13 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-22 6:21:15 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-22 7:01:22 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.account_id = '1'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.account_id = '1'
+2017-03-22 7:01:45 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.account_id = '1'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '4' AND WHERE u.account_id = '1'
+2017-03-22 7:01:55 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.account_id = '4'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '6' AND WHERE u.account_id = '4'
+2017-03-22 7:04:05 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.account_id = '3'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.account_id = '3'
+2017-03-22 7:04:49 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.account_id = '1'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.account_id = '1'
+2017-03-22 7:04:54 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.account_id = '3'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.account_id = '3'
+2017-03-22 7:05:16 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.account_id = '1'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.account_id = '1'
+2017-03-22 7:05:24 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.account_id = '3'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.account_id = '3'
+2017-03-22 7:07:47 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.level = '1'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.level = '1'
+2017-03-22 7:07:51 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.level = '3'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.level = '3'
+2017-03-22 7:11:31 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_accountuser.php at Line 6:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.level = '1'WHERE u.account_id = '9' AND WHERE u.level = '1'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level  WHERE u.account_id = '9' WHERE u.level = '1'WHERE u.account_id = '9' AND WHERE u.level = '1'
+2017-03-22 7:13:44 - NOTICE -->C:\xampp\htdocs\workflow\system\switch-user.php at Line 105:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE u.level = '1'' at line 4 - SELECT *
+                FROM users u
+                LEFT JOIN accounts a ON a.account_id = u.account_id
+                LEFT JOIN levels l ON l.level_id = u.level WHERE u.account_id = '9' AND WHERE u.level = '1'
+2017-03-22 7:55:28 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-22 7:58:32 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-22 9:12:41 - NOTICE -->C:\xampp\htdocs\workflow\stages-list.php at Line 15:  Failed database query - assure - Column count doesn't match value count at row 1 - INSERT INTO stages VALUES (NULL,'9', '20',NULL,NULL,NULL,NULL)
+2017-03-22 10:04:39 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost

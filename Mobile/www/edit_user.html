@@ -1,0 +1,987 @@
+<div class="pages">
+    <!--<div data-page="edit-user" class="page toolbar-through no-navbar">-->
+    <div data-page="projects" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divEditUserHeader"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <label id="lblMainLabelForEditUser" style="display: none;"></label>
+                <div class="page_single">
+                    <div>
+                        <input type="button" name="Back" class="back_btn" id="btnEditUserBack" value="" />
+                    </div>
+                    <div id="divMainEditUser">
+
+                        <div id="divEditUser">
+                            <table width="100%" border="0" class="edit_table">
+                                <tr>
+                                    <td>
+
+
+                                        <div class="user_inf">User Information</div>
+
+                                        <div class="Demo-table-container table-responsive">
+                                            <div class="contactform">
+                                                <label id="lblEditUser" style="display: none;">
+                                                </label>
+                                                <div id="divSubEditDoc" class="job_profit ">
+
+
+                                                    <div>
+                                                        <label>
+                                                            First Name:*</label>
+                                                        <input type="text" id="txtFirstName" name="txtFirstName" class="form_input form-control validation validate[required[Enter First Name]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            Last Name:*</label>
+                                                        <input type="text" id="txtLastName" name="txtLastName" class="form_input form-control validation validate[required[Enter Last Name]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            DBA:*</label>
+                                                        <input type="text" id="txtDBA" name="txtDBA" class="form_input form-control validation validate[required[Enter DBA]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            Email:*</label>
+                                                        <input type="text" id="txtEmail" name="txtEmail" class="form_input form-control validation validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            Phone:<span class="red">*</span>:</label>
+                                                        <input type="text" id="txtPhone" name="txtPhone" class="masked-phone form_input form-control validation validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            SMS Carrier:</label>
+                                                        <select id="ddlSmsCarrier">
+                                                            <option value="">NO SMS</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            Access Level:</label>
+                                                        <select id="ddlAccessLevel">
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            Office:</label>
+                                                        <select id="ddlOffice">
+                                                            <!--<option value="0">Default</option>-->
+                                                        </select>
+                                                    </div>
+                                                    <div class="modify_ins">
+                                                        <label>
+                                                            For Journal:</label>
+                                                        <input type="checkbox" name="chkForJournal" id="chkForJournal">
+                                                    </div>
+                                                    <div class="modify_ins">
+                                                        <label>
+                                                            Founder:</label>
+                                                        <input type="checkbox" name="chkFounder" id="chkFounder">
+                                                    </div>
+                                                    <div class="modify_ins">
+                                                        <label>
+                                                            Active:</label>
+                                                        <input type="checkbox" name="chkActive" id="chkActive">
+                                                    </div>
+                                                    <div class="chkUserInfo">
+                                                        <label class="">
+                                                            General liability insurance expires Not Needed:</label>
+                                                        <input type="checkbox" name="chkLibInsExpNoNeed" id="chkLibInsExpNoNeed">
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            General liability insurance expires on:</label>
+                                                        <input type="text" id="txtLibInsExpOn" name="txtLibInsExpOn" class="form_input form-control datestamp validation validate[funcCall[YYMMddDateFormat[Invalid Date Format]]]" />
+                                                    </div>
+                                                    <div class="chkUserInfo">
+                                                        <label class="">
+                                                            Workers Compensations insurance expires Not Needed</label>
+                                                        <input type="checkbox" name="chkCompInsExpNoNeed" id="chkCompInsExpNoNeed">
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            Workers Compensations insurance expires on 
+                                                        </label>
+                                                        <input type="text" id="txtCompInsExpOn" name="txtCompInsExpOn" class="form_input form-control datestamp validation validate[funcCall[YYMMddDateFormat[Invalid Date Format]]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            Notes:
+                                                        </label>
+                                                        <textarea name="txtNotes" class="edit_txtNotes" id="txtNotes" rows="5"></textarea>
+                                                    </div>
+                                                    <div style="text-align: center;">
+                                                        <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                            id="btnEditUser" value="Save" />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div id="divEditPassword" style="display: block;">
+                            <table width="100%" border="0" class="edit_table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+
+                                            <div class="user_inf"><a class="" style="border-radius: 0px;">Edit Password </a></div>
+                                            <div class="Demo-table-container table-responsive">
+                                                <label id="lblEditPassword" style="display: none;">
+                                                </label>
+                                                <div class="contactform job_profit">
+                                                    <div>
+                                                        <label>
+                                                            New Password:
+                                                        </label>
+                                                        <input type="password" id="txtNewPwd" name="txtNewPwd" class="form_input form-control validation newpwd validate[required[Enter New Password]]],validate[funcCall[validatetext[Invalid New Password]]],validate[length[7,20]]" />
+                                                        <span class="pull-left">New Password must be at least 7 characters.</span>
+                                                    </div>
+                                                    <div>
+                                                        <label>
+                                                            Confirm New Password:</label>
+                                                        <input type="password" id="txtConfNewPwd" name="txtConfNewPwd" class="form_input form-control validation cnfpwd validate[required[Enter Confirm Password]]],validate[funcCall[validatePassword[Password &amp; Confirm Password Does Not Match]]]" />
+                                                    </div>
+                                                    <div style="text-align: center;">
+                                                        <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                            id="btnSubmitEditPwd" value="Save" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div id="divMainUploadInsForm" class="edit_table ">
+
+                            <form method="post" enctype="multipart/form-data">
+                                <div class="user_inf">Upload Insurance Form</div>
+                                <div class="contactform job_profit">
+                                    <input type="file" accept="image/*" id="fuinsurancefrm" name="iform" class="form_input form-control validation validate[required[Enter Document File]]">
+                                    <div>
+                                        <input type="submit" id="btnuploadinsuranceform" name="insuranceform" class="form_submit bulebtn_comn" value="Save" style="width: 27%;" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div id="divInsForm" class="edit_table">
+                            <div class="user_inf">Insurance Form</div>
+                            <div class="Demo-table-container table-responsive table_hight">
+                                <label id="lblInsuranceForm" class="form_label" style="display: none;">
+                                </label>
+                                <div id="divuserUploadPdfForms"></div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div id="divDeleteUser" class="edit_table">
+                            <div class="user_inf">Delete User</div>
+                            <div class="Demo-table-container table-responsive">
+                                <label id="lblDeleteUser" style="display: none;">
+                                </label>
+                                <div class="" style="text-align: center;">
+
+                                    <input type="submit" name="Delete" class="form_submit redbtn_comn" id="btnDeleteUser" value="Delete" style="width: 27%;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+
+
+                        <div class="edit_table">
+                            <div class="user_inf">User Permissions</div>
+                            <div class="Demo-table-container table-responsive">
+                                <label id="lblUserEditPerm" style="display: none;">
+                                </label>
+                                <div id="divBindEditUserPerm"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>&nbsp;</div>
+                    <div id="divStageAdvAccess" class="edit_table">
+                        <div class="user_inf">Stage Advancement Access</div>
+                        <div class="Demo-table-container table-responsive">
+                            <label id="lblStageAdvAccess" style="display: none;">
+                            </label>
+                            <div id="divStageAdvanceAccess"></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div id="divStageNotify" class="edit_table">
+                        <div class="user_inf">Stage Notifications</div>
+                        <div class="Demo-table-container table-responsive">
+                            <label id="lblStageNotify" style="display: none;">
+                            </label>
+                            <div id="divStageNofification"></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            var $ = jQuery.noConflict();
+            jQuery(".formError").remove();
+            DateCallJS();
+            var UserID = page.query.UserID;
+
+            if (UserID != null && UserID != "" && UserID != "undefined") {
+                if (Checkaccess('edit_users')) {
+                    BindUserDetailsForEdit('MethodName=GetDetailOfUserForEdit&UserID=' + UserID);
+                    BindUserUploadInsPdfForms('MethodName=UserInsurancepdfUpload&UserID=' + UserID);
+                    BindEditUserPermissions('MethodName=GetUsersEditPermissions&UserID=' + UserID);
+                    BindStagesForAdvanceAccess('MethodName=GetAllStagesForEditUser&UserID=' + UserID);
+                    BindAllStageNotification('MethodName=BindStageNotificationDetails&UserID=' + UserID);
+                    $("#divMainEditUser").css("display", "block");
+                }
+                else {
+                    $("#lblMainLabelForEditUser").html("Insufficient Rights");
+                    $("#lblMainLabelForEditUser").css("display", "block");
+                    $("#divMainEditUser").css("display", "none");
+                }
+                if (!Checkaccess('edit_user_passwords')) {
+                    $("#divEditPassword").css("display", "none");
+                }
+            }
+
+            function BindUserDetailsForEdit(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+
+                        var data = $.parseJSON(data);
+
+                        $("#ddlSmsCarrier").empty();
+                        $("#ddlSmsCarrier").append("<option value=''>NO SMS</option>");
+                        for (var i = 0; i < data.carriersArray.length; i++) {
+                            $("#ddlSmsCarrier").append($("<option value='" + data.carriersArray[i].sms_id + "'>" + data.carriersArray[i].carrier + "</option>"));
+                        }
+                        $("#ddlAccessLevel").empty();
+                        for (var i = 0; i < data.userLevelsArray.length; i++) {
+                            $("#ddlAccessLevel").append($("<option value='" + data.userLevelsArray[i].level_id + "'>" + data.userLevelsArray[i].level + "</option>"));
+                        }
+                        $("#ddlOffice").empty();
+                        $("#ddlOffice").append("<option value='0'>Default</option>");
+                        for (var i = 0; i < data.officesArray.length; i++) {
+                            $("#ddlOffice").append($("<option value='" + data.officesArray[i].office_id + "'>" + data.officesArray[i].title + "</option>"));
+                        }
+                        var items = [];
+                        if (data.userArray.length > 0) {
+                            for (var i = 0; i < data.userArray.length; i++) {
+                                $("#txtFirstName").val(data.userArray[i].fname);
+                                $("#txtLastName").val(data.userArray[i].lname);
+                                $("#txtDBA").val(data.userArray[i].dba);
+                                $('#divEditUserHeader').html("Edit " + data.userArray[i].dba);
+                                $("#txtEmail").val(data.userArray[i].email);
+                                $("#txtPhone").val(data.userArray[i].phone);
+                                if (data.userArray[i].journal.toString() == "1") {
+                                    $('#chkForJournal').attr('checked', true);
+                                }
+                                if (data.userArray[i].founder.toString() == "1") {
+                                    $('#chkFounder').attr('checked', true);
+                                }
+                                if (data.userArray[i].is_active.toString() == "1") {
+                                    $('#chkActive').attr('checked', true);
+                                }
+                                if (data.userArray[i].generalinsbox.toString() == "1") {
+                                    $('#chkLibInsExpNoNeed').attr('checked', true);
+                                }
+
+                                $("#txtLibInsExpOn").val(data.userArray[i].generalins);
+                                if (data.userArray[i].workerinsbox.toString() == "true") {
+                                    $('#chkCompInsExpNoNeed').attr('checked', true);
+                                }
+
+                                $("#txtCompInsExpOn").val(data.userArray[i].workerins);
+                                $("#txtNotes").val(data.userArray[i].notes);
+
+                                var SmsId = data.userArray[i].sms_carrier;
+                                var LevelId = data.userArray[i].level;
+                                var OfficeId = data.userArray[i].office_id;
+
+                                if (OfficeId == null || OfficeId == undefined || OfficeId == '')
+                                    OfficeId = 0;
+                                $('#ddlSmsCarrier').val(SmsId).attr("selected", "selected");
+                                $('#ddlAccessLevel').val(LevelId).attr("selected", "selected");
+                                $('#ddlOffice').val(OfficeId).attr("selected", "selected");
+                                return false;
+                            }
+                            return false;
+                        }
+                        else {
+                            navigator.notification.alert(
+                                "User details not found!", alertDismissed,"An error occured","Done"             
+                            );
+                            return false;
+                        }
+                        return false;
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            errorMessage, alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+                return false;
+            }
+
+            $("#btnEditUser").unbind().click(function () {
+
+                var retval = false;
+                var ans = check_itemsvalidate('#divSubEditDoc input');
+
+                if (ans) {
+                    var chkeditJournal = "0";
+                    var chkeditFounder = "0";
+                    var chkeditActive = "0";
+                    var chkeditLibInsNotNeed = "0";
+                    var chkeditCompInsNotNeed = "0";
+
+                    var UserID = page.query.UserID;
+                    if (UserID != null && UserID != "" && UserID != "undefined") {
+
+                        if ($('#chkForJournal').is(":checked"))
+                        { chkeditJournal = 1; }
+
+                        if ($('#chkFounder').is(":checked"))
+                        { chkeditFounder = 1; }
+
+                        if ($('#chkActive').is(":checked"))
+                        { chkeditActive = 1; }
+
+                        if ($('#chkLibInsExpNoNeed').is(":checked"))
+                        { chkeditLibInsNotNeed = 1; }
+
+                        if ($('#chkCompInsExpNoNeed').is(":checked"))
+                        { chkeditCompInsNotNeed = 1; }
+
+                        UpdateEditUserDetails('MethodName=UpdateEditUserDetails&UserID=' + UserID + '&fname=' + $("#txtFirstName").val() + '&lname=' + $("#txtLastName").val() + '&Dba=' + $("#txtDBA").val() + '&email=' + $("#txtEmail").val() + '&phone=' + $("#txtPhone").val() + '&smsCarrier=' + $("#ddlSmsCarrier").val() + '&accessLevel=' + $("#ddlAccessLevel").val() + '&office=' + $("#ddlOffice").val() + '&journal=' + chkeditJournal + '&founder=' + chkeditFounder + '&Active=' + chkeditActive + '&libInsExp=' + chkeditLibInsNotNeed + '&txtLibInsExpOn=' + $("#txtLibInsExpOn").val() + '&comInsExp=' + chkeditCompInsNotNeed + '&txtComInsExpOn=' + $("#txtCompInsExpOn").val() + '&txtNotes=' + $("#txtNotes").val());
+
+                    }
+                    else {
+                        return false;
+                    }
+                }
+                return false;
+            });
+
+            function UpdateEditUserDetails(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: "POST",
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+
+                        var data = $.parseJSON(data);
+
+                        if (data.status == "1") {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"Successful","Done"             
+                            );
+                            //$('#lblEditUser').html(data.message);
+                            //$("#lblEditUser").css("display", "block");
+                            mainView.loadPage("get_user.html?UserID=" + UserID);
+                            //BindUserDetailsForEdit('MethodName=GetDetailOfUserForEdit&UserID=' + UserID);
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            //$('#lblEditUser').html(data.message);
+                            //$("#lblEditUser").css("display", "block");
+                            return false;
+                        }
+
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+            }
+
+            $('#btnSubmitEditPwd').unbind().click(function () {
+                var retval = false;
+                var ans = check_itemsvalidate('#divEditPassword input');
+                if (ans) {
+                    UpdatePasswordForUser('MethodName=UpdateUserPassword&UserID=' + UserID + '&Password=' + $("#txtNewPwd").val());
+                }
+                else {
+                    return false;
+                }
+                return false;
+            });
+
+            function UpdatePasswordForUser(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: "POST",
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+
+                        var data = $.parseJSON(data);
+                        if (data.status == "1") {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"Successful","Done"             
+                            );
+                            //$('#lblEditPassword').html(data.message);
+                            //$("#lblEditPassword").css("display", "block");
+                            $("#txtNewPwd").val('');
+                            $("#txtConfNewPwd").val('');
+                            mainView.loadPage("get_user.html?UserID=" + UserID);
+                            //BindUserDetailsForEdit('MethodName=GetDetailOfUserForEdit&UserID=' + UserID);
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            //$('#lblEditPassword').html(data.message);
+                            //$("#lblEditPassword").css("display", "block");
+                            return false;
+                        }
+
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+            }
+
+            function BindUserUploadInsPdfForms(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+                        $('#divuserUploadPdfForms').empty();
+                        $('#lblInsuranceForm').html("");
+                        var items = [];
+                        if (data.userPdfArray.length > 0) {
+                            //alert(data.message);
+                            var path = "https://xactbid.pocketofficepro.com/images/icons/pdf_lg.png";
+                            var filePath = "https://xactbid.pocketofficepro.com/insuranceform/";
+                            items.push("<table>");
+                            for (var i = 0; i < data.userPdfArray.length; i++) {
+                                var fileFullPath = filePath + data.userPdfArray[i].pdfname;
+                                items.push("<tr class='pdf_form'><td><a href=" + fileFullPath + "><img title=" + fileFullPath + " class='viewInsuranceForm' src=" + path + " /></a><br /><a id=aviewInsuranceForm_" + data.userPdfArray[i].pdf_id + " class='viewInsuranceForm' title=" + fileFullPath + " href=" + fileFullPath + "> " + data.userPdfArray[i].pdfname + "</a><br />" + data.userPdfArray[i].datecreated + "</td></tr>");
+                            }
+                            items.push("</table>");
+                            $('#divuserUploadPdfForms').append(items.join(''));
+                            $(".viewInsuranceForm").unbind().click(function () {
+                                var FileName = this.title;
+                                window.open(FileName, '_system');
+                                return false;
+
+                            });
+                        }
+                        else {
+                            //alert(data.message);
+                            $('#lblInsuranceForm').html("No Insurance Form uploded");
+                            $("#lblInsuranceForm").css("display", "block");
+                            return false;
+                        }
+
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+            }
+
+            $('#btnDeleteUser').unbind().click(function () {
+                if (confirm('Are you sure?')) {
+                    DeleteUserByUserId('MethodName=DeleteUserById&UserID=' + UserID);
+                    return false;
+                }
+                else { return false; }
+            });
+
+            function DeleteUserByUserId(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+                        if (data.status == "1") {
+                            navigator.notification.alert(
+                               data.message, alertDismissed,"Successful","Done"             
+                            );
+                            mainView.loadPage("users.html");
+                            //BindUserDetailsForEdit('MethodName=GetDetailOfUserForEdit&UserID=' + UserID);
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            //$('#lblDeleteUser').html(data.message);
+                            //$("#lblDeleteUser").css("display", "block");
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                         navigator.notification.alert(
+                             "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+            }
+
+            function BindEditUserPermissions(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+                        $('#divBindEditUserPerm').empty();
+                        var items = [];
+                        if (data.userPermArray.length > 0) {
+                            //alert(data.message);
+                            var imgPath = "https://xactbid.pocketofficepro.com/images/icons/delete.png";
+                            items.push("<table><tr><td colspan='4'><b>Modules:</b><span class='smallnote'><br />A = Access<br />O = Ownership required<br /><font color='red'>Exception to Group<br /></font></span></td></tr><tr><td colspan='4'>&nbsp;</td></tr><tr style='float: left; width:45%'><td><b>A</b></td><td ><b>O</b></td><td colspan='2'>&nbsp;</td></tr><tr style='float: left; width:45%'><td><b>A</b></td><td ><b>O</b></td><td colspan='2'>&nbsp;</td></tr>");
+
+                            for (var i = 0; i < data.userPermArray.length; i++) {
+                                //var RoundVal = Math.round(data.userPermArray.length / 2);
+
+                                if (data.userPermArray[i].exception_id == '' || data.userPermArray[i].exception_id == null) {
+
+                                    var accesChecked = '';
+
+                                    //var accessAction = "add_ex_on";
+                                    var accessAction = "add_ex_off";
+
+                                    items.push("<tr style='width:45%; float:left; margin-left: 5px;  font-size: 13px;'>");
+                                    if (data.userPermArray[i].module_access_id != '' && data.userPermArray[i].module_access_id != null) {
+                                        accesChecked = "checked";
+                                        //accessAction = "add_ex_off";
+                                        accessAction = "add_ex_on";
+                                    }
+                                    items.push("<td><input type='checkbox' class='chkAccessPerm' value=" + accessAction + " checked=" + accesChecked + " name='chkAccessPerm_" + data.userPermArray[i].module_id + "' id='chkAccessPerm_" + data.userPermArray[i].module_id + "' ></td>");
+
+                                    var ownerDisabled = 'disabled=disabled';
+                                    var checked_owner = '';
+                                    var ownerAction = "add_ex_ownon";
+
+                                    var IsChecked = "";
+                                    if (data.userPermArray[i].access_ownership == 1) {
+                                        checked_owner = "checked";
+                                        ownerAction = "add_ex_ownoff";
+                                        IsChecked = "checked:checked";
+                                    }
+
+                                    if (data.userPermArray[i].ownership_enabled == 1) {
+                                        //items.push("<td><input type='checkbox' class='chkOwnerShip' enabled='enabled'   value=" + ownerAction + "  IsChecked name='chkOwnerShip_" + data.userPermArray[i].module_id + "' id='chkOwnerShip_" + data.userPermArray[i].module_id + "' ></td>");
+                                        items.push("<td><input type='checkbox' class='chkOwnerShip' enabled='enabled'   value=" + ownerAction + "  IsChecked   name='chkOwnerShip_" + data.userPermArray[i].module_id + "' id='chkOwnerShip_" + data.userPermArray[i].module_id + "' ></td>");
+                                    }
+                                    else {
+                                        items.push("<td><input type='checkbox' class='chkOwnerShip' disabled='disabled'   value=" + ownerAction + "  IsChecked   name='chkOwnerShip_" + data.userPermArray[i].module_id + "' id='chkOwnerShip_" + data.userPermArray[i].module_id + "' ></td>");
+                                    }
+                                    //items.push("<td><input type='checkbox' class='chkOwnerShip'  value=" + ownerAction + "  checked=" + checked_owner + "  name='chkOwnerShip_" + data.userPermArray[i].module_id + "' id='chkOwnerShip_" + data.userPermArray[i].module_id + "' ></td>");
+                                    items.push("<td colspan=2>" + data.userPermArray[i].title + "</td></tr>");
+                                }
+                                else {
+
+                                    items.push("<tr style='width:45%; float:left;'>");
+                                    var checked_access = '';
+                                    var action_access = "edit_ex_on";
+                                    var ISChecked = "No";
+
+
+                                    if (data.userPermArray[i].exception_onoff == 1) {
+                                        checked_access = "checked:checked";
+                                        action_access = "edit_ex_on";
+                                        ISChecked = "checked";
+
+                                        items.push("<td><input type='checkbox' disabled='disabled' class='chkEditAccessPerm'  checked  value='edit_ex_on'  name='chkEditAccessPerm_" + data.userPermArray[i].module_id + "' id='chkEditAccessPerm_" + data.userPermArray[i].module_id + "' ></td>");
+                                    }
+                                    else {
+                                        items.push("<td><input type='checkbox' disabled='disabled' class='chkEditAccessPerm'  value='edit_ex_on' name='chkEditAccessPerm_" + data.userPermArray[i].module_id + "' id='chkEditAccessPerm_" + data.userPermArray[i].module_id + "' ></td>");
+                                    }
+                                    //items.push("<td><input type='checkbox' disabled='disabled' class='chkEditAccessPerm'  value=" + action_access + "  checked_access  name='chkEditAccessPerm_" + data.userPermArray[i].module_id + "' id='chkEditAccessPerm_" + data.userPermArray[i].module_id + "' ></td>");
+                                    var editChecked_owner = '';
+                                    var ISOchecked = "No";
+                                    if (data.userPermArray[i].exception_ownership == 1) {
+                                        editChecked_owner = "checked:checked";
+                                        ISOchecked = "checked";
+                                        items.push("<td><input type='checkbox' class='chkEditOwnerShip' disabled='disabled' checked   editChecked_owner   name='chkEditOwnerShip_" + data.userPermArray[i].module_id + "' id='chkEditOwnerShip_" + data.userPermArray[i].module_id + "' ></td>");
+                                    }
+                                    else {
+                                        items.push("<td><input type='checkbox' class='chkEditOwnerShip' disabled='disabled'  editChecked_owner   name='chkEditOwnerShip_" + data.userPermArray[i].module_id + "' id='chkEditOwnerShip_" + data.userPermArray[i].module_id + "' ></td>");
+                                    }
+
+                                    //items.push("<td><input type='checkbox' class='chkEditOwnerShip' disabled='disabled' checked=" + ISOchecked + "   editChecked_owner   name='chkEditOwnerShip_" + data.userPermArray[i].module_id + "' id='chkEditOwnerShip_" + data.userPermArray[i].module_id + "' ></td>");
+                                    items.push("<td><a href='javascript:;' id='aLinkDelRights_" + data.userPermArray[i].module_id + "'><img id='imgDelRights_" + data.userPermArray[i].module_id + "' class='imgDelUserPerm' alt='del' src=" + imgPath + " border='0'style='margin:0px 10px 0px 0px !important;'></a></td><td style='color:red;'>" + data.userPermArray[i].title + "</td></tr>");
+                                }
+
+                            }
+                            items.push("</table>");
+                            $('#divBindEditUserPerm').append(items.join(''));
+
+                            $(".chkAccessPerm").unbind().click(function () {
+                                var accessActionName = this.value;
+                                var splits_id = this.id.split('_');
+                                var moduleId = splits_id[1];
+                                if ((moduleId != null || moduleId != "" || moduleId != "undefined") && accessActionName != "") {
+                                    BindUserPermAfterActionPerform('MethodName=UpdateUserPermissionByAction&ModuleId=' + moduleId + '&Action=' + accessActionName + '&UserID=' + UserID);
+                                }
+                                return false;
+                            });
+                            $(".chkOwnerShip").unbind().click(function () {
+                                var ownerActionName = this.value;
+                                var splits_id = this.id.split('_');
+                                var moduleId = splits_id[1];
+                                if ((moduleId != null || moduleId != "" || moduleId != "undefined") && ownerActionName != "") {
+                                    BindUserPermAfterActionPerform('MethodName=UpdateUserPermissionByAction&ModuleId=' + moduleId + '&Action=' + ownerActionName + '&UserID=' + UserID);
+                                }
+                                return false;
+                            });
+                            $(".imgDelUserPerm").unbind().click(function () {
+                                var delActionName = "del_ex";
+                                var splits_id = this.id.split('_');
+                                var moduleId = splits_id[1];
+                                if ((moduleId != null || moduleId != "" || moduleId != "undefined") && delActionName != "") {
+                                    BindUserPermAfterActionPerform('MethodName=UpdateUserPermissionByAction&ModuleId=' + moduleId + '&Action=' + delActionName + '&UserID=' + UserID);
+                                }
+                                return false;
+                            });
+                        }
+                        else {
+                            //alert(data.message);
+                            $('#lblUserEditPerm').html("No record found for User Permission");
+                            $("#lblUserEditPerm").css("display", "block");
+                            return false;
+                        }
+
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+            }
+
+            function BindUserPermAfterActionPerform(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+
+                        if (data.status == "1") {
+                            //alert(data.message);
+                            BindEditUserPermissions('MethodName=GetUsersEditPermissions&UserID=' + UserID);
+                        }
+                        else {
+                            //alert(data.message);
+                            $('#lblUserEditPerm').html(data.message);
+                            $("#lblUserEditPerm").css("display", "block");
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                      navigator.notification.alert(
+                         "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                     );
+                    }
+                })
+            }
+
+            function BindStagesForAdvanceAccess(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+
+                        var data = $.parseJSON(data);
+                        $('#divStageAdvanceAccess').empty();
+                        var items = [];
+                        items.push("<table>");
+                        var arrcheckk = [];
+
+
+                        items.push(data.strstageadvance);
+
+                        items.push("</table>");
+                        $('#divStageAdvanceAccess').append(items.join(''));
+                        $(".chkStageAdvncAccess").unbind().click(function () {
+                            var splits_id = this.id.split('_');
+                            var stageId = splits_id[1];
+                            if (stageId != null || stageId != "" || stageId != "undefined") {
+
+                                BindStageAdvcAccessStatus('MethodName=UpdateUserStageAdvAccessStatus&stageId=' + stageId + '&UserID=' + UserID);
+                            }
+                            return false;
+                        });
+
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            errorMessage, alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+
+            }
+
+            function BindStageAdvcAccessStatus(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+
+                        if (data.status == "1") {
+                            //alert(data.message);
+                            BindStagesForAdvanceAccess('MethodName=GetAllStagesForEditUser&UserID=' + UserID);
+                        }
+                        else {
+                            //alert(data.message);
+                            $('#lblStageAdvAccess').html(data.message);
+                            $("#lblStageAdvAccess").css("display", "block");
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+            }
+
+            function BindAllStageNotification(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+
+                        var data = $.parseJSON(data);
+                        $('#divStageNofification').empty();
+                        var items = [];
+
+                        if (data.stageNotifyArray.length > 0) {
+                            items.push("<table><tr><td><b>E</b></td><td><b>T</b></td><td>&nbsp;</td><td>&nbsp;</td></tr>");
+                            var checked_Email = [];
+                            var checked_Sms = [];
+
+                            for (var i = 0; i < data.stageNotifyArray.length; i++) {
+                                checked_Email[i] = "";
+                                checked_Sms[i] = "";
+                                var StageNum = data.stageNotifyArray[i].stage_num;
+
+                                for (var j = 0; j < data.emailNotifyArray.length; j++) {
+
+                                    if (data.emailNotifyArray[j].stage_num == StageNum) {
+                                        checked_Email[i] = "checked='checked'";
+                                    }
+                                }
+                                for (var k = 0; k < data.smsNotifyArray.length; k++) {
+                                    if (data.smsNotifyArray[k].stage_num == StageNum) {
+                                        checked_Sms[i] = "checked='checked'";
+                                    }
+                                }
+                                items.push("<tr><td><input type='checkbox' value='emailAction' class='chkStageEmailNotify' " + checked_Email[i].toString() + " id='chkStageEmailNotify_" + data.stageNotifyArray[i].stage_num + "' ></td><td><input type='checkbox' value='smsAction' class='chkStagesSmslNotify' " + checked_Sms[i].toString() + "  id='chkStagesSmslNotify_" + data.stageNotifyArray[i].stage_num + "' ></td><td><b>" + data.stageNotifyArray[i].stage_num + "</b>.&nbsp;</td><td>" + data.stageNotifyArray[i].stage + "</td></tr>");
+                            }
+                            items.push("</table>");
+                        }
+                        else {
+
+                            $("#lblStageNotify").html("No Stages");
+                            $("#lblStageNotify").css("display", "block");
+                        }
+
+
+                        $('#divStageNofification').append(items.join(''));
+                        $(".chkStageEmailNotify").unbind().click(function () {
+                            var splits_id = this.id.split('_');
+                            var stageNum = splits_id[1];
+                            var action = "emailAction";
+
+                            if (stageNum != null || stageNum != "" || stageNum != "undefined") {
+                                BindStageNotiAfterUpdate('MethodName=UpdateUserStageNotificationStatus&action=' + action + '&stageNum=' + stageNum + '&UserID=' + UserID);
+                            }
+                            return false;
+                        });
+                        $(".chkStagesSmslNotify").unbind().click(function () {
+                            var splits_id = this.id.split('_');
+                            var stageNum = splits_id[1];
+                            var action = "smsAction";
+
+                            if (stageNum != null || stageNum != "" || stageNum != "undefined") {
+                                BindStageNotiAfterUpdate('MethodName=UpdateUserStageNotificationStatus&action=' + action + '&stageNum=' + stageNum + '&UserID=' + UserID);
+                            }
+                            return false;
+                        });
+
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            errorMessage, alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+
+            }
+
+            function BindStageNotiAfterUpdate(data) {
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                    //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+
+                        if (data.status == "1") {
+                            //alert(data.message);
+                            BindAllStageNotification('MethodName=BindStageNotificationDetails&UserID=' + UserID);
+                        }
+                        else {
+                            //alert(data.message);
+                            $('#lblStageNotify').html(data.message);
+                            $("#lblStageNotify").css("display", "block");
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                       navigator.notification.alert(
+                            "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+            }
+            $("#btnuploadinsuranceform").unbind().click(function () {
+
+                var UserID = page.query.UserID;
+                if ($('#fuinsurancefrm').val() != "") {
+                    // alert($('#fludoc').prop('files').length);
+                    var file_data = $('#fuinsurancefrm').prop('files')[0];
+                    var form_data = new FormData();
+
+                    form_data.append('flag', '3');
+                    form_data.append('userid', UserID);
+
+                    form_data.append('file', file_data);
+                    $.when($.ajax({
+                        url: 'https://xactbid.pocketofficepro.com/fileuploader.php', // point to server-side PHP script 
+                        //url: "http://dev.elagoondigital.net/workflow/fileuploader.php",
+                        dataType: 'text',  // what to expect back from the PHP script, if anything
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        data: form_data,
+                        type: 'post',
+                        success: function (message) {
+                            navigator.notification.alert(
+                                message, alertDismissed,"Successful","Done"             
+                            );
+                            $('#fuinsurancefrm').val("");
+                        },
+                        error: function (data) {
+                             navigator.notification.alert(
+                                data, alertDismissed,"An error occured","Done"             
+                            );
+                        },
+                    }).then(function () {
+                        BindUserUploadInsPdfForms('MethodName=UserInsurancepdfUpload&UserID=' + UserID);
+                    }));
+
+
+
+                    $("#divMainEditUser").css("display", "block");
+
+                }
+                else {
+                    navigator.notification.alert(
+                        "No files selected.", alertDismissed,"An error occured","Done"             
+                    );
+                }
+                return false;
+
+            });
+
+            $("#btnEditUserBack").unbind().click(function () {
+                mainView.loadPage("get_user.html?UserID=" + UserID);
+                return false;
+            });
+
+            function DateCallJS() {
+                var $ = jQuery.noConflict();
+                $('.datestamp').datepicker(
+                    {
+                        dateFormat: 'yy-mm-dd',
+                        changeMonth: true,
+                        changeYear: true,
+                        yearRange: "1925:2999",
+                        onClose: function () {
+                            if (this.value != '') {
+                                $.validationEngine.loadValidation('.datestamp');
+                            }
+                        }
+                    });
+            }
+
+
+        </script>
+    </div>
+</div>
+
+

@@ -1,0 +1,40 @@
+2019-04-29 19:28:03 - NOTICE -->D:\xampp\htdocs\ums\xactimate\includes\ajax\add_appointment.php at Line 29:  emailFromTemplate - Failed: Could not instantiate mail function.; array (
+  0 => 'add_appointment',
+  1 => '196',
+  2 => '110',
+  3 => 
+  array (
+    'job_id' => '3',
+  ),
+  4 => false,
+)
+2019-04-29 19:58:00 - NOTICE -->D:\xampp\htdocs\ums\xactimate\includes\ajax\edit_jobinsurance.php at Line 19:  emailFromTemplate - Failed: Could not instantiate mail function.; array (
+  0 => 'modify_insurance',
+  1 => '196',
+  2 => '110',
+  3 => 
+  array (
+    'job_id' => '3',
+  ),
+  4 => false,
+)
+2019-04-29 19:58:12 - NOTICE -->D:\xampp\htdocs\ums\xactimate\includes\ajax\edit_jobinsurance.php at Line 19:  emailFromTemplate - Failed: Could not instantiate mail function.; array (
+  0 => 'modify_insurance',
+  1 => '196',
+  2 => '110',
+  3 => 
+  array (
+    'job_id' => '3',
+  ),
+  4 => false,
+)
+2019-04-29 19:58:26 - NOTICE -->D:\xampp\htdocs\ums\xactimate\includes\ajax\edit_jobinsurance.php at Line 19:  emailFromTemplate - Failed: Could not instantiate mail function.; array (
+  0 => 'modify_insurance',
+  1 => '196',
+  2 => '110',
+  3 => 
+  array (
+    'job_id' => '3',
+  ),
+  4 => false,
+)

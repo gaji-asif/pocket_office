@@ -1,0 +1,28 @@
+<div class="box">
+	<div class="box-header">
+		<h2><i class="halflings-icon bullhorn"></i><span class="break"></span>Announcements</h2>
+	</div>
+	<div class="box-content">
+		<table id="announcements-list" class="table table-bordered table-striped table-hover table-condensed bootstrap-datatable datatable">
+			<thead>
+				<tr>
+					<th>Subject</th>
+					<th>Author</th>
+					<th>Added</th>
+				</tr>
+			</thead>
+			<tbody>
+			{{#each announcements}}
+				<tr rel="view-announcement" data-job-id="{{announcement_id}}" class="clickable-row">
+					<td>{{subject}}</td>
+					<td>{{lname}}, {{fname}}</td>
+					<td>{{getDateFromTimestamp timestamp}}</td>
+				</tr>
+			{{/each}}
+			{{#unless announcements}}
+			<tr><td colspan="3">No Announcements Found</td></tr>
+			{{/unless}}
+			</tbody>
+		</table>
+	</div>
+</div>

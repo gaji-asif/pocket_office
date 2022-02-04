@@ -1,0 +1,54 @@
+﻿<div class="pages ">
+    <div data-page="job-map" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">
+                    Jobs Map 
+                </div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+
+            </div>
+            <div id="pages_maincontent">
+                <div class="table-responsive large_table" style="clear: both;">
+                    <div id="divjobmapfilters">
+
+
+                        <form id="search-jobs-map" method="get" style="text-align: center;">
+                            <input type="text" class="map_searchbox form_input form-control validation validate[required[search location can't be empty]]" name="address" id="txtmapaddress" value="" placeholder="Search location here" />
+                            <label for="label">Radius</label>
+                            <select name="radius" id="drdradious" class="jobs_map">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                            </select>
+                            <input type="submit" id="btnsearchjobmap" value="Search" class="bulebtn_comn" />
+                        </form>
+
+                    </div>
+                   
+                   <div id="jobs-map" style="height:400px;"></div>
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
+
+</div>
+
+
+

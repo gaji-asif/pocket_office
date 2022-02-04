@@ -1,0 +1,11 @@
+2019-01-17 11:33:16 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost
+2019-01-17 12:28:07 - NOTICE -->D:\xampp\htdocs\ums\xactimate\includes\ajax\edit_jobnumber.php at Line 25:  emailFromTemplate - Failed: Could not instantiate mail function.; array (
+  0 => 'edit_job_number',
+  1 => '196',
+  2 => '110',
+  3 => 
+  array (
+    'job_id' => '1',
+  ),
+  4 => false,
+)

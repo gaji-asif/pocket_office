@@ -1,0 +1,55 @@
+<div class="pages">
+    <div data-page="suppliers" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a></div>
+                <div class="navbar_page_center">
+                    Suppliers</div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a></div>
+            </div>
+            <div id="pages_maincontent">
+                <a id="aAddSplr" class="aAddSplr" href="javascript:;" title="Add Supplier" style="background: none; font-weight: bold; float:right;">Add Supplier</a>
+                <div class="page_single">
+                    <div>
+                        <label id="lblMsgForSupplierMainLabel" style="display: none;"></label>
+                        <div id="divSupplierLst" style="display: block;">
+                          
+                            <div class="table-responsive table_hight">
+                                <label id="lblSuplList" style="display: none;">
+                                </label>
+                                <ul id="lstSupl">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            if(Checkaccess('modify_suppliers'))
+            {
+                $('#aAddSplr').css("display","block");
+            }
+            else
+            {
+                $('#aAddSplr').css("display","none");
+            }
+            if(Checkaccess('view_customers'))
+            { 
+              GetSupplierList('MethodName=GetSupplierList');  
+              $('#divSupplierLst').css("display","block");
+              $('#lblMsgForSupplierMainLabel').css("display","none");
+            }
+            else
+            {
+                $('#lblMsgForSupplierMainLabel').html("Insufficient Rights");
+                $('#lblMsgForSupplierMainLabel').css("display","block");
+                $('#divSupplierLst').css("display","none");
+            }
+        -->
+    </div>
+</div>

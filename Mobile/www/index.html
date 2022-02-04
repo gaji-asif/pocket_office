@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/validationEngine.jquery.css" />
+    <link rel="stylesheet" href="css/framework7.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body id="mobile_wrap">
+
+    <div class="statusbar-overlay"></div>
+
+    <div class="panel-overlay"></div>
+
+    <div class="views">
+
+        <div class="view view-main">
+            <div class="pages navbar-through toolbar-through ">
+
+                <div data-page="index" class="page homepage">
+
+                    <div class="page-content">
+                        <div class="popup popup-login modal-in" style="display: block;">
+                            <div class="content-block" id="divlogin">
+                                <span>
+                                    <img src="images/logo_workfolw1.png" alt="" /></span>
+                                <div class=" login_blk">
+                                    <label id="lblmsg" style="color: red; display: none;"></label>
+                                    <div class="loginform ">
+                                        <div style="display: none;">
+                                            <label>Account:</label>
+                                            <input type="text" id="txtLoginAccountName" name="txtLoginAccountName" />
+                                        </div>
+                                        <label>Username:</label>
+                                        <input type="text" id="txtLoginUserName" name="txtLoginUserName" class="form_input form-control validation validate[required[User Name Required]]" />
+                                        <label>Password:</label>
+                                        <input type="password" id="txtLoginPassword" name="Password" value="" class="form_input form-control validation validate[required[Password Required]],validate[funcCall[validatetext[Invalid Password]]],validate[length[6,15]]" />
+
+                                        <input type="submit" name="submit" class="form_submit" onclick="CheckLogin();" id="submit" value="Login" />
+                                        <input type="button" name="reset" class="form_submit" onclick="Clearall();" id="btnreset" value="Reset" />
+
+                                        <a href="javascript:;" onclick="ShowForgotForm(1);" title="Forgot Password?" class="forgot_link">Forgot Password?</a>
+
+                                    </div>
+                                </div>
+                                <div id="container1">
+                                </div>
+
+                                <!--<div class="close_popup_button_gray"><a href="#" class="close-popup">close</a></div>-->
+
+                            </div>
+                            <div class="content-block" id="divforgotpw" style="display: none;">
+                                <h4>Forgot Password</h4>
+                                <label id="lblmsgforgotpassword" style="color: red; display: none;"></label>
+                                <div class="loginform">
+                                    <label>Account:</label>
+                                    <input type="text" id="txtFAccountName" name="txtFAccountName" class="form_input form-control validation validate[required[Account Required]]" />
+                                    <label>Email:</label>
+                                    <input type="text" id="txtFEmail" name="txtFEmail" class="form_input form-control validation validate[required[Enter Email Address]], validate[funcCall[validateCustomEmailAddress[Invalid Email Address]]]" />
+
+                                    <input type="submit" id="submitFPassword" class="form_submit" value="Submit" title="Submit" onclick="CheckForgotPassword();" />
+
+                                    <input type="button" name="Back" class="form_submit greybtn_comn help_back" onclick="ShowForgotForm(0);" id="btnBack" value="Back" />
+                                    <div class="clearfix"></div>
+                                    <a href="javascript:;" id="lnkhelp" class="forgot_link">Help</a>
+                                </div>
+
+                                <!--<div class="close_popup_button_gray"><a href="#" class="close-popup">close</a></div>-->
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
+
+    <script src="js/jquery.validationEngine-en.js" type="text/javascript"></script>
+    <script src="js/jquery.validationEngine.js" type="text/javascript"></script>
+
+    <script src="js/User.js" type="text/javascript"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript">
+        var $ = jQuery.noConflict();
+        $(document).ready(function () {
+             
+            if (window.localStorage.getItem("sessLoginId") != undefined && window.localStorage.getItem("sessLoginId") != null)
+                location.href = "home.html";
+            $("input").keypress(function (e) {
+
+                if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+                    $('#submit').click();
+                    return false;
+                } else {
+                    return true;
+                }
+            });
+        });
+        function openform() {
+            $.get('CaptureImage.html').success(function (html) {
+                $('#container1').html(html);
+            });
+            // window.open('CaptureImage.html', '_blank', 'location=yes');
+
+        }
+        $('#lnkhelp').click(function myfunction() {
+            window.location = "mailto:cbm3384@gmail.com";
+        });
+        function CheckLogin() {
+            var $ = jQuery.noConflict();
+            var retval = false;
+            var ans = check_itemsvalidate('#divlogin input');
+            if (ans == true) {
+
+                //AjaxCall('MethodName=Login&username=testuser&password=bigjjose&account=Performance Construction');
+
+                AjaxCall('MethodName=Login&username=' + $("#txtLoginUserName").val() + '&password=' + $("#txtLoginPassword").val() + '&account=' + $("#txtLoginAccountName").val());
+            }
+            else {
+                return false;
+            }
+
+
+        }
+        function CheckForgotPassword() {
+
+            var retval = false;
+            var $ = jQuery.noConflict();
+            var ans = check_itemsvalidate('#divforgotpw input');
+            if (ans == true) {
+                var account = $("#txtFAccountName").val();
+                var email = $("#txtFEmail").val();
+                AjaxCallForgotPassword('MethodName=ForgotPassword&account=' + account + '&email=' + email + '');
+                return false;
+            }
+            else {
+                return false;
+            }
+
+
+        }
+
+        function ShowForgotForm(flag) {
+            var $ = jQuery.noConflict();
+            $("#txtFAccountName").val("");
+            $("#txtFEmail").val("");
+            $("#lblmsgforgotpassword").css("display", "none");
+            jQuery(".formError").remove();
+            if (flag == '1') {
+                $('#divlogin').css("display", "none");
+                $('#divforgotpw').css("display", "block");
+            }
+            else {
+                $('#divforgotpw').css("display", "none");
+                $('#divlogin').css("display", "block");
+            }
+
+        }
+
+        function AjaxCall(data) {
+            var $ = jQuery.noConflict();
+            $.ajax({
+                url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                //url: "https://xactbid.pocketofficepro.com/dev/workflowservice.php",
+                type: "POST",
+                data: data,
+                cache: true,
+                success: function (data, textStatus, jqxhr) {
+
+
+                    var obj = $.parseJSON(data);
+
+                    if (obj.status == "1") {
+                        $("#lblmsg").css('display', 'none');
+
+                        window.localStorage.setItem("sessLoginId", obj.User.ao_userid);
+                        window.localStorage.setItem("sessUserName", obj.User.ao_username);
+                        window.localStorage.setItem("sessLevel", obj.User.ao_level);
+                        window.localStorage.setItem("sessAccountId", obj.User.ao_accountid);
+                        window.localStorage.setItem("sessFname", obj.User.ao_fname);
+                        window.localStorage.setItem("sessLname", obj.User.ao_lname);
+                        window.localStorage.setItem("ao_founder", obj.User.ao_founder);
+                        window.localStorage.setItem("ao_password", obj.User.ao_password);
+
+                        if (obj.modules != "0") {
+                            window.localStorage.setItem("ao_module_access", JSON.stringify(obj.modules));
+                        }
+                        if (obj.navigations != "0") {
+
+                            window.localStorage.setItem("ao_nav_access", JSON.stringify(obj.navigations));
+
+                        }
+
+                        location.href = "home.html";
+                    }
+                    else {
+                        $("#lblmsg").css('display', 'block');
+                        $("#lblmsg").text(obj.message);
+
+                        return false;
+                    }
+
+                },
+                error: function (jqxhr, textStatus, errorMessage) {
+                    navigator.notification.alert(
+                        "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                    );
+                    console.log(errorMessage);
+                }
+            })
+        }
+
+        function AjaxCallForgotPassword(data) {
+
+            var $ = jQuery.noConflict();
+            $("#lblmsgforgotpassword").css('display', 'none');
+            $.ajax({
+                url: "https://xactbid.pocketofficepro.com/imranwebservice.php",
+                //url: "http://dev.elagoondigital.net/workflow/imranwebservice.php",
+                type: "POST",
+                data: data,
+                cache: true,
+                success: function (data, textStatus, jqxhr) {
+                    var obj = $.parseJSON(data);
+
+                    $("#lblmsgforgotpassword").css('display', 'block');
+                    $("#lblmsgforgotpassword").text(obj.message);
+                    $("#txtFAccountName").val("");
+                    $("#txtFEmail").val("");
+
+
+                },
+                error: function (jqxhr, textStatus, errorMessage) {
+                    navigator.notification.alert(
+                        "There was an error. Try again please!", alertDismissed,"An error occured","Done"             
+                    );
+                }
+            })
+            return false;
+        }
+
+        function Clearall() {
+            var $ = jQuery.noConflict();
+            $("#txtLoginPassword").removeClass("form_input form-control validation validate[required[Password Required]],validate[funcCall[validatetext[Invalid Password]]],validate[length[6,15]]");
+            $('#txtLoginAccountName').val('');
+            $('#txtLoginUserName').val('');
+            $('#txtLoginPassword').val('');
+            //$('#lblmsg').html('');
+
+        }
+    </script>
+</body>
+</html>

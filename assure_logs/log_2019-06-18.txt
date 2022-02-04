@@ -1,0 +1,3 @@
+2019-06-18 19:53:08 - NOTICE -->D:\xampp\htdocs\ums\xactimate\index.php at Line 5:  Failed database connection - Invalid connection variables: localhost, root, 
+2019-06-18 19:53:10 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 3:  Failed database connection - Invalid connection variables: localhost, root, 
+2019-06-18 19:53:31 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost

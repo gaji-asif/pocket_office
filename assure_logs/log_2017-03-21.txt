@@ -1,0 +1,23 @@
+2017-03-21 3:01:42 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-21 4:13:38 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-21 4:38:17 - NOTICE -->C:\xampp\htdocs\workflow\workflowservice.php at Line 7:  Try database - assure - localhost
+2017-03-21 5:09:38 - NOTICE -->C:\xampp\htdocs\workflow\workflowservice.php at Line 7:  Try database - assure - localhost
+2017-03-21 5:09:51 - NOTICE -->C:\xampp\htdocs\workflow\workflowservice.php at Line 7:  Try database - assure - localhost
+2017-03-21 6:53:38 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-21 8:04:40 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-21 8:08:58 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-21 8:08:58 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-03-21 8:09:16 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-21 9:00:01 - NOTICE -->C:\xampp\htdocs\workflow\stages-list.php at Line 15:  Failed database query - assure - Column count doesn't match value count at row 1 - INSERT INTO stages
+                VALUES ('9', 'Stage 1')
+2017-03-21 9:04:43 - NOTICE -->C:\xampp\htdocs\workflow\stages-list.php at Line 16:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''account_id','stage')
+                VALUES ('9', 'vddv')' at line 1 - INSERT INTO stages ('account_id','stage')
+                VALUES ('9', 'vddv')

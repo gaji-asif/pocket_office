@@ -1,0 +1,82 @@
+﻿<div class="pages ">
+    <form class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+
+    <div data-page="job-uploads" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <input type="hidden" id="hdnoffset" value="0">
+            <input type="hidden" id="hdntotalrecord" value="0">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">
+                    Jobs Uploads
+                </div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent" class=" main_contact">
+
+                <div class="Demo-table-container">
+                    <div class="contactform">
+                        <span class="">    <a id="lnklintjobuploadback" class="editback_btn" href="javascript:;"></a></span>
+                        <div class="jobup_blk">
+                            <label id="lblJobUploadList" style="display: none;"></label>
+                            <button id="lnkcapturephoto">Capture Photo</button>
+                            <button id="lnkcapturegallery">Upload from Gallery</button>
+                            <label id="lblAcctLogo" style="display:none;"></label>
+                            <input type="file" id="fluJobUpload" multiple name="fluJobUpload" style="display:none" />
+                            <button id="btngeneratepdf" class="bulebtn_comn">Generate Pdf</button>
+                            <!-- <button id="btnUploadfromserver" class="bulebtn_comn">Upload from Server</button> -->
+                        </div>
+                        <!--  <input type="button" value="Upload Photo" id="lnkphotoupload" />-->
+                        <!--   <input type="button" value="Upload Pdf" id="lnkpdfupload"  />-->
+
+
+                        <div id="divfiles">
+                            <div class="btn_row">
+                                <a href="#" class="btn_row_first  active" id="lnkshowphotodiv">Photos</a>
+                                <a href="#" class="btn_row_first " id="lnkshowdocdiv">Documents</a>
+                            </div>
+                            <div id="divjobUploadedphotos" style="display: block" class="pdf_blk"></div>
+                            <div id="divjobUploaddocs" class="pdf_blk" style="display: none;"></div>
+                        </div>
+                        <div id="divEditUploadFileTitle" style="display: none">
+                            <div class="contactform">
+                                <label>
+                                    Title:
+                                </label>
+                                <label id="lblJUId" style="display: none;"></label>
+                                <input type="text" id="txtUFileTitle" name="txtUFileTitle" class="form_input form-control validation newpwd validate[required[Enter Title]]]" />
+                            </div>
+                            <div style="text-align: center !important;">
+
+                                <input type="submit" name="Save" class="form_submit bulebtn_comn" id="btnSubmitEditTitle" value="Save" />
+                                <a id="lnkjobuploadback" class="greybtn_comn form_submit jobs_canbut" href="javascript:;">Cancel</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <link href="stylesheet-pure.css" rel="stylesheet" />
+                <script>
+                </script>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+</div>

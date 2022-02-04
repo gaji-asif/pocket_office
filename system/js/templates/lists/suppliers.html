@@ -1,0 +1,32 @@
+<div class="box">
+	<div class="box-header">
+		<h2><i class="halflings-icon user"></i><span class="break"></span>Suppliers</h2>
+	</div>
+	<div class="box-content">
+		<table id="suppliers-list" class="table table-bordered table-striped table-condensed bootstrap-datatable datatable">
+			<thead>
+				<tr>
+					<th>Supplier</th>
+					<th>Contact</th>
+					<th>Phone</th>
+					<th>Fax</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+			{{#each suppliers}}
+				<tr>
+					<td>{{supplier}}</td>
+					<td>{{contact}}</td>
+					<td>{{getFormatPhone phone}}</td>
+					<td>{{getFormatPhone fax}}</td>
+					<td>{{email}}</td>
+				</tr>
+			{{/each}}
+			{{#unless suppliers}}
+			<tr><td colspan="5">No Suppliers Found</td></tr>
+			{{/unless}}
+			</tbody>
+		</table>
+	</div>
+</div>

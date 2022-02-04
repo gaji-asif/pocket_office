@@ -1,0 +1,8 @@
+2020-06-07 19:54:56 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-06-07 21:24:40 - NOTICE -->/home/pocketoffice/public_html/xactbid/index.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2020-06-07 21:24:40 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 1:  Failed database connection - Invalid connection variables: , , 
+2020-06-07 21:25:00 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-06-07 21:25:01 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 41:  Failed login - Invalid credentials: , , 
+2020-06-07 21:25:15 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-06-07 22:26:21 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-06-07 23:27:37 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com

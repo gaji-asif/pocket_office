@@ -1,0 +1,112 @@
+<div class="pages">
+    <div data-page="stages" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divStageHeaderText"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+
+                <div class="page_single">
+                    <div id="divmainstages">
+                        <div>
+                            <a id="aAddStage" class="aAddSplr" href="javascript:;" style="display: block; font-weight: bold; float: right;">Add Stage</a>
+                            <div id="divchangeorder" class="btn btn-blue btn-small pull-right" tooltip="">
+                                Change Order
+                            </div>
+                        </div>
+                        <span style="display: none;" id="aLinkBackToSystemStages">
+                            <a href="system.html" class="back_btn"></a>
+                        </span>
+
+                        <div id="divStage" style="display: block;">
+                            <div class=" table-responsive table_hight">
+                                <label id="lblStage" style="display: none;">
+                                </label>
+                                <div id="lstStage">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <label id="lblStageMsgMainLbl" style="display: none; color: Red; font-weight: bold;"></label>
+                            <div id="divAddStage" style="display: none;">
+
+                                <div class="Demo-table-container ">
+                                    <div class="contactform">
+                                        <!--<span>
+                                                <a href="system.html" class="back_btn"></a>
+                                        </span>-->
+                                        <label id="lblAddStage" style="display: none; color: Red; font-weight: bold;"></label>
+                                        <div>
+                                            <label>
+                                                Stage Name:<span class="red">*</span></label>
+                                            <input type="text" id="txtStageName" name="txtStageName" maxlength="40" class="form_input form-control validation validate[required[Enter Stage Name]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Description:<span class="red">*</span></label>
+                                            <!--<input type="text" id="txtDescription" name="txtDescription" class="form_input form-control validation validate[required[Enter Description]]" />-->
+
+
+                                            <!-- <textarea id="txtDescription" class="edit_txtNotes validation  validate[required[Enter Description]]" rows="5" name="txtDescription"></textarea>
+                                                                                   </div>-->
+                                            <textarea id="txtDescription" class="edit_txtNotes validation  validate[funcCall[validateTextArea[Enter Description]]]" rows="5" name="txtDescription"></textarea>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Duration:</label>
+                                            <input type="text" id="txtDuration" name="txtDuration" class="form_input form-control validation validate[funcCall[Amount4digit[Only 4 digit number allow]]]" />
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                id="btnSaveStage" value="Save" />
+                                            <input type="submit" name="Cancel" class="form_submit greybtn_comn" id="btnCancel"
+                                                value="Cancel" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divstagechangeordersection" style="display: none;">
+                        <span id="divbktostage">
+                            <a href="javascript:;" class="back_btn"></a>
+                        </span>
+                       
+                        <p><i>* Use Drag and Drop to change the order of stages and then, click Update</i></p>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <div class="stagedrag"><span>Order/Number</span>Stage</div>
+                                    <ul style="padding: 30px;" id="job_stage_table" class="table table-striped table-hover"></ul>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div id="btnupdatestage" class="btn btn-blue btn-small pull-right">
+                                        Update
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

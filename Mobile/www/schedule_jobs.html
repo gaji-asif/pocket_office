@@ -1,0 +1,553 @@
+<div class="pages">
+    <div data-page="schedule_jobs" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divScheduleJobHeader"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                
+                    <div id="divMainScheduleJob">
+                     <div class="contactform ">
+                        <div id="divScheduleJobDetail" style="display: block;">
+                  
+                    <div class="Demo-table-container">
+                                <div class="edit_table ">
+                                        <div class="user_inf" id="divScheJobDetailHead">Job Details</div>
+                                       
+                                            <label id="lblSchedule" style="display: none; color: Red;">
+                                            </label>
+                                           <div class="job_profit ">
+                                                <div>
+                                                    <label>
+                                                        Title:</label>
+                                                    <input type="text" id="txtSTitle" name="txtSTitle" maxlength="45" class="form_input form-control" />
+                                                </div>
+                                            <div class="schedule_win">
+                                                    <label>
+                                                        Customer:</label>
+                                                       
+                                                    <label id="lblSCustomer"></label>
+                                                </div>
+                                                <div class="schedule_win">
+                                                    <label>
+                                                        Address:</label>
+                                                       
+                                                    <label id="lblSAddress"></label>
+                                                </div>
+                                                <div class="schedule_win">
+                                                    <label>
+                                                        City / State / Zip:</label>
+                                                     
+                                                <div class="sched_state">    <span id="lblSCity"></span>
+                                                    <span id="lblState"></span>
+                                                    <span id="lblSZip"></span></div>
+                                                    </div>
+                                                
+                                                 
+                                                
+                                                <div class="schedule_win">
+                                                    <label>
+                                                        Salesman:</label>
+                                                        
+                                                    <label id="lblSalesman"></label>
+                                                </div>
+                                                <div class="schedule_win">
+                                                    <label>
+                                                        Phone#:</label>
+                                                        
+                                                    <label id="lblPhone"></label>
+                                                </div>
+                                                <div class="schedule_win">
+                                                    <label>
+                                                        Salesman/Ph#:</label>
+                                                     
+                                                    <label id="lblSalesPhone"></label>
+                                                </div class="schedule_win">
+                                                <div class="schedule_win">
+                                                    <label>
+                                                        Job#:</label>
+                                                     
+                                                    <label id="lblSJob"></label>
+                                                </div>
+                                                <div class="schedule_win">
+                                                    <label>
+                                                        Start Date:</label>
+                                                     
+                                                    <label id="lblStartDt"></label>
+                                                </div>
+                                                <div id="divWindow1" style="display:none;">
+                                                    <label>
+                                                        # of Windows:</label>
+                                                    <!--<label id="lblNoOfWindow"></label>-->
+                                                    <input type="text" id="lblNoOfWindow" name="lblNoOfWindow" class="form_input" />
+                                                </div>
+                                                <div id="divWindow2" style="display:none;">
+                                                    <label>
+                                                        Marked?:</label>
+                                                    <!--<label id="lblWinMarked"></label>-->
+                                                    <input type="text" id="lblWinMarked" name="lblWinMarked" class="form_input" />
+                                                </div>
+                                                <div id="divWindow3" style="display:none;">
+                                                    <label>
+                                                        Window on Story #:</label>
+                                                    <!--<label id="lblWinStoryNo"></label>-->
+                                                    <input type="text" id="lblWinStoryNo" name="lblWinStoryNo" class="form_input" />
+                                                </div>
+                                                <div id="divWindow4" style="display:none;">
+                                                    <label>
+                                                        Side of house:</label>
+                                                    <select id="ddlWinHouseSide" name="ddlWinHouseSide">
+						                                    <option value="E">E</option>
+						                                    <option value="W">W</option>
+						                                    <option value="N">N</option>
+						                                    <option value="S">S</option>
+                                                    </select>
+                                                </div></div>
+                     </div>
+                          </div>
+                        </div>
+                         </div>
+                          </div>
+                        <div><label id="lblScheduleJobDetails"></label></div>
+                            <div class="contactform schdulejobp">
+                        <div id="divGutterJobDetail" style="display: none;">
+                     		<div class="Demo-table-container">
+                                <div class="edit_table ">
+                           
+                                        <div class="user_inf">Job Details</div>
+                                      
+                                         <div class="job_profit ">
+                                            <label id="lblGutterJobDetails" style="display: block; color: Red;">
+                                            </label>
+                                           
+                                                <div>
+                                                    <label>
+                                                        Gutter lineal footage:</label>
+                                                    <input type="text" id="txtGtrLinealFootage" name="txtGtrLinealFootage" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Gutter Color:</label>
+                                                    <input type="text" id="txtGutterColor" name="txtGutterColor" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Gutter Material:</label>
+                                                    <select id="ddlGutterMaterial">
+                                                        <option value="Aluminum">Aluminum</option>
+                                                        <option value="Plastic">Plastic</option>
+                                                        <option value="Galvalume">Galvalume</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Gutter cover type:</label>
+                                                    <input type="text" id="txtGtrCoverType" name="txtGtrCoverType" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Pitch:</label>
+                                                    <input type="text" id="txtPitch" name="txtPitch" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        # of Stories:</label>
+                                                    <select id="ddlStories">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3+</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Downspout lineal footage:</label>
+                                                    <input type="text" id="txtDownspoutLF" name="txtDownspoutLF" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Gutter Size:</label>
+                                                    <select id="ddlGutterSize">
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Downspout Size:
+                                                    </label>
+                                                    <select id="ddlDownspoutSize">
+                                                        <option value="2x3">2x3</option>
+                                                        <option value="3x4">3x4</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Gutter cover lineal footage:</label>
+                                                    <input type="text" id="txtGtrCoverLF" name="txtGtrCoverLF" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Electrical Outlet Location:</label>
+                                                    <input type="text" id="txtElecOutletLoc" name="txtElecOutletLoc" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Agreed upon price with Subcontractor:</label>
+                                                    <input type="text" id="txtAgreedPrice" name="txtAgreedPrice" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Tear Off Notes:</label>
+                                                    <textarea name="txtTearOffNotes" class="edit_txtNotes" id="txtTearOffNotes" rows="5"></textarea>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Any Specific Details:</label>
+                                                    <textarea name="txtSpecificDetails" class="edit_txtNotes" id="txtSpecificDetails" rows="5"></textarea>
+                                                </div>
+                                                <div>
+                                                    <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                        id="btnSaveGutterJob" value="Save" />
+                                                    <input type="button" value="Cancel" id="btnCancelGutterJob" class="form_submit Supplier_wid greybtn_comn" name="Cancel">
+                                                </div>
+                                 
+                        </div>
+                         </div>
+                      </div>
+                     </div>
+                      </div>
+                        <div id="divRepairJobDetail" style="display: none;">
+                         <div class="contactform schdulejobp">
+                                  <div class="Demo-table-container">
+                                    <div class="edit_table ">
+                                           <div class="user_inf">Job Details</div>
+                            <div class="job_profit ">
+                                 
+                               
+                                            <label id="lblRepairJobDetails" style="display: block; color: Red;">
+                                            </label>
+                                            
+                                                <div>
+                                                    <label>
+                                                        House:</label>
+                                                    <input type="text" id="txtHouseRJ" name="txtHouseRJ" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Shed:</label>
+                                                    <input type="text" id="txtShedRJ" name="txtShedRJ" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Gutters:</label>
+                                                    <input type="text" id="txtGuttersRJ" name="txtGuttersRJ" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Total L.F:</label>
+                                                    <input type="text" id="txtTotalLFRJ" name="txtTotalLFRJ" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Garage:</label>
+                                                    <input type="text" id="txtGarageRJ" name="txtGarageRJ" class="form_input" />
+                                                </div>
+                                               <div>
+                                                    <label>
+                                                        Patio:</label>
+                                                    <input type="text" id="txtPatioRJ" name="txtPatioRJ" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Color:</label>
+                                                    <input type="text" id="txtColorRJ" name="txtColorRJ" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Downspout:</label>
+                                                    <input type="text" id="txtDownspoutRJ" name="txtDownspoutRJ" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Agreed upon price with Subcontractor:</label>
+                                                    <input type="text" id="txtSCAgreedPriceRJ" name="txtSCAgreedPriceRJ" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Repair Details:</label>
+                                                    <textarea name="txtRepairDetailsRJ" class="edit_txtNotes" id="txtRepairDetailsRJ" rows="5"></textarea>
+                                                </div>
+                                                <div>
+                                                    <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                        id="btnSaveScheduleRepairJob" value="Save" />
+                                                    <input type="button" value="Cancel" id="btnCancleScheduleRepairJob" class="form_submit Supplier_wid greybtn_comn" name="Cancel">
+                                                </div>
+                                           
+                                    </div>
+                        </div>
+                         </div>
+                   </div>
+                   </div>
+                      
+                        <div id="divRoofingJobDetail" style="display: none;">
+                         <div class="contactform schdulejobp">
+                                  <div class="Demo-table-container">
+                                    <div class="edit_table ">
+                                                 <div class="user_inf">Job Details</div>
+                            <div class="job_profit ">
+                           
+                                      
+                                            <label id="lblRoofingJobDetail" style="display: block; color: Red;">
+                                            </label>
+                                           
+                                                <div>
+                                                    <label>
+                                                        Permit:</label>
+                                                    <select name="ddlPermitLst" id="ddlPermitLst">
+                                                            <option value="yes">Yes</option>
+                                                            <option value="YES-Midroof Required">YES-Midroof Required</option>
+                                                            <option value="no">No</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        # of Stories:</label>
+                                                    <select id="ddlStoriesNum" name="ddlStoriesNum">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3+</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        House Layers/Squares:</label>
+                                                    <select id="ddlHouseLayers" name="ddlHouseLayers">
+                                                            <option value="">N/A</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                    </select>
+                                                    <br />
+                                                    <input size='6' type="text" name='txtHouseSquares' id="txtHouseSquares">
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Shed Layers/Squares:</label>
+                                                    <select id="ddlShedLayers" name="ddlShedLayers">
+                                                            <option value="">N/A</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                    </select>
+                                                    <br />
+                                                    <input size='6' type="text" name='txtShedSquares' id="txtShedSquares">
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        New Roof:</label>
+                                                    <input type="text" id="txtNewRoof" name="txtNewRoof" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Squares:</label>
+                                                    <input type="text" id="txtSquares" name="txtSquares" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Roofing Tear Off:</label>
+                                                        <select name="ddlRoofTearOff" id="ddlRoofTearOff">
+                                                            <option value="no">No</option>
+                                                            <option value="yes">Yes</option>
+                                                        </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Drip Edge Installation:</label>
+                                                    <select id="ddlDripEdgeInstl" name="ddlDripEdgeInstl">
+                                                         <option value="N/A">N/A</option>
+                                                         <option value="Eave">Eave </option>
+                                                         <option value="Rake">Eave and Rake</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Need a Production Manager:
+                                                    </label>
+                                                    <select id="ddlProdMngr" name="ddlProdMngr">
+                                                        <option value="no">No</option>
+                    		                            <option value="yes">Yes</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Existing Roof:</label>
+                                                    <input type="text" name='txtExistingRoof' id="txtExistingRoof">
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Garage Layers/Squares:</label>
+                                                    <select id="ddlGarageLayers" name="ddlGarageLayers">
+                                                            <option value="">N/A</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                    </select>
+                                                    <br />
+                                                    <input size='6' type="text" name='txtGarageSquares' id="txtGarageSquares">
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Patio Layers/Squares:</label>
+                                                    <select id="ddlPatioLayers" name="ddlPatioLayers">
+                                                            <option value="">N/A</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                    </select>
+                                                    <br />
+                                                    <input size='6' type="text" name='txtPatioSquares' id="txtPatioSquares">
+                                                </div>
+                                                
+                                                <div>
+                                                    <label>
+                                                        Roof Color:</label>
+                                                    <input type="text" id="txtRoofColor" name="txtRoofColor" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Pitch:</label>
+                                                    <input type="text" id="txtRoofPitch" name="txtRoofPitch" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Roofing Color:</label>
+                                                    <input type="text" id="txtRoofingColor" name="txtRoofingColor" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Agreed upon price with Subcontractor:</label>
+                                                    <input type="text" id="txtRoofUponPrice" name="txtRoofUponPrice" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Tear Off Notes:</label>
+                                                    <textarea name="txtRoofTearOffNotes" class="edit_txtNotes" id="txtRoofTearOffNotes" rows="5"></textarea>
+                                                </div>
+                                                 <div>
+                                                    <label>
+                                                        Any Specific Details:</label>
+                                                    <textarea name="txtRoofSpecificDetails" class="edit_txtNotes" id="txtRoofSpecificDetails" rows="5"></textarea>
+                                                </div>
+                                                <div>
+                                                    <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                        id="btnSaveRoofingJob" value="Save" />
+                                                    <input type="button" value="Cancel" id="btnCancelRoofingJob" class="form_submit Supplier_wid greybtn_comn" name="Cancel">
+                                                </div>
+                                            
+                                        </div>
+                                   </div>
+                        </div></div></div>
+                  
+                  
+                        <div id="divWindowJobDetail" style="display: none;">
+                              <div class="contactform schdulejobp">
+                                  <div class="Demo-table-container">
+                                    <div class="edit_table ">
+                                     <div class="user_inf">Job Details</div>
+                            <div class="job_profit ">
+                                     
+                                            <label id="Label1" style="display: block; color: Red;">
+                                            </label>
+                                            
+                                                <div>
+                                                    <label>
+                                                        Type of Window:</label>
+                                                    <select id="ddlWindowType" name="ddlWindowType">
+                                                        <option value="Wood">Wood</option>
+                                                        <option value="Aluminum">Aluminum</option>
+                                                        <option value="Vinyl">Vinyl</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Window Dimensions:</label>
+                                                    <span style="float:left; width:45%;">
+                                                        <input type="text" id="txtWinDimensions_x" name="txtWinDimensions_x" class="form_input" />
+                                                    </span>
+                                                    <span style="float:left; width:10%;"><label style="text-align: center ! important; padding: 7px 0px 3px ! important;">X</label></span>
+                                                    <span style="float:left; width:45%;">
+                                                        <input type="text" id="txtWinDimensions_y" name="txtWinDimensions_y" class="form_input" />
+                                                    </span>
+                                                    </div>
+                                                    <!--<div>
+                                                    <label></label>
+                                                    <input type="text" id="txtWinDimensions_y" name="txtWinDimensions_y" class="form_input" /></div>-->
+                                                
+                                                <div>
+                                                    <label>
+                                                        Glazing Bead:</label>
+                                                    <input type="text" id="txtGlazingBead" name="txtGlazingBead" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Window Color:</label>
+                                                    <input type="text" id="txtWindowColor" name="txtWindowColor" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Screen:</label>
+                                                    <input type="text" id="txtWindowScreen" name="txtWindowScreen" class="form_input" />
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Agreed upon price with Subcontractor:</label>
+                                                    <input type="text" id="txtWindowUponPrice" name="txtWindowUponPrice" class="form_input" />
+                                                </div>
+                                               <div>
+                                                    <label>
+                                                        Description of Damage:</label>
+                                                   <textarea name="txtWindowDamage" class="edit_txtNotes" id="txtWindowDamage" rows="5"></textarea>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        Any Specific Details:</label>
+                                                    <textarea name="txtWinSpecificDetails" class="edit_txtNotes" id="txtWinSpecificDetails" rows="5"></textarea>
+                                                </div>
+                                                <div>
+                                                    <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                        id="btnSaveWindowJob" value="Save" />
+                                                    <input type="button" value="Cancel" id="btnCancelWindowJob" class="form_submit Supplier_wid greybtn_comn" name="Cancel">
+                                                </div>
+                                            
+                                        </div>
+                                   </div>
+                        </div></div>
+                     </div>
+                  
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

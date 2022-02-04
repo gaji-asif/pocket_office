@@ -1,0 +1,8 @@
+2020-05-21 0:30:36 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-05-21 0:50:07 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-05-21 1:07:51 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-05-21 1:07:51 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 41:  Failed login - Invalid credentials: , , 
+2020-05-21 1:08:02 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-05-21 21:19:24 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-05-21 23:00:11 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com
+2020-05-21 23:01:16 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com

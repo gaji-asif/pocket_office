@@ -1,0 +1,5 @@
+2019-12-18 18:46:38 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 22:  Try database - assure - www.pocketofficepro.com
+2019-12-18 18:47:06 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 22:  Try database - assure - pocketofficepro.com
+2019-12-18 18:47:06 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2019-12-18 18:47:14 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 22:  Try database - assure - pocketofficepro.com
+2019-12-18 19:27:07 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 22:  Try database - assure - pocketofficepro.com

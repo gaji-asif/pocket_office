@@ -1,0 +1,7 @@
+{{#each messages}}
+    <li>
+        <div class="strong">{{getChatMessageName fname user_id}}:</div>
+        <div>{{ text }}</div>
+        <div class="timestamp">{{fromNow timestamp}}</div>
+    </li>
+{{/each}}

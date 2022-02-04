@@ -1,0 +1,140 @@
+<?php
+include 'includes/common_lib.php';
+$this_page = new pageinfo(basename($_SERVER['SCRIPT_NAME']));
+pageSecure($this_page->source);
+$firstLast = UIUtil::getFirstLast();
+?>
+<?=ViewUtil::loadView('doc-head')?>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
+<!--<script>
+$(document).ready( function () {
+
+  $("#btn btn-success").on( "click", function () {
+  
+        alert( $(this).attr('data-script') );
+  	    $(this).attr('data-script', "share_url.php?url=http://localhost/workflow/schedule.php?schedule=http://localhost/workflow/includes/ajax/get_calmonth.php?m=8&Y=20&user=207&type=task_type%3D91");  
+  });
+});
+</script>-->
+<h1 class="page-title"><i class="icon-calendar"></i><?=$this_page->title?></h1>
+
+
+
+    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+      <tr>
+        <td colspan=2>
+        
+        
+        <?php
+
+if(ModuleUtil::checkAccess('add_user'))
+
+{
+
+?>
+
+<div class="btn-group pull-right page-menu">
+    <div rel="open-modal" data-script="share_url.php" class="btn btn-success" title="Add user" tooltip>
+        <i class="icon-plus"></i>
+    </div>
+</div>
+
+<?php
+
+}
+
+?>
+
+
+<form method="get" id="urlsave" name="urlsave">
+<?php //echo $_SESSION['urlResultText']; ?>
+<input type="text" id="urlResultText" value=""/>
+</form>
+
+<script type='text/javascript'>
+
+	function urlSet(){
+	
+		var sessData = document.getElementById('urlResultText').value;
+		//alert(sessData);
+		Request.make('<?=AJAX_DIR?>/share_url_session_set.php?url='+sessData, 'urlSet', true, true);
+	
+	}
+
+</script>
+
+<span id="urlSet" ></span>
+<div style="text-align:right"><strong>Shareable link:</strong>
+<span id="urlResult">Result</span>
+
+
+</div>
+          <form style='margin-bottom:0;' name='form'>
+            <input type="hidden" class="list-filter-input ignore-filter-reset" id="m" value=""/>
+            <input type="hidden" class="list-filter-input ignore-filter-reset" id="Y" value=""/>
+            <select id='user' class="list-filter-input">
+				<option value="">User</option>
+<?php
+$users_array = UserModel::getAll(TRUE, $firstLast);
+foreach($users_array as $user)
+{
+?>
+              <option value="<?=$user['user_id']?>"><?=$user['select_label']?></option>
+<?php
+}
+?>
+            </select>
+            <select id='type' class="list-filter-input">
+                <option value=''>Type</option>
+				<option value='appointment'>Appointment</option>
+				<option value='delivery'>Delivery</option>
+				<option value='event'>Event</option>
+				<option value='repair'>Repair</option>
+<?php
+$taskTypes = TaskModel::getAllTaskTypes();
+foreach ($taskTypes as $taskType) {
+?>
+                <option value='task_type=<?= $taskType['task_type_id'] ?>'><?= $taskType['task'] ?></option>
+<?php
+}
+?>
+            </select>
+            <input type='button' value='Month View' onclick="filterList('<?=AJAX_DIR?>/get_calmonth.php', 'schedulecontainer');">
+            <input type='button' value='Week View' onclick="filterList('<?=AJAX_DIR?>/get_calweek.php', 'schedulecontainer');">
+            <input type='button' value='Clear Filters' onclick="resetFilterListInputs(); filterList('<?=AJAX_DIR?>/get_calweek.php', 'schedulecontainer');">
+          </form>
+        </td>
+      </tr>
+    </table>
+<?php
+if(ModuleUtil::checkAccess('view_schedule')) {
+?>
+    <table border=0 cellspacing=0 cellpadding=0 class="schedule-table">
+      <tr>
+        <td id='schedulecontainer'></td>
+      </tr>
+      <tr>
+        <td>
+          &nbsp;
+          <?php
+		  echo '11111111111111111111111';
+		  echo @$_REQUEST['schedule'];
+		   if($_REQUEST['schedule'] != ""){?>
+          <script type='text/javascript'>
+		  Request.make('<?php echo $_REQUEST['schedule']; ?>', 'schedulecontainer', true, true);
+	  	  </script>
+          <?php } else { ?>
+          <script type='text/javascript'>
+		  Request.make('<?=AJAX_DIR?>/get_cal<?=RequestUtil::get('view', 'week')?>.php?ws=<?=RequestUtil::get('ws')?>', 'schedulecontainer', true, true);
+          </script>
+          <?php } ?>
+        </td>
+      </tr>
+    </table>
+<?php
+} else {
+    echo ModuleUtil::showInsufficientRightsAlert('view_schedule', TRUE);
+}
+?>
+  </body>
+</html>

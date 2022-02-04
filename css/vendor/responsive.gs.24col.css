@@ -1,0 +1,114 @@
+/*	24 COLUMN : RESPONSIVE GRID SYSTEM
+	DEVELOPER : DENIS LEBLANC
+	URL : http://responsive.gs
+	VERSION : 3.0
+	LICENSE : GPL & MIT */
+
+
+/* 	SET ALL ELEMENTS TO BOX-SIZING : BORDER-BOX */
+* { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/**behavior: url(/scripts/boxsizing.htc);*/ 
+	/*	If you need support for IE7 and lower make 
+		sure the boxsizing.htc file is linked properly.
+		More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+
+
+/*	MAIN CONTAINER 
+	Set the width to whatever you want the width of your site to be. */
+.container { 
+	margin: 0 auto; 
+}
+
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+.container:after,
+.row:after, 
+.col:after, 
+.clr:after, 
+.group:after { 
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+
+/* 	DEFAULT ROW STYLES 
+	Set bottom padding according to preference */
+.row { padding-bottom: 0; }
+			
+								  
+/* DEFAULT COLUMN STYLES */
+.col { 
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+@media ( min-width : 768px ) {
+	
+	.gutters .col {
+		margin-left: 2%;
+	}
+	
+	.gutters .col:first-child { 
+		margin-left: 0; 
+	}
+}
+
+
+/*	COLUMN WIDTH ON DISPLAYS +768px 
+	You might need to play with media queries here to suite your design. */
+/*@media ( min-width : 768px ) {*/
+	.span-1 { width: 4.16666666667%; }
+    .span-2 { width: 8.33333333333%; }
+    .span-3 { width:12.5%; }
+    .span-4 { width: 16.6666666667%; }
+    .span-5 { width: 20.8333333333%; }
+    .span-6 { width: 25%; }
+    .span-7 { width: 29.1666666667%; }
+    .span-8 { width: 33.3333333333%; }
+    .span-9 { width: 37.5%; }
+    .span-10 { width: 41.6666666667%; }
+    .span-11 { width: 45.8333333333%; }
+    .span-12 { width: 50%; }
+    .span-13 { width: 54.1666666667%; }
+    .span-14 { width: 58.3333333333%; }
+    .span-15 { width: 62.5%; }
+    .span-16 { width: 66.6666666667%; }
+    .span-17 { width: 70.8333333333%; }
+    .span-18 { width: 75%; }
+    .span-19 { width: 79.1666666667%; }
+    .span-20 { width: 83.3333333333%; }
+    .span-21 { width: 87.5%; }
+    .span-22 { width: 91.6666666667%; }
+    .span-23 { width: 95.8333333333%; }
+    .span-24 { width: 100%; }
+    
+    .gutters .span-1 { width: 2.25%; }
+	.gutters .span-2 { width: 6.5%; }
+	.gutters .span-3 { width: 10.75%; }
+	.gutters .span-4 { width: 15.0%; }
+	.gutters .span-5 { width: 19.25%; }
+	.gutters .span-6 { width: 23.5%; }
+	.gutters .span-7 { width: 27.75%; }
+	.gutters .span-8 { width: 32.0%; }
+	.gutters .span-9 { width: 36.25%; }
+	.gutters .span-10 { width: 40.5%; }
+	.gutters .span-11 { width: 44.75%; }
+	.gutters .span-12 { width: 49.0%; }
+	.gutters .span-13 { width: 53.25%; }
+	.gutters .span-14 { width: 57.5%; }
+	.gutters .span-15 { width: 61.75%; }
+	.gutters .span-16 { width: 66.0%; }
+	.gutters .span-17 { width: 70.25%; }
+	.gutters .span-18 { width: 74.5%; }
+	.gutters .span-19 { width: 78.75%; }
+	.gutters .span-20 { width: 83.0%; }
+	.gutters .span-21 { width: 87.25%; }
+	.gutters .span-22 { width: 91.5%; }
+	.gutters .span-23 { width: 95.75%; }
+	.gutters .span-24 { width: 100%; }
+/*}*/

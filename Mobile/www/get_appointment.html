@@ -1,0 +1,146 @@
+<div class="pages">
+    <!--getAppoinment-->
+    <div data-page="get_Appoinment" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divHeadForGetAppointment"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div>
+                        <div id="divAddApppointment" style="display: block;">
+                            <div class="Demo-table-container">
+                                <div class="contactform schdulejobp">
+                                    <label id="lblAddApppointment" style="display: none; color: Red;">
+                                    </label>
+
+                                    <div>
+                                        <label>
+                                            Title:<span class="red">*</span></label>
+                                        <input type="text" id="txtApptTitle" name="txtApptTitle" maxlength="45" class="form_input form-control validation validate[required[Enter Title]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Date:</label>
+                                        <input type="text" class="form-control validation datestamp validate[funcCall[YYMMddDateFormat[Invalid Date Format]]]" id="txtApptdate" maxlength="10">
+                                    </div>
+                                    <div>
+                                        <label>Start Time:<span class="red">*</span></label>
+                                        <div id="ddlTimeList"></div>
+                                        <!--<select class=" validation validate[funcCall[selectval[Select Gender]]]" id="ddlGender">
+                                                  <option value="">- Select -</option>
+                                            </select>-->
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Description:<span class="red">*</span></label>
+                                        <!--<input type="text" id="txtApptDesc" name="txtApptDesc" class="form_input form-control validation validate[required[Enter Description]]" />-->
+                                        <textarea id="txtApptDesc" class="edit_txtNotes validation  validate[funcCall[validateTextArea[Enter Description]]]" rows="5" name="txtApptDesc"></textarea>
+                                    </div>
+
+                                    <div>
+                                        <input type="submit" name="Save" class="form_submit bulebtn_comn" id="btnSaveAppointment" value="Save" />
+                                        <input type="button" name="Cancel" class="form_submit greybtn_comn" id="btnCancelAppt" value="Cancel" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divViewApptDetail" style="display: none;">
+                        <div class="Demo-table-container">
+                            <div class="contactform">
+                                <label id="lblviewAppDetail" style="display: none; color: Red;">
+                                </label>
+                                <div>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <input type="button" name="Back" class="back_btn" id="btnViewApptBack" value="" />
+                                            </td>
+                                            <td style="text-align: right; font-weight: bold;"><a id="alinkDelAppt" class="aStageDelete" href="javascript:;" title="Remove Appoinment"><i class="icon-remove"></i></a>
+                                                <a id="alinkViewJob" class="alinkViewjobAppoint btn btn-block btn-info btn-next-stage" style="display:none;" href="javascript:;" title="View Job">View Job <i class="icon-circle-arrow-right"></i></a>
+                                            </td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td>Title:
+                                            </td>
+                                            <td>
+                                                <label id="lblApptTitle"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Creator:
+                                            </td>
+                                            <td>
+                                                <label id="lblApptCreator"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Date:
+                                            </td>
+                                            <td>
+                                                <label id="lblApptDate"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time:
+                                            </td>
+                                            <td>
+                                                <label id="lblApptTime"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Job Number:
+                                            </td>
+                                            <td>
+                                                <label id="lblAppJobNum"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salesman:
+                                            </td>
+                                            <td>
+                                                <label id="lblApptSalesman"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Description:
+                                            </td>
+                                            <td>
+                                                <label id="lblApptDesc"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Created:
+                                            </td>
+                                            <td>
+                                                <label id="lblApptCreated"></label>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+

@@ -1,0 +1,308 @@
+﻿<div class="pages ">
+    <form class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+
+    <div data-page="project" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <input type="hidden" id="hdnoffset" value="0">
+            <input type="hidden" id="hdntotalrecord" value="0">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">
+                    Upload from Server
+                </div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent" class=" main_contact">
+
+                <div class="Demo-table-container">
+                    <div class="contactform">
+                        <a id="lnkuploadfromserverback" class="greybtn_comn editback_btn" href="javascript:;"></a>
+                        <label id="lblJobUploadList" style="display: none;">
+                        </label>
+                        <!--<button id="btnUploadSelected" class="bulebtn_comn">Upload</button>-->
+            
+                        <div id="divfiles">
+                            <div class="btn_row">
+                                <a href="#" class="btn_row_first  active" id="lnkshowphotodiv1">Photos</a>
+                                <a href="#" class="btn_row_first " id="lnkshowdocdiv1">Documents</a>
+                            </div>
+                            <div id="divjobUploadedphotos1" style="display: block" class="pdf_blk"></div>
+                            <div id="divjobUploaddocs1" class="pdf_blk" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <link href="stylesheet-pure.css" rel="stylesheet" />
+            </div>
+        </div>
+
+        <script>
+            //myApp.onPageInit('job-uploads', function (page) {
+                var $ = jQuery.noConflict();
+                jQuery(".formError").remove();
+                CheckUserLogin();
+                var JobId = page.query.JId;
+                var selectedimgids = [];
+                                
+                $('#lnkuploadfromserverback').click(function () {
+
+                    var JobId = page.query.JId;
+                    mainView.loadPage("jobuploads.html?JId=" + JobId);
+                    return false;
+                });
+                
+                $('#btnUploadfromserver').click(function () {
+                    mainView.loadPage("uploadfromserver.html?JId=" + JobId);
+                    return false;
+                });
+
+                BindUploadFilesForSelectedJob('MethodName=GetUploadFilesForUploadFromServer&JobID=' + JobId);
+                function BindUploadFilesForSelectedJob(data) {
+                    
+                    $.ajax({
+                        url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                        type: 'POST',
+                        data: data,
+                        cache: false,
+                        success: function (data, textStatus, jqxhr) {
+                            var data = $.parseJSON(data);
+                            selectedimgids = [];
+                            $("#divfiles").css("display", "block");
+                            $('#divjobUploadedphotos1').empty();
+                            $('#divjobUploaddocs1').empty();
+                            var photoitems = [];
+                            var pdfitems = [];
+                            
+                            if (data.uploads_array.length > 0) {
+                                var JobNo = data.JobNo;
+                                $("#lnkuploadfromserverback").css("display", "inline-block");
+                                var filePath = "https://xactbid.pocketofficepro.com/ServerDirectory/" + JobNo + "/";
+                                
+                                var fileImgDflt = "https://xactbid.pocketofficepro.com/images/icons/pdf_lg.png";
+
+                                photoitems.push("<table><tr><td style='padding-bottom: 10px;'><button id='btnUploadSelected' class='bulebtn_comn'>Upload</button>&nbsp;&nbsp;<button id='btnsynchronizeimg' class='bulebtn_comn'>Synchronize</button></td></tr>");
+                                pdfitems.push("<table><tr><td style='padding-bottom: 10px;'><button id='btnPDFUploadSelected' class='bulebtn_comn'>Upload</button>&nbsp;&nbsp;<button id='btnsynchronizepdf' class='bulebtn_comn'>Synchronize</button></td></tr>");
+
+                                for (var i = 0; i < data.uploads_array.length; i++) {
+                                    
+                                    var fileFullPath = filePath + data.uploads_array[i];
+                                    var uploadFileName = data.uploads_array[i];
+                                    var fileImg = "";
+                                    var extension = uploadFileName.split('.');
+                                    var fileExt = extension[1];
+                                    
+                                    if (fileExt == 'png' || fileExt == 'jpg' || fileExt == 'gif' || fileExt == 'jpeg' || fileExt == 'ico') {
+                                            fileImg = filePath + data.uploads_array[i];
+                                            photoitems.push("<tr class='pdf_form1'><td><div class='upldimg'><label class='checkbox metro-checkbox' for='chkjobupld1_" + i + "' data-uploadname=" + uploadFileName + "><input class='jobuplodchk'  name='chkjobupld1'  data-uploadname=" + uploadFileName + " type='checkbox' id='chkjobupld1_" + i + "'/><span class='check'></span></label><img id='jobimgupld_" + i + "' title=" + fileFullPath + " class='viewJobUploadFile' src=" + fileFullPath + " /></div><br />"+ uploadFileName +"</div></td></tr>");
+                                        
+                                    }
+                                    else {
+                                            fileImg = fileImgDflt;
+                                            pdfitems.push("<tr class='pdf_form1'><td><div class='upldimg'><label class='checkbox metro-checkbox' for='chkjobupldpdf1_" + i + "' data-uploadname=" + uploadFileName + "><input class='jobuplodchk'  name='chkjobupldpdf1'  data-uploadname=" + uploadFileName + " type='checkbox' id='chkjobupldpdf1_" + i + "'/><span class='check'></span></label><img id='jobimgupld_" + i + "' title=" + fileFullPath + " class='viewJobUploadFile' src=" + fileImg + " /></div><br />" + uploadFileName + "</td></tr>");
+
+                                    }
+                                    
+                                }
+                                photoitems.push("</table>");
+                                pdfitems.push("</table>");
+                               
+                                $('#divjobUploadedphotos1').append(photoitems.join(''));
+                                $('#divjobUploaddocs1').append(pdfitems.join(''));
+                                $(".viewJobUploadFile").click(function () {
+                                    var FileName = this.title;
+                                    var FileType = FileName.substring(FileName.lastIndexOf(".") + 1);
+                                    if (FileType == 'pdf') {
+                                        //window.open('http://docs.google.com/viewer?url=' + FileName, '_blank');
+                                        window.open(FileName, '_system');
+                                        return false;
+                                    }
+                                    else {
+                                        //window.open(FileName, '_system');
+                                        var FileName = this.title;
+                                        launchEditor(this.id, FileName);
+                                        return false;
+                                    }
+
+                                });
+                                $('#btnsynchronizeimg').unbind().click(function () {
+                                    $(".metro-checkbox input:checkbox[name=chkjobupld1]").each(function () {
+                                        $(this).prop('checked', 'checked');
+                                    }); $('#btnUploadSelected').click();
+                                });
+                                $('#btnUploadSelected').unbind().click(function () {
+                                    var selected = new Array();
+                                    $(".metro-checkbox input:checkbox[name=chkjobupld1]:checked").each(function () {
+                                        upldimages = $(this).attr('data-uploadname');
+                                        selected.push(upldimages);
+                                    });
+
+                                    if (selected.length > 0) {
+                                        var JobId = page.query.JId;
+                                        var data = 'MethodName=uploadFilesFromServer&pdfdata=' + selected + '&JobID=' + JobId;
+                                        $.ajax({
+                                            url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                                            type: 'POST',
+                                            data: data,
+                                            cache: false,
+                                            success: function (data, textStatus, jqxhr) {
+                                                var data = $.parseJSON(data);
+                                                if (data.status == "1") {
+                                                    //var FullPath = "https://xactbid.pocketofficepro.com/uploads/" + data.filename;
+                                                    //window.open('http://docs.google.com/viewer?url=https://xactbid.pocketofficepro.com/uploads/' + data.filename, '_blank');
+                                                    //window.open(FullPath, '_system');
+                                                    navigator.notification.alert(
+                                                        "file uploaded successfully", alertDismissed,"Successful","Done"             
+                                                    );
+                                                    //BindUploadFilesForSelectedJob('MethodName=GetUploadFilesForSelectedJob&JobID=' + JobId);
+                                                    mainView.loadPage("jobuploads.html?JId=" + JobId);
+                                                }
+                                                else {
+                                                    return false;
+                                                }
+                                            },
+                                            error: function (jqxhr, textStatus, errorMessage) {
+                                                navigator.notification.alert(
+                                                    errorMessage, alertDismissed,"An error occured","Done"             
+                                                );
+                                            }
+                                        });
+                                    } else {
+                                       navigator.notification.alert(
+                                           "Select images for upload", alertDismissed,"Unsuccessful","Done"             
+                                        );
+                                    }
+                                });
+
+                                $('#btnsynchronizepdf').unbind().click(function () {
+                                    $(".metro-checkbox input:checkbox[name=chkjobupldpdf1]").each(function () {
+                                        $(this).prop('checked', 'checked');
+                                    });
+                                    $('#btnPDFUploadSelected').click();
+                                });
+                                $('#btnPDFUploadSelected').unbind().click(function () {
+                                    var selected = new Array();
+                                    $(".metro-checkbox input:checkbox[name=chkjobupldpdf1]:checked").each(function () {
+                                        upldimages = $(this).attr('data-uploadname');
+                                        selected.push(upldimages);
+                                    });
+
+                                    if (selected.length > 0) {
+                                        var JobId = page.query.JId;
+                                        var data = 'MethodName=uploadFilesFromServer&pdfdata=' + selected + '&JobID=' + JobId;
+                                        $.ajax({
+                                            url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                                            type: 'POST',
+                                            data: data,
+                                            cache: false,
+                                            success: function (data, textStatus, jqxhr) {
+                                                var data = $.parseJSON(data);
+                                                if (data.status == "1") {
+                                                    //var FullPath = "https://xactbid.pocketofficepro.com/uploads/" + data.filename;
+                                                    //window.open('http://docs.google.com/viewer?url=https://xactbid.pocketofficepro.com/uploads/' + data.filename, '_blank');
+                                                    //window.open(FullPath, '_system');
+                                                    navigator.notification.alert(
+                                                        "file uploaded successfully", alertDismissed,"Successful","Done"             
+                                                    );
+                                                    //BindUploadFilesForSelectedJob('MethodName=GetUploadFilesForSelectedJob&JobID=' + JobId);
+                                                    mainView.loadPage("jobuploads.html?JId=" + JobId);
+                                                }
+                                                else {
+                                                    return false;
+                                                }
+                                            },
+                                            error: function (jqxhr, textStatus, errorMessage) {
+                                                navigator.notification.alert(
+                                                    errorMessage, alertDismissed,"An error occured","Done"             
+                                                );
+                                            }
+                                        });
+                                    } else {
+                                        navigator.notification.alert(
+                                            "Select Document for upload", alertDismissed,"Unsuccessful","Done"             
+                                        );
+                                    }
+                                });
+                            }
+                            else {
+                                
+                                $("#divfiles").css("display", "block");
+                                $('#divjobUploadedphotos1').empty();
+                                $('#divjobUploaddocs1').empty();
+                                photoitems.push("<table>");
+                                pdfitems.push("<table>");
+                                photoitems.push("<tr class='acenter'><td>No files Form uploded</td></tr>");
+                                pdfitems.push("<tr class='acenter'><td>No files Form uploded</td></tr>");
+                                photoitems.push("</table>");
+                                pdfitems.push("</table>");
+                                $('#divjobuploadedphotos1').append(photoitems.join(''));
+                                $('#divjobuploaddocs1').append(pdfitems.join(''));
+                                return false;
+                            }
+                            
+                        },
+                        error: function (jqxhr, textStatus, errorMessage) {
+                            navigator.notification.alert(
+                                errorMessage, alertDismissed,"An error occured","Done"             
+                            );
+                        }
+                    })
+                }
+           
+                function GetFileSize(filepath) {
+                    var $ = jQuery.noConflict();
+                    var res = false;
+                    var fs = 0;
+                    var request;
+                    request = $.ajax({
+                        type: "HEAD",
+                        url: filepath,
+                        success: function () {
+                            //alert("Size is " + request.getResponseHeader("Content-Length"));
+                            var fileSize = request.getResponseHeader("Content-Length");
+                            //alert(fileSize/1000);
+                            return res = fileSize;
+
+                        }
+                    });
+                    //alert(res);
+
+                }
+
+                $('#lnkshowphotodiv1').click(function () {
+                    $('#divjobUploadedphotos1').css('display', 'block');
+                    $('#divjobUploaddocs1').css('display', 'none');
+                    $(this).addClass('active');
+                    $('#lnkshowdocdiv1').removeClass('active');
+                   
+                    
+                });
+                $('#lnkshowdocdiv1').click(function () {
+                    $('#divjobUploadedphotos1').css('display', 'none');
+                    $('#divjobUploaddocs1').css('display', 'block');
+                    $(this).addClass('active');
+                    $('#lnkshowphotodiv1').removeClass('active');
+                  
+                    
+                });
+
+                
+            //});
+        </script>
+
+    </div>
+
+</div>
+
+
+

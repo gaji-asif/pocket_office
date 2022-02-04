@@ -1,0 +1,130 @@
+<div class="pages">
+    <div data-page="get_task" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divheadjobtasks"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div>
+                        <div id="divAddtask" style="display: none;">
+                            <div class="Demo-table-container">
+
+                                <div class="contactform schdulejobp">
+                                    <div>
+                                        <label>
+                                            Task Type:<span class="red">*</span></label>
+                                        <select class=" validation validate[funcCall[selectval[Select Task Type]]]" id="ddltasktype">
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Stage:<span class="red">*</span></label>
+                                        <select class=" validation validate[funcCall[selectval[Select Stage]]]" id="ddltaskstage">
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Contractor:</label>
+                                        <select id="ddlcontractor">
+                                        </select>
+                                    </div>
+                                    <div class="modify_ins">
+                                            <label>
+                                                Schedule:
+                                                
+                                            </label>
+                                            <input type="checkbox" id="chktaskschedule" name="chktaskschedule">
+                                        </div>
+                                    <div id="divtaskschedule" style="display:none;">
+                                        <div>
+                                            <label>
+                                                Start Date:<span class="red">*</span></label>
+                                            <input type="text" class="form-control validation datestamp validate[required[Enter Start Date]] validate[funcCall[YYMMddDateFormat[Invalid Start Date Format]]]" id="txtTaskStartDate" maxlength="10">
+                                        </div>
+                                        <div>
+                                            <label>Start Time:</label>
+                                            <div id="ddlTasktStartTime"></div>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                End Date:<span class="red">*</span></label>
+                                            <input type="text" class="form-control validation datestamp validate[required[Enter End Date]] validate[funcCall[YYMMddDateFormat[Invalid End Date Format]]]" id="txtTaskEndDate" maxlength="10">
+                                        </div>
+                                        <div>
+                                            <label>End Time:</label>
+                                            <div id="ddlTaskEndTime"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Duration:<span class="red">*</span></label>
+                                        <select id="drdduration">
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <!-- <div id="divtaskschedule">
+                                            <div>
+                                                <label>
+                                                    Start Date:</label>
+                                                <input type="text" maxlength="10" id="txttaskdate" class="form-control validation datestamp validate[funcCall[YYMMddDateFormat[Invalid Date Format]]]">
+                                            </div>
+                                            <!--  <div>
+                                                <label>
+                                                    Proximity Scheduler:</label>
+
+                                            </div> 
+                                        </div>-->
+                                        <div class="modify_ins">
+                                            <label>
+                                                Completed/Contractor Paid:
+                                            
+                                            </label>
+                                            <input type="checkbox" id="chktaskcomplete" name="chktaskcomplete">
+                                            <span id="lbledittaskcompletedate"></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Notes:</label>
+                                        <textarea rows="5" style="width: 100%;" id="txttaskNotes" name="txttaskNotes"></textarea>
+                                    </div>
+
+                                    <div>
+                                        <input type="submit" name="Save" class="form_submit bulebtn_comn" id="btnSavejobTask" value="Save" />
+                                        <input type="button" class="form_submit greybtn_comn" id="btnCanceltask" value="Cancel" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divViewTaskDetail" style="display: none;">
+                            <div class="Demo-table-container contactform">
+                                <div>
+                                    <div class="supplier_det"><a id="lnktaskviewback" class="back_btn" href="javascript:;"></a></div>
+                                    <table class="table" id="tbltaskdetails">
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                           
+                </script>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+

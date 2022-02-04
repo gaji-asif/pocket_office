@@ -1,0 +1,62 @@
+<?php
+
+include '../common_lib.php';
+if(!viewWidget('widget_inbox')) { die(); }
+
+?>
+<table class="table table-condensed table-striped table-hover table-widget">
+<?php
+if($res == null) {
+    $sql = "select messages.message_id, messages.subject, users.fname, users.lname, message_link.timestamp, messages.timestamp".
+           " from messages, users, message_link".
+           " where message_link.delete=0 and messages.message_id=message_link.message_id and messages.user_id=users.user_id and message_link.user_id='".$_SESSION['ao_userid']."'".
+           " order by messages.timestamp desc".
+           " limit 10";
+
+    $res = DBUtil::query($sql);
+}
+
+if(mysqli_num_rows($res) == 0)
+{
+?>
+<h1 class="widget">No Messages Found</h1>
+<?php
+}
+else
+{
+?>
+<table class="table table-condensed table-striped table-hover table-widget">
+	<thead>
+		<tr>
+			<th>Subject</th>
+			<th>From</th>
+			<th>Timestamp</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php
+	while(list($id, $subject, $fname, $lname, $read, $sent)=mysqli_fetch_row($res))
+	{
+		$timestamp = DateUtil::formatDateTime($sent);
+
+		$row_class = '';
+		if(empty($read))
+		{
+			$row_class = 'info';
+		}
+
+		$view_data = array(
+			'row_class' => $row_class,
+			'id' => $id,
+			'subject' => $subject,
+			'lname' => $lname,
+			'fname' => $fname,
+			'timestamp' => $timestamp,
+		);
+		echo ViewUtil::loadView('widgets/inbox-row', $view_data);
+	}
+?>
+	</tbody>
+</table>
+<?
+}

@@ -1,0 +1,9 @@
+2019-10-31 19:11:50 - NOTICE -->D:\xampp\htdocs\ums\xactimate\index.php at Line 5:  Failed database connection - Invalid connection variables: localhost, root, 
+2019-10-31 19:11:53 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 3:  Failed database connection - Invalid connection variables: localhost, root, 
+2019-10-31 19:12:27 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost
+2019-10-31 19:12:29 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Failed database connection - Invalid connection variables: localhost, root, 
+2019-10-31 19:12:29 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 46:  Failed login - Invalid credentials: , , 
+2019-10-31 19:12:44 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost
+2019-10-31 19:12:46 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Failed database connection - Invalid connection variables: localhost, root, 
+2019-10-31 19:12:46 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 46:  Failed login - Invalid credentials: , , 
+2019-10-31 19:25:57 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost

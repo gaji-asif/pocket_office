@@ -1,0 +1,79 @@
+    <div class="pages">
+        <div data-page="tasktypes" class="page toolbar-through no-navbar">
+            <div class="page-content">
+                <div class="navbarpages">
+                    <div class="navbar_home_link">
+                        <a href="#" data-panel="left" class="open-panel">
+                            <img src="images/icons/white/user.png" alt="" title="" /></a></div>
+                    <div class="navbar_page_center" id="divTasktypeHeaderText"></div>
+                    <div class="menu_open_icon_white">
+                        <a href="home.html">
+                            <img src="images/menu_open.png" alt="" title="" /></a></div>
+                </div>
+                <div id="pages_maincontent">
+                <div>
+                    <a id="aAddTaskType" class="add_job" href="javascript:;" style="display:block; font-weight:bold; float:right;">  Add Task Type</a>
+                </div>
+                
+                  <div class="page_single">
+                        <div>
+                            <div id="divTaskType" style="display:block;">
+                                <div class=" table-responsive table_hight">
+                                    <div>
+                                        <a id="aTaskTypesBack" class="back_btn"></a>
+                                    </div>
+                                    <label id="lblTaskType" style="display: none;">
+                                    </label>
+                                    <div id="lstTaskType">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="divModifyTaskType" style="display:none;">
+                                <label id="lblTaskTypeMainLbl" style="display: none; color:Red; font-weight:bold;"></label>
+                                <input id="hdnTaskTypeID" type="hidden" value="0" />
+                                <div id="divAddTaskType">
+                                    <div class="Demo-table-container ">
+                                    <div class="contactform">
+                                        <div>
+                                            <label>
+                                                Task Type Name <span class="red">*</span>:</label>                              
+                                            <input type="text" id="txtTaskTypeName" name="txtTaskTypeName" class="form_input form-control validation validate[required[Enter Task Type Name]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Color<span class="red">*</span>:</label>
+                                            <input type="color" id="txtTaskTypeColor" name="txtTaskTypeColor" class="form_input form-control validation validate[required[Select Color]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Auto-create Tasks: </label>
+                                            <select id="ddlAutoCreateTasks">
+                                            </select>
+                                            <input type="submit" name="Add" class="bulebtn_comn"
+                                                id="btnAddTaskType" value="Add" />
+                                        </div>
+                                        <div>
+                                            <div id="divAutoCreateTaskList">
+                                                <ul class="auto_create_task_ids" id="auto-create-tasks"></ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                id="btnSaveTaskType" value="Save" />
+                                                
+                                            <input type="button" name="Cancel" class="form_submit greybtn_comn" id="btnCancelTaskType"
+                                                value="Cancel" />
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+

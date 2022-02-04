@@ -1,0 +1,153 @@
+<div class="pages">
+    <div data-page="modmaterials" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divModMaterialHeader"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent" class="material_toppad">
+                <div class="page_single">
+                    <label id="lblParentModMaterials" style="display: none; font-weight: bold; color: red;"></label>
+                    <div id="divParentModMaterials" style="display: block;">
+                        <div id="divaModMaterialsBack">
+                            <a id="aModMaterialsBack" class="back_btn"></a>
+                        </div>
+                        <div id="divModMaterialCat" style="display: block;" class="table-responsive table_hight">
+
+                            <div class="table_hight">
+                                <label id="lblModMaterialCat" style="display: none;">
+                                </label>
+                                <div id="lstModMaterialCat">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divModMaterialDetail" style="display: none;">
+                            <div class="mode_material_detail" style="width: 100%;">
+                                <div class="mat_back_bottun">
+                                    <a id="aLinkModMateBack" class="back_btn"></a>
+                                </div>
+                                <div class="mat_right_side">
+                                    <a id="aLinkEditMatBrand" href="javascript:;"><i class="icon-pencil"></i>Brands</a>&nbsp;|&nbsp;
+                                <a id="aLinkEditMatCategory" href="javascript:;"><i class="icon-pencil"></i>Categories</a> &nbsp;|&nbsp;
+                                <a id="aLinkAddNewMaterial" class="add_job mode_material_detail" href="javascript:;">Add Material</a>
+                                </div>
+                                <input type="hidden" id="hdnModMatCatId" value="0">
+                                <input type="hidden" id="hdnModMaterialID" value="0">
+                            </div>
+
+                            <!--<div class="mode_material_detail">  
+                                <a id="aLinkEditMatBrand" href="javascript:;"> <i class="icon-pencil"></i> Brands</a>&nbsp;|&nbsp;
+                                <a id="aLinkEditMatCategory" href="javascript:;"><i class="icon-pencil"></i> Categories</a> &nbsp;|&nbsp;
+                                <a id="aLinkAddNewMaterial" class="add_job mode_material_detail" href="javascript:;"> Add Material</a>
+                            </div>-->
+
+                            <div class="Demo-table-container table-responsive table_hight" style="float: left;">
+                                <label id="lblModMaterialDetail" style="display: none;">
+                                </label>
+                                <ul id="lstModMaterialDetail">
+                                </ul>
+                                <ul id="lstModMateBrandDetail">
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="divAddEditModMaterial" style="display: none;">
+                        <div class="Demo-table-container">
+                            <div class="contactform schdulejobp">
+                                <label id="lblAddModMatItem" style="display: none; color: Red;"></label>
+                                <div id="divAddNewMatItem" style="display: none;">
+                                    <div>
+                                        <label>Material Name: *</label>
+                                        <input type="text" id="txtAddMaterialName" name="txtAddMaterialName" class="form_input form-control validation validate[required[Enter Material Name]]" />
+                                    </div>
+                                    <div>
+                                        <label>Brand:</label>
+                                        <select id="ddlAddMaterialBrand"></select>
+                                    </div>
+                                    <div>
+                                        <label>Category:</label>
+                                        <select id="ddlAddMaterialCat"></select>
+                                    </div>
+                                    <div>
+                                        <label>Price: &nbsp;&nbsp;[USD]</label>
+                                        <input type="text" id="txtAddMaterialPrice" maxlength="13" name="txtAddMaterialPrice" class="form_input form-control validation validate[funcCall[Amount12digit[Allow only 10 digit and 2 decimal point number]]]" />
+                                    </div>
+                                    <div>
+                                        <label>Unit:</label>
+                                        <select id="ddlAddMaterialUnit"></select>
+                                    </div>
+                                    <div>
+                                        <label>Description:</label>
+                                        <textarea name="txtAddMatDescription" id="txtAddMatDescription" style="width: 100%;" rows="5"></textarea>
+                                    </div>
+                                    <div>
+                                        <input type="submit" name="btnSaveAddModMaterial" class="form_submit Supplier_wid bulebtn_comn"
+                                            id="btnSaveAddModMaterial" value="Submit" />
+                                        <input type="submit" name="btnCancelAddModMaterial" class="form_submit Supplier_wid bulebtn_comn greybtn_comn"
+                                            id="btnCancelAddModMaterial" value="Cancel" />
+                                    </div>
+                                </div>
+                                <div id="divEditMatDetails" style="display: none;">
+                                    <div>
+                                        <label>Title: *</label>
+                                        <input type="text" id="txtEditModMatTitle" name="txtEditModMatTitle" class="form_input form-control validation validate[required[Enter Title]]" />
+                                    </div>
+                                    <div class="modify_ins">
+                                        <label>Active: </label>
+                                        <input id="chkEditModMatActive" type="checkbox" name="chkEditModMatActive">
+                                    </div>
+                                    <div>
+                                        <label>Brand:</label>
+                                        <select id="ddlEditModMatBrand"></select>
+                                    </div>
+                                    <div>
+                                        <label>Category:</label>
+                                        <select id="ddlEditModMatCat"></select>
+                                    </div>
+                                    <div>
+                                        <label>Price: &nbsp;&nbsp;[USD]</label>
+                                        <input type="text" id="txtEditModMatPrice" name="txtEditModMatPrice" maxlength="13" class="form_input form-control validation validate[funcCall[Amount12digit[Allow only 10 digit and 2 decimal point number]]]" />
+                                    </div>
+                                    <div>
+                                        <label>Unit:</label>
+                                        <select id="ddlEditModMatUnit"></select>
+                                    </div>
+                                    <div>
+                                        <label>Description:</label>
+                                        <textarea name="txtEditModMatDescription" id="txtEditModMatDescription" style="width: 100%;" rows="5"></textarea>
+                                    </div>
+                                    <div>
+                                        <label>Colors:</label>
+                                        <ul id="ulMaterialColorList"></ul>
+                                    </div>
+                                    <div id="divAddMatColor">
+                                        <label>Add Color:</label>
+                                        <input type="text" id="txtEditModMatAddColor" name="txtEditModMatAddColor" class="edit_input" />
+                                        <input id="btnAddModMatColor" class="bulebtn_comn" type="submit" value="Add" name="btnAddModMatColor">
+                                    </div>
+                                    <div>
+                                        <input type="submit" name="btnSaveEditModMaterial" class="form_submit Supplier_wid bulebtn_comn"
+                                            id="btnSaveEditModMaterial" value="Submit" />
+                                        <input type="submit" name="btnCancelEditModMaterial" class="form_submit Supplier_wid bulebtn_comn greybtn_comn"
+                                            id="btnCancelEditModMaterial" value="Cancel" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

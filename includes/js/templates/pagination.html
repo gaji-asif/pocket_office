@@ -1,0 +1,15 @@
+<div class="pagination text-center">
+{{#if totalRows}}
+    {{#ifCond page '!=' 0}}
+    <a href="" rel="pagination-first" title="Go to first page" tooltip><i class="icon-double-angle-left"></i></a>
+    <a href="" rel="pagination-previous" title="Go to previous page" tooltip><i class="icon-angle-left"></i></a>
+    {{/ifCond}}
+    <span>
+        {{pageLower}} &ndash; {{pageUpper}} of {{totalRows}}
+    </span>
+    {{#ifCond displayPage '<' pages}}
+    <a href="" rel="pagination-next" title="Go to next page" tooltip><i class="icon-angle-right"></i></a>
+    <a href="" rel="pagination-last" title="Go to last page" tooltip><i class="icon-double-angle-right"></i></a>
+    {{/ifCond}}
+{{/if}}
+</div>

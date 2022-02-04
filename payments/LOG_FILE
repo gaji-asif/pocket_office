@@ -1,0 +1,153 @@
+[2019-06-18 22:21 America/Denver] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1051
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A18%3A32+Jun+18%2C+2019+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=test&mc_fee=4.96&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560917888&payer_status=verified&business=dpmzmdr-facilitator%40gmail.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AsNlui0z.c02jZLNumOwuCO14NvtAKyHw86DhBRFk.1gBIs.KKZAgg3d&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=087137503B096904H&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=dpmzmdr-facilitator%40gmail.com&payment_fee=4.96&shipping_discount=0.00&insurance_amount=0.00&receiver_id=Y7KD5RH5SZCW4&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=100.00&shipping=0.00&ipn_track_id=db1109d05513
+[2019-06-18 22:21 America/Denver] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Wed, 19 Jun 2019 04:21:53 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=m4hQqy2I3CZ_sou1yfgD3yLabWfnWREcZB5XQKJs3g98ySMPJ0qcJA3t4hgXf0rHj1WMxeF4_AbhTx4hf6AOI_WDUl-KebHZRkwoN2uen_7tNKQL_iZOnoYL7Sih6Kheu-pire3AMN1HDmWEp0Jx60YC1Jf2UQ2jTVo2Jl47jkOws60AuE0_Ji7y2P6OyjWNYKBXFbZ7iCYcGDPTj36f09n4PSPrcgB5D-SayAM6HZMA8pm4yd9bhzpclIAcnavRLTiKEZw4-jvOVhk3fJov-OCi56uIbkaGzOssRLAkgDjti0frBGDXkvgLlZm1IKC2LKvWISC5jpt_OrmXgiE-RomRNEckJ0lyVTfXNUI-yHdOaIr-hHbuXYGs9vdVybOimCwVapP_sSm68ZdXsdk_kEC8Otl88wpSmAC_f6aCvXPxeoY66wtDYfJ51ea; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Jun-2029 04:21:53 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 18-Jun-2021 04:21:53 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1560918113283462; path=/; expires=Fri, 11-Jun-49 04:21:53 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: a7b5f9c33ee2d
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1639450973%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Wed, 19 Jun 2019 04:51:54 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+[2019-06-18 22:21 America/Denver] Verified IPN: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A18%3A32+Jun+18%2C+2019+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=test&mc_fee=4.96&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560917888&payer_status=verified&business=dpmzmdr-facilitator%40gmail.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AsNlui0z.c02jZLNumOwuCO14NvtAKyHw86DhBRFk.1gBIs.KKZAgg3d&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=087137503B096904H&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=dpmzmdr-facilitator%40gmail.com&payment_fee=4.96&shipping_discount=0.00&insurance_amount=0.00&receiver_id=Y7KD5RH5SZCW4&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=100.00&shipping=0.00&ipn_track_id=db1109d05513 
+[2019-06-18 22:26 America/Denver] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 975
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Ineligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A15%3A22+Jun+18%2C+2019+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=test&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560917687&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AF663cnV1w1870YiTW35GHlBPIJ2Acm5i.YIr0Txpks42PBV3NJNPEGG&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=56X63636A44657723&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=billing%40johnsonmgmt.net&shipping_discount=0.00&insurance_amount=0.00&pending_reason=unilateral&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=100.00&shipping=0.00&ipn_track_id=e92570b6d100
+[2019-06-18 22:26 America/Denver] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Wed, 19 Jun 2019 04:26:10 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=9EYa-I0cKH6s7cl2JxiANerwaBdM8-vdN9_m1VlLMe2VsIaDTvmk2nQy9jz9gfz_fEhxDZoNMQsCLBxJL3_0BSXQWgppRKQg-AljBC902r_GnWpiNSwiCtWE7lqDB13aOrqwGic5Wyzx31wtse2R78N_ekYC-mfcx4gpcfoL9r3ZJv3UPjRvDCE84Shp6gw6p8yeU3whhgmHPHFsApiMpVPO1W9lw4FYHGhbU5f4_2Azwswyj8VLOF5NNzRVwY-r81VvVcCI2GjeFRIy21vDES8V8EbPqAa9ZBcznHfjySXN9UpSmOmuB8ns1grZb-Jh1HsxfgvOxecfwxiKwX4ZT2BZ5FZKlJdwiqDWX1S1JApHlpuDqhCoiVfBFzuaRFdjuxfB7rRN14x-Lw0jwIpelI0zNJ-irO4fyYVrM5JpxD405YPKxv_hZYIyTDm; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Jun-2029 04:26:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 18-Jun-2021 04:26:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1560918370579225; path=/; expires=Fri, 11-Jun-49 04:26:10 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 222bbbef84bf7
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1656293725%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Wed, 19 Jun 2019 04:56:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+[2019-06-18 22:26 America/Denver] Verified IPN: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Ineligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A15%3A22+Jun+18%2C+2019+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=test&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560917687&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AF663cnV1w1870YiTW35GHlBPIJ2Acm5i.YIr0Txpks42PBV3NJNPEGG&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=56X63636A44657723&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=billing%40johnsonmgmt.net&shipping_discount=0.00&insurance_amount=0.00&pending_reason=unilateral&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=100.00&shipping=0.00&ipn_track_id=e92570b6d100 
+[2019-06-18 22:35 America/Denver] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1050
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=18.50&protection_eligibility=Eligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A35%3A29+Jun+18%2C+2019+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=test&mc_fee=1.20&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560918884&payer_status=verified&business=dpmzmdr-facilitator%40gmail.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AnKVFeUPlctSUhY3kvaNrCwS5VIcANemvHOks.bwB9.7jIr7j6oxmoee&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=15P71951DJ919152Y&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=dpmzmdr-facilitator%40gmail.com&payment_fee=1.20&shipping_discount=0.00&insurance_amount=0.00&receiver_id=Y7KD5RH5SZCW4&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=18.50&shipping=0.00&ipn_track_id=71973c332679c
+[2019-06-18 22:35 America/Denver] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Wed, 19 Jun 2019 04:35:38 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=kuzJhPAxI30B4e5DKg47sOxMHoVaPNVeNHiAETKt0uGbbgCusky0it0Ihox5ASBRW8SJ-gkCRTYZJtG5Z9k7yw2IfnXFFDiv7aZ5VsNh5m_qr3lpT0CDdaKzfTyqKcr-JfRsBGYeQdOgQq1Us_hBnV0Ah6ZxaZFYHI45OClSGSYPu6gPrYwz0eOCBOKlJ5u6ScpwRIV7Yaajwsqz3_PGegCxtsgCBYw1H3qNraeC41VymDwKkulGge4oQ9Pn_dXKVxdWjlZTewGTgeXLaO6KX7FpzaDFZSsbUCet6ejmV9h2dq9d39d0QsPyzF7o8y0AnOp6pMCdT1wBHzrhfyVZWpmK4Zb810q0_eqm_7qxhcsPTVs5Ft7ihvJJNf_QsPuJ8zTO5GMkU8szX3G0zQdd5_HsiwmTUmT_uSQ8o6Hg4B_x_TmCamH-luuXucG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Jun-2029 04:35:39 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 18-Jun-2021 04:35:39 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1560918938464927; path=/; expires=Fri, 11-Jun-49 04:35:38 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: c014346069a0f
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2595948893%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Wed, 19 Jun 2019 05:05:39 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+[2019-06-18 22:35 America/Denver] Verified IPN: cmd=_notify-validate&mc_gross=18.50&protection_eligibility=Eligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A35%3A29+Jun+18%2C+2019+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=test&mc_fee=1.20&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560918884&payer_status=verified&business=dpmzmdr-facilitator%40gmail.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AnKVFeUPlctSUhY3kvaNrCwS5VIcANemvHOks.bwB9.7jIr7j6oxmoee&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=15P71951DJ919152Y&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=dpmzmdr-facilitator%40gmail.com&payment_fee=1.20&shipping_discount=0.00&insurance_amount=0.00&receiver_id=Y7KD5RH5SZCW4&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=18.50&shipping=0.00&ipn_track_id=71973c332679c 
+[2019-06-18 22:37 America/Denver] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1050
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A37%3A14+Jun+18%2C+2019+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=test&mc_fee=0.81&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560918999&payer_status=verified&business=dpmzmdr-facilitator%40gmail.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=ASdWWRSp7E57XMWjir.Gd3MWhnF2AdBdRNtClOv3epeiyYL9ddNsnQle&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=5SM44678SJ304604H&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=dpmzmdr-facilitator%40gmail.com&payment_fee=0.81&shipping_discount=0.00&insurance_amount=0.00&receiver_id=Y7KD5RH5SZCW4&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=10.00&shipping=0.00&ipn_track_id=df7a824db9950
+[2019-06-18 22:37 America/Denver] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Wed, 19 Jun 2019 04:37:20 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=WAieJpJwY4JiDiAkqKCCMwCcbJejVA9fg8Hp3YZufu07S1YdBzzumCEy-1mDo7fe137mfz6hacDPITSei-8wJdCA3efXEq6OeGI_gTj3xrQNe4ziAdd60mp9Zn41Df805aMoXprSj8hm8D9hWE95-xJ4GYFeSVYfJrh9pfWzwAUa_GgFvd35owy1IpPnQBY9Gkus1jmMgx8x0AsHx3ZaK2w-8QwyHAGa5PtsJZLmwahJgSbf8m8ddRDUcUOxk7ziqAZxV2jfipohL2PXAEadc7BkXjsgeNpc_O2jwn0z_EKMVnbFGAWVXTSx_2Q6MhFlDpW95NI9qjVrhdun2Sj0Z7MVoCS_Do12nkILNQyHAlJ0Afu19R2hrXOEFE0xLQCq1YPXDZ5IU49IOM8MYeFJ4tKxmA6bnVBxUn5MRauA9mVgW9TAEQ-HOohtiOO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Jun-2029 04:37:21 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 18-Jun-2021 04:37:21 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1560919041032122; path=/; expires=Fri, 11-Jun-49 04:37:21 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 70cb4e9b188d
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D29100381%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Wed, 19 Jun 2019 05:07:21 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+[2019-06-18 22:37 America/Denver] Verified IPN: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A37%3A14+Jun+18%2C+2019+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=test&mc_fee=0.81&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560918999&payer_status=verified&business=dpmzmdr-facilitator%40gmail.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=ASdWWRSp7E57XMWjir.Gd3MWhnF2AdBdRNtClOv3epeiyYL9ddNsnQle&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=5SM44678SJ304604H&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=dpmzmdr-facilitator%40gmail.com&payment_fee=0.81&shipping_discount=0.00&insurance_amount=0.00&receiver_id=Y7KD5RH5SZCW4&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=10.00&shipping=0.00&ipn_track_id=df7a824db9950 
+[2019-06-18 22:39 America/Denver] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1048
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=2.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A39%3A22+Jun+18%2C+2019+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=test&mc_fee=0.45&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560919130&payer_status=verified&business=dpmzmdr-facilitator%40gmail.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A20RYPLjIirJBp.s9WVkwkA4v8gxA3v7IJpUTUwoRGErkMRx8iPgbmgY&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=0LE85578283279212&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=dpmzmdr-facilitator%40gmail.com&payment_fee=0.45&shipping_discount=0.00&insurance_amount=0.00&receiver_id=Y7KD5RH5SZCW4&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=2.00&shipping=0.00&ipn_track_id=e9ba1ab9504a5
+[2019-06-18 22:39 America/Denver] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Wed, 19 Jun 2019 04:39:29 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=1Bv0JmBV6f99ZwAqlu1l_Zrl3ERE9uh_m5DkSvk3NBpyTOxe-VgmBjuwpIq8ypQ5g8bBuxCx3RMtj3sc-NWLLCZJ3WhbxTSnUcwnz0ijqQNBDrZNP0YGOHOnJzN7h1jp-9Aw__1uLBpFUlsro0Lxb74BWhREt33rfGNPwWlTkmsQuqTADwdWPymd6G1QKk8F1Gn9K2K_s6nq6DIrnH6nD6YeXajoooQFpf_Ic5Kk5pHKHNLENuuJL4ZOfywtEpWKHQ1RnbUW28i6XrqhOo-pCbkimDWGk_Wa15DUnRFAinLOLlwazlcjnehedyoChKOQJYIJQG1WXGLH7qvouV_H3tTDNITQ-3mkYOCC2cvOfTugaQil6auqZYb-qKfQ0VUAye-HkB9RpFV6l6rHv_c_y6Taz3FVrOu1yZkOJPncR4eQNZ6BGRvToSpiw0O; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 16-Jun-2029 04:39:29 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 18-Jun-2021 04:39:29 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1560919169346811; path=/; expires=Fri, 11-Jun-49 04:39:29 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 368f55dc4c27f
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2176584029%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Wed, 19 Jun 2019 05:09:30 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+[2019-06-18 22:39 America/Denver] Verified IPN: cmd=_notify-validate&mc_gross=2.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=X4ELT4S6647VU&tax=0.00&address_street=1+Main+St&payment_date=21%3A39%3A22+Jun+18%2C+2019+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=test&mc_fee=0.45&address_country_code=US&address_name=test+buyer&notify_version=3.9&custom=1560919130&payer_status=verified&business=dpmzmdr-facilitator%40gmail.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A20RYPLjIirJBp.s9WVkwkA4v8gxA3v7IJpUTUwoRGErkMRx8iPgbmgY&payer_email=billing-buyer%40johnsonmgmt.net&txn_id=0LE85578283279212&payment_type=instant&last_name=buyer&address_state=CA&receiver_email=dpmzmdr-facilitator%40gmail.com&payment_fee=0.45&shipping_discount=0.00&insurance_amount=0.00&receiver_id=Y7KD5RH5SZCW4&txn_type=web_accept&item_name=Online+Payment&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=2.00&shipping=0.00&ipn_track_id=e9ba1ab9504a5 

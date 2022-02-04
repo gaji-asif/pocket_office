@@ -1,0 +1,2 @@
+2020-04-27 22:38:09 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 1:  Failed database connection - Invalid connection variables: , , 
+2020-04-27 22:38:25 - NOTICE -->/home/pocketoffice/public_html/xactbid/login.php at Line 17:  Try database - assure - pocketofficepro.com

@@ -1,0 +1,129 @@
+
+    <div class="pages">
+        <div data-page="addsupplier" class="page toolbar-through no-navbar">
+            <div class="page-content">
+                <div class="navbarpages">
+                    <div class="navbar_home_link">
+                        <a href="#" data-panel="left" class="open-panel">
+                            <img src="images/icons/white/user.png" alt="" title="" /></a></div>
+                    <div class="navbar_page_center" id="divHeadForSupplierMethod"></div>
+                    <div class="menu_open_icon_white">
+                        <a href="home.html">
+                            <img src="images/menu_open.png" alt="" title="" /></a></div>
+                </div>
+                <div id="pages_maincontent">
+                    <div class="page_single">
+                        <div>
+                            <div id="divAddSupplier" style="display:block;">
+                              <div class="Demo-table-container">
+                                    <label id="lblAddSupplier" style="display: none; color:Red;">
+                                    </label>
+                                    <div class="contactform">
+                                        <div>
+                                            <label>
+                                                Supplier:<span class="red">*</span></label>                              
+                                            <input type="text" id="txtSupplier" name="txtSupplier" maxlength="45" class="form_input form-control validation validate[required[Enter Supplier]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Contact:</label>
+                                            <input type="text" id="txtContactNo" name="txtContact" class="form_input form-control" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Phone:<span class="red">*</span></label>
+                                            <input type="text" id="txtPhone" name="txtPhone" class="masked-phone form_input form-control validation validate[required[Enter Phone Number]] validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Fax:</label>
+                                            <input type="text" id="txtFax" name="txtFax" class="masked-phone form_input form-control validation validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Fax]]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Email:<span class="red">*</span></label>
+                                            <input type="text" id="txtEmail" name="txtEmail" class="form_input form-control validation validate[required[Enter Email]],validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" />
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="Save" class="form_submit bulebtn_comn" id="btnSaveSupplier" value="Save" />
+                                            <input type="submit" name="Cancel" class="form_submit greybtn_comn" id="btnCancel" value="Cancel" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="divEditSupplier" style="display:none;">
+                                <div class="Demo-table-container">
+                                <label id="lblEditSupplier" style="display: none; color: Red;">
+                                </label>
+                                <div class="contactform">
+                                    <div>
+                                        <label>
+                                            Supplier:<span class="red">*</span></label>
+                                        <input type="text" id="txtEditSupplier" name="txtEditSupplier" maxlength="45" class="form_input form-control validation validate[required[Enter Supplier]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Contact:</label>
+                                        <input type="text" id="txtEditContact" name="txtEditContact" class="form_input form-control" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Phone:<span class="red">*</span></label>
+                                        <input type="text" id="txtEditPhone" name="txtEditPhone" class="masked-phone form_input form-control validation validate[required[Enter Phone Number]]  validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Fax:</label>
+                                        <input type="text" id="txtEditFax" name="txtEditFax" class="masked-phone form_input form-control validation validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Fax]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Email:<span class="red">*</span></label>
+                                        <input type="text" id="txtEditEmail" name="txtEditEmail" class="form_input form-control validation validate[required[Enter Email]],validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" />
+                                    </div>
+                                    <div>
+                                        <input type="submit" name="Submit" class="form_submit Supplier_wid bulebtn_comn"
+                                            id="btnUpdateSupplier" value="Save" />
+                                        <input type="submit" name="Delete" class="form_submit redbtn_comn Supplier_wid"
+                                            id="btndelete" value="Delete" />
+                                        <input type="submit" name="Cancel" class="form_submit greybtn_comn Supplier_wid" id="btnEditCancel" value="Cancel" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+                if(Checkaccess('modify_suppliers'))
+                {
+                    $('#divEditSupplier').css("display","block");
+                }
+
+                if (supplierId != null && supplierId != "" && supplierId != "undefined") 
+                {
+                    if(Checkaccess('modify_suppliers'))
+                    {
+                        $("#divAddSupplier").css("display", "none");
+                        $("#divEditSupplier").css("display", "block");
+                        $("#divHeadForSupplierMethod").html("");
+                        $("#divHeadForSupplierMethod").html("Edit Supplier");
+                    }
+                }
+                else 
+                {
+                    if(Checkaccess('modify_suppliers'))
+                    {
+                        $("#divAddSupplier").css("display", "block");
+                        $("#divEditSupplier").css("display", "none");
+                        $("#divHeadForSupplierMethod").html("");
+                        $("#divHeadForSupplierMethod").html("Add Supplier");
+                    }
+                }
+                -->
+        </div>
+    </div>
+   
+    
+

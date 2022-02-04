@@ -1,0 +1,698 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.8.18/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.2.2
+3 info using node@v0.8.18
+4 verbose read json /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/package.json
+5 warn package.json 1derful@2.0.0 No README.md file found!
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful',
+7 verbose install   [ 'grunt',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-nodeunit',
+7 verbose install     'grunt-contrib-uglify' ] ]
+8 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/package.json
+9 info preinstall 1derful@2.0.0
+10 verbose read json /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt/package.json
+11 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/package.json
+12 verbose readDependencies using package.json deps
+13 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt/package.json
+14 verbose already installed skipping grunt@~0.4.5 /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful
+15 verbose cache add [ 'grunt-contrib-jshint@~0.10.0', null ]
+16 verbose cache add name=undefined spec="grunt-contrib-jshint@~0.10.0" args=["grunt-contrib-jshint@~0.10.0",null]
+17 verbose parsed url { pathname: 'grunt-contrib-jshint@~0.10.0',
+17 verbose parsed url   path: 'grunt-contrib-jshint@~0.10.0',
+17 verbose parsed url   href: 'grunt-contrib-jshint@~0.10.0' }
+18 verbose cache add name="grunt-contrib-jshint" spec="~0.10.0" args=["grunt-contrib-jshint","~0.10.0"]
+19 verbose parsed url { pathname: '~0.10.0', path: '~0.10.0', href: '~0.10.0' }
+20 verbose addNamed [ 'grunt-contrib-jshint', '~0.10.0' ]
+21 verbose addNamed [ null, '>=0.10.0- <0.11.0-' ]
+22 verbose cache add [ 'grunt-contrib-nodeunit@~0.3.3', null ]
+23 verbose cache add name=undefined spec="grunt-contrib-nodeunit@~0.3.3" args=["grunt-contrib-nodeunit@~0.3.3",null]
+24 verbose parsed url { pathname: 'grunt-contrib-nodeunit@~0.3.3',
+24 verbose parsed url   path: 'grunt-contrib-nodeunit@~0.3.3',
+24 verbose parsed url   href: 'grunt-contrib-nodeunit@~0.3.3' }
+25 verbose cache add name="grunt-contrib-nodeunit" spec="~0.3.3" args=["grunt-contrib-nodeunit","~0.3.3"]
+26 verbose parsed url { pathname: '~0.3.3', path: '~0.3.3', href: '~0.3.3' }
+27 verbose addNamed [ 'grunt-contrib-nodeunit', '~0.3.3' ]
+28 verbose addNamed [ null, '>=0.3.3- <0.4.0-' ]
+29 verbose cache add [ 'grunt-contrib-uglify@~0.4.0', null ]
+30 verbose cache add name=undefined spec="grunt-contrib-uglify@~0.4.0" args=["grunt-contrib-uglify@~0.4.0",null]
+31 verbose parsed url { pathname: 'grunt-contrib-uglify@~0.4.0',
+31 verbose parsed url   path: 'grunt-contrib-uglify@~0.4.0',
+31 verbose parsed url   href: 'grunt-contrib-uglify@~0.4.0' }
+32 verbose cache add name="grunt-contrib-uglify" spec="~0.4.0" args=["grunt-contrib-uglify","~0.4.0"]
+33 verbose parsed url { pathname: '~0.4.0', path: '~0.4.0', href: '~0.4.0' }
+34 verbose addNamed [ 'grunt-contrib-uglify', '~0.4.0' ]
+35 verbose addNamed [ null, '>=0.4.0- <0.5.0-' ]
+36 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+37 verbose lock grunt-contrib-jshint@~0.10.0 /Users/cmitchell/.npm/956acfd4-grunt-contrib-jshint-0-10-0.lock
+38 silly lockFile 7215ca9b-grunt-contrib-nodeunit-0-3-3 grunt-contrib-nodeunit@~0.3.3
+39 verbose lock grunt-contrib-nodeunit@~0.3.3 /Users/cmitchell/.npm/7215ca9b-grunt-contrib-nodeunit-0-3-3.lock
+40 silly lockFile bea3f155-grunt-contrib-uglify-0-4-0 grunt-contrib-uglify@~0.4.0
+41 verbose lock grunt-contrib-uglify@~0.4.0 /Users/cmitchell/.npm/bea3f155-grunt-contrib-uglify-0-4-0.lock
+42 silly addNameRange { name: 'grunt-contrib-jshint',
+42 silly addNameRange   range: '>=0.10.0- <0.11.0-',
+42 silly addNameRange   hasData: false }
+43 silly addNameRange { name: 'grunt-contrib-nodeunit',
+43 silly addNameRange   range: '>=0.3.3- <0.4.0-',
+43 silly addNameRange   hasData: false }
+44 silly addNameRange { name: 'grunt-contrib-uglify',
+44 silly addNameRange   range: '>=0.4.0- <0.5.0-',
+44 silly addNameRange   hasData: false }
+45 verbose url raw grunt-contrib-jshint
+46 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-jshint' ]
+47 verbose url resolved https://registry.npmjs.org/grunt-contrib-jshint
+48 info trying registry request attempt 1 at 16:38:56
+49 http GET https://registry.npmjs.org/grunt-contrib-jshint
+50 verbose url raw grunt-contrib-nodeunit
+51 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-nodeunit' ]
+52 verbose url resolved https://registry.npmjs.org/grunt-contrib-nodeunit
+53 info trying registry request attempt 1 at 16:38:56
+54 http GET https://registry.npmjs.org/grunt-contrib-nodeunit
+55 verbose url raw grunt-contrib-uglify
+56 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-uglify' ]
+57 verbose url resolved https://registry.npmjs.org/grunt-contrib-uglify
+58 info trying registry request attempt 1 at 16:38:56
+59 verbose etag "2OT7VUZ149JWEO62IUVNJWZWD"
+60 http GET https://registry.npmjs.org/grunt-contrib-uglify
+61 http 200 https://registry.npmjs.org/grunt-contrib-uglify
+62 silly registry.get cb [ 200,
+62 silly registry.get   { date: 'Sat, 05 Jul 2014 22:38:56 GMT',
+62 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+62 silly registry.get     etag: '"9CUSV5EG43WTYS056RG3DC04N"',
+62 silly registry.get     'content-type': 'application/json',
+62 silly registry.get     'cache-control': 'max-age=30',
+62 silly registry.get     'content-length': '46908',
+62 silly registry.get     'accept-ranges': 'bytes',
+62 silly registry.get     via: '1.1 varnish',
+62 silly registry.get     age: '1321',
+62 silly registry.get     'x-served-by': 'cache-dfw1828-DFW',
+62 silly registry.get     'x-cache': 'HIT',
+62 silly registry.get     'x-cache-hits': '1',
+62 silly registry.get     'x-timer': 'S1404599936.905647,VS0,VE46',
+62 silly registry.get     vary: 'Accept',
+62 silly registry.get     'keep-alive': 'timeout=10, max=50',
+62 silly registry.get     connection: 'Keep-Alive' } ]
+63 silly addNameRange number 2 { name: 'grunt-contrib-uglify',
+63 silly addNameRange   range: '>=0.4.0- <0.5.0-',
+63 silly addNameRange   hasData: true }
+64 silly addNameRange versions [ 'grunt-contrib-uglify',
+64 silly addNameRange   [ '0.1.0',
+64 silly addNameRange     '0.1.1',
+64 silly addNameRange     '0.1.2',
+64 silly addNameRange     '0.2.0',
+64 silly addNameRange     '0.2.1',
+64 silly addNameRange     '0.2.2',
+64 silly addNameRange     '0.2.3',
+64 silly addNameRange     '0.2.4',
+64 silly addNameRange     '0.2.5',
+64 silly addNameRange     '0.2.6',
+64 silly addNameRange     '0.2.7',
+64 silly addNameRange     '0.3.0',
+64 silly addNameRange     '0.3.1',
+64 silly addNameRange     '0.1.1-rc5',
+64 silly addNameRange     '0.1.1-rc6',
+64 silly addNameRange     '0.3.2',
+64 silly addNameRange     '0.3.3',
+64 silly addNameRange     '0.4.0',
+64 silly addNameRange     '0.5.0' ] ]
+65 verbose addNamed [ 'grunt-contrib-uglify', '0.4.0' ]
+66 verbose addNamed [ '0.4.0', '0.4.0' ]
+67 silly lockFile a0aad41b-grunt-contrib-uglify-0-4-0 grunt-contrib-uglify@0.4.0
+68 verbose lock grunt-contrib-uglify@0.4.0 /Users/cmitchell/.npm/a0aad41b-grunt-contrib-uglify-0-4-0.lock
+69 silly lockFile 7576fdea-y-grunt-contrib-uglify-0-4-0-tgz https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.0.tgz
+70 verbose lock https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.0.tgz /Users/cmitchell/.npm/7576fdea-y-grunt-contrib-uglify-0-4-0-tgz.lock
+71 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.0.tgz',
+71 verbose addRemoteTarball   '6a4df3e85ccf4bbae484b0328cc71c9f102e80be' ]
+72 info retry fetch attempt 1 at 16:38:56
+73 verbose fetch to= /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/tmp.tgz
+74 http GET https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.0.tgz
+75 http 200 https://registry.npmjs.org/grunt-contrib-jshint
+76 silly registry.get cb [ 200,
+76 silly registry.get   { date: 'Sat, 05 Jul 2014 22:38:56 GMT',
+76 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+76 silly registry.get     etag: '"7JLAFBKQONHIJVZEQQRWYF24Q"',
+76 silly registry.get     'content-type': 'application/json',
+76 silly registry.get     'cache-control': 'max-age=30',
+76 silly registry.get     'content-length': '51433',
+76 silly registry.get     'accept-ranges': 'bytes',
+76 silly registry.get     via: '1.1 varnish',
+76 silly registry.get     age: '6032',
+76 silly registry.get     'x-served-by': 'cache-dfw1827-DFW',
+76 silly registry.get     'x-cache': 'HIT',
+76 silly registry.get     'x-cache-hits': '1',
+76 silly registry.get     'x-timer': 'S1404599936.916839,VS0,VE54',
+76 silly registry.get     vary: 'Accept',
+76 silly registry.get     'keep-alive': 'timeout=10, max=50',
+76 silly registry.get     connection: 'Keep-Alive' } ]
+77 silly addNameRange number 2 { name: 'grunt-contrib-jshint',
+77 silly addNameRange   range: '>=0.10.0- <0.11.0-',
+77 silly addNameRange   hasData: true }
+78 silly addNameRange versions [ 'grunt-contrib-jshint',
+78 silly addNameRange   [ '0.1.0',
+78 silly addNameRange     '0.1.1',
+78 silly addNameRange     '0.2.0',
+78 silly addNameRange     '0.3.0',
+78 silly addNameRange     '0.4.0',
+78 silly addNameRange     '0.4.1',
+78 silly addNameRange     '0.4.2',
+78 silly addNameRange     '0.4.3',
+78 silly addNameRange     '0.5.0',
+78 silly addNameRange     '0.5.1',
+78 silly addNameRange     '0.5.2',
+78 silly addNameRange     '0.5.3',
+78 silly addNameRange     '0.5.4',
+78 silly addNameRange     '0.6.0',
+78 silly addNameRange     '0.6.1',
+78 silly addNameRange     '0.6.2',
+78 silly addNameRange     '0.6.3',
+78 silly addNameRange     '0.6.4',
+78 silly addNameRange     '0.6.5',
+78 silly addNameRange     '0.7.0',
+78 silly addNameRange     '0.7.1',
+78 silly addNameRange     '0.7.2',
+78 silly addNameRange     '0.8.0',
+78 silly addNameRange     '0.9.0',
+78 silly addNameRange     '0.9.1',
+78 silly addNameRange     '0.9.2',
+78 silly addNameRange     '0.10.0',
+78 silly addNameRange     '0.1.1-rc5',
+78 silly addNameRange     '0.1.1-rc6' ] ]
+79 verbose addNamed [ 'grunt-contrib-jshint', '0.10.0' ]
+80 verbose addNamed [ '0.10.0', '0.10.0' ]
+81 silly lockFile af8d4102-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@0.10.0
+82 verbose lock grunt-contrib-jshint@0.10.0 /Users/cmitchell/.npm/af8d4102-grunt-contrib-jshint-0-10-0.lock
+83 silly lockFile 97fbf99a--grunt-contrib-jshint-0-10-0-tgz https://registry.npmjs.org/grunt-contrib-jshint/-/grunt-contrib-jshint-0.10.0.tgz
+84 verbose lock https://registry.npmjs.org/grunt-contrib-jshint/-/grunt-contrib-jshint-0.10.0.tgz /Users/cmitchell/.npm/97fbf99a--grunt-contrib-jshint-0-10-0-tgz.lock
+85 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-jshint/-/grunt-contrib-jshint-0.10.0.tgz',
+85 verbose addRemoteTarball   '57ebccca87e8f327af6645d8a3c586d4845e4d81' ]
+86 info retry fetch attempt 1 at 16:38:56
+87 verbose fetch to= /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/tmp.tgz
+88 http GET https://registry.npmjs.org/grunt-contrib-jshint/-/grunt-contrib-jshint-0.10.0.tgz
+89 http 200 https://registry.npmjs.org/grunt-contrib-nodeunit
+90 silly registry.get cb [ 200,
+90 silly registry.get   { date: 'Sat, 05 Jul 2014 22:38:57 GMT',
+90 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+90 silly registry.get     etag: '"1E44473EZZBZ6S2ONELHQU5K2"',
+90 silly registry.get     'content-type': 'application/json',
+90 silly registry.get     'cache-control': 'max-age=30',
+90 silly registry.get     'content-length': '25356',
+90 silly registry.get     'accept-ranges': 'bytes',
+90 silly registry.get     via: '1.1 varnish',
+90 silly registry.get     age: '215',
+90 silly registry.get     'x-served-by': 'cache-dfw1827-DFW',
+90 silly registry.get     'x-cache': 'MISS',
+90 silly registry.get     'x-cache-hits': '0',
+90 silly registry.get     'x-timer': 'S1404599936.914472,VS0,VE183',
+90 silly registry.get     vary: 'Accept',
+90 silly registry.get     'keep-alive': 'timeout=10, max=50',
+90 silly registry.get     connection: 'Keep-Alive' } ]
+91 silly addNameRange number 2 { name: 'grunt-contrib-nodeunit',
+91 silly addNameRange   range: '>=0.3.3- <0.4.0-',
+91 silly addNameRange   hasData: true }
+92 silly addNameRange versions [ 'grunt-contrib-nodeunit',
+92 silly addNameRange   [ '0.1.0',
+92 silly addNameRange     '0.1.1',
+92 silly addNameRange     '0.1.2',
+92 silly addNameRange     '0.2.0',
+92 silly addNameRange     '0.2.1',
+92 silly addNameRange     '0.2.2',
+92 silly addNameRange     '0.3.0',
+92 silly addNameRange     '0.1.2-rc5',
+92 silly addNameRange     '0.1.2-rc6',
+92 silly addNameRange     '0.3.1',
+92 silly addNameRange     '0.3.2',
+92 silly addNameRange     '0.3.3',
+92 silly addNameRange     '0.4.0',
+92 silly addNameRange     '0.4.1' ] ]
+93 verbose addNamed [ 'grunt-contrib-nodeunit', '0.3.3' ]
+94 verbose addNamed [ '0.3.3', '0.3.3' ]
+95 silly lockFile 40ca0d7d-grunt-contrib-nodeunit-0-3-3 grunt-contrib-nodeunit@0.3.3
+96 verbose lock grunt-contrib-nodeunit@0.3.3 /Users/cmitchell/.npm/40ca0d7d-grunt-contrib-nodeunit-0-3-3.lock
+97 silly lockFile 2ee36828-grunt-contrib-nodeunit-0-3-3-tgz https://registry.npmjs.org/grunt-contrib-nodeunit/-/grunt-contrib-nodeunit-0.3.3.tgz
+98 verbose lock https://registry.npmjs.org/grunt-contrib-nodeunit/-/grunt-contrib-nodeunit-0.3.3.tgz /Users/cmitchell/.npm/2ee36828-grunt-contrib-nodeunit-0-3-3-tgz.lock
+99 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-nodeunit/-/grunt-contrib-nodeunit-0.3.3.tgz',
+99 verbose addRemoteTarball   '15f18dd71ba128a3afbb27fadd7f6f924df8ff31' ]
+100 info retry fetch attempt 1 at 16:38:56
+101 verbose fetch to= /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/tmp.tgz
+102 http GET https://registry.npmjs.org/grunt-contrib-nodeunit/-/grunt-contrib-nodeunit-0.3.3.tgz
+103 http 200 https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.0.tgz
+104 silly shasum updated bytes 8401
+105 info shasum 6a4df3e85ccf4bbae484b0328cc71c9f102e80be
+105 info shasum /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/tmp.tgz
+106 verbose tar unpack /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/tmp.tgz
+107 silly lockFile 5ed523ce-36729-0-2629747136961669-package /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/package
+108 verbose lock /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/package /Users/cmitchell/.npm/5ed523ce-36729-0-2629747136961669-package.lock
+109 silly gunzTarPerm modes [ '755', '644' ]
+110 silly gunzTarPerm extractEntry package.json
+111 silly gunzTarPerm extractEntry README.md
+112 silly gunzTarPerm extractEntry LICENSE-MIT
+113 silly gunzTarPerm extractEntry tasks/uglify.js
+114 silly gunzTarPerm extractEntry tasks/lib/uglify.js
+115 verbose read json /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/package/package.json
+116 silly lockFile 5ed523ce-36729-0-2629747136961669-package /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/package
+117 verbose from cache /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/package/package.json
+118 verbose tar pack [ '/Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz',
+118 verbose tar pack   '/Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/package' ]
+119 verbose tarball /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz
+120 verbose folder /Users/cmitchell/tmp/npm-14517/1404599936729-0.2629747136961669/package
+121 silly lockFile e0f9a880-contrib-uglify-0-4-0-package-tgz /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz
+122 verbose lock /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz /Users/cmitchell/.npm/e0f9a880-contrib-uglify-0-4-0-package-tgz.lock
+123 http 200 https://registry.npmjs.org/grunt-contrib-jshint/-/grunt-contrib-jshint-0.10.0.tgz
+124 silly lockFile e0f9a880-contrib-uglify-0-4-0-package-tgz /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz
+125 silly lockFile d5ae763f-unt-contrib-uglify-0-4-0-package /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package
+126 verbose lock /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package /Users/cmitchell/.npm/d5ae763f-unt-contrib-uglify-0-4-0-package.lock
+127 silly lockFile d5ae763f-unt-contrib-uglify-0-4-0-package /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package
+128 verbose tar unpack /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz
+129 silly lockFile d5ae763f-unt-contrib-uglify-0-4-0-package /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package
+130 verbose lock /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package /Users/cmitchell/.npm/d5ae763f-unt-contrib-uglify-0-4-0-package.lock
+131 silly gunzTarPerm modes [ '755', '644' ]
+132 silly gunzTarPerm extractEntry package.json
+133 silly gunzTarPerm extractEntry README.md
+134 silly gunzTarPerm extractEntry LICENSE-MIT
+135 silly gunzTarPerm extractEntry tasks/uglify.js
+136 silly gunzTarPerm extractEntry tasks/lib/uglify.js
+137 silly shasum updated bytes 6976
+138 info shasum 57ebccca87e8f327af6645d8a3c586d4845e4d81
+138 info shasum /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/tmp.tgz
+139 verbose tar unpack /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/tmp.tgz
+140 silly lockFile 89df7c22-6771-0-03855743329040706-package /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/package
+141 verbose lock /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/package /Users/cmitchell/.npm/89df7c22-6771-0-03855743329040706-package.lock
+142 silly gunzTarPerm modes [ '755', '644' ]
+143 silly gunzTarPerm extractEntry package.json
+144 silly gunzTarPerm extractEntry README.md
+145 silly gunzTarPerm extractEntry LICENSE-MIT
+146 silly gunzTarPerm extractEntry tasks/jshint.js
+147 silly gunzTarPerm extractEntry tasks/lib/jshint.js
+148 verbose read json /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package/package.json
+149 silly lockFile d5ae763f-unt-contrib-uglify-0-4-0-package /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package
+150 silly shasum updated bytes 8396
+151 info shasum 1e5ef637dd0e15195c208964f7414acd28ce9a34
+151 info shasum /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz
+152 verbose from cache /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package/package.json
+153 verbose chmod /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz 644
+154 verbose chown /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz [ 0, 20 ]
+155 silly lockFile 7576fdea-y-grunt-contrib-uglify-0-4-0-tgz https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.0.tgz
+156 silly lockFile a0aad41b-grunt-contrib-uglify-0-4-0 grunt-contrib-uglify@0.4.0
+157 verbose read json /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/package/package.json
+158 silly lockFile bea3f155-grunt-contrib-uglify-0-4-0 grunt-contrib-uglify@~0.4.0
+159 silly lockFile 89df7c22-6771-0-03855743329040706-package /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/package
+160 verbose from cache /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/package/package.json
+161 verbose tar pack [ '/Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz',
+161 verbose tar pack   '/Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/package' ]
+162 verbose tarball /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz
+163 verbose folder /Users/cmitchell/tmp/npm-14517/1404599936771-0.03855743329040706/package
+164 silly lockFile b8148b38-ontrib-jshint-0-10-0-package-tgz /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz
+165 verbose lock /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz /Users/cmitchell/.npm/b8148b38-ontrib-jshint-0-10-0-package-tgz.lock
+166 silly lockFile b8148b38-ontrib-jshint-0-10-0-package-tgz /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz
+167 silly lockFile 94beb58a-nt-contrib-jshint-0-10-0-package /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package
+168 verbose lock /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package /Users/cmitchell/.npm/94beb58a-nt-contrib-jshint-0-10-0-package.lock
+169 silly lockFile 94beb58a-nt-contrib-jshint-0-10-0-package /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package
+170 verbose tar unpack /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz
+171 silly lockFile 94beb58a-nt-contrib-jshint-0-10-0-package /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package
+172 verbose lock /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package /Users/cmitchell/.npm/94beb58a-nt-contrib-jshint-0-10-0-package.lock
+173 silly gunzTarPerm modes [ '755', '644' ]
+174 silly gunzTarPerm extractEntry package.json
+175 silly gunzTarPerm extractEntry README.md
+176 silly gunzTarPerm extractEntry LICENSE-MIT
+177 silly gunzTarPerm extractEntry tasks/jshint.js
+178 silly gunzTarPerm extractEntry tasks/lib/jshint.js
+179 verbose read json /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package/package.json
+180 silly lockFile 94beb58a-nt-contrib-jshint-0-10-0-package /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package
+181 silly shasum updated bytes 6975
+182 info shasum b8f550c7dc6d524684546708c6271d729965f790
+182 info shasum /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz
+183 verbose from cache /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package/package.json
+184 verbose chmod /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz 644
+185 verbose chown /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz [ 0, 20 ]
+186 silly lockFile 97fbf99a--grunt-contrib-jshint-0-10-0-tgz https://registry.npmjs.org/grunt-contrib-jshint/-/grunt-contrib-jshint-0.10.0.tgz
+187 silly lockFile af8d4102-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@0.10.0
+188 silly lockFile 956acfd4-grunt-contrib-jshint-0-10-0 grunt-contrib-jshint@~0.10.0
+189 http 200 https://registry.npmjs.org/grunt-contrib-nodeunit/-/grunt-contrib-nodeunit-0.3.3.tgz
+190 silly shasum updated bytes 5670
+191 info shasum 15f18dd71ba128a3afbb27fadd7f6f924df8ff31
+191 info shasum /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/tmp.tgz
+192 verbose tar unpack /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/tmp.tgz
+193 silly lockFile 330de96f-36844-0-5459038908593357-package /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/package
+194 verbose lock /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/package /Users/cmitchell/.npm/330de96f-36844-0-5459038908593357-package.lock
+195 silly gunzTarPerm modes [ '755', '644' ]
+196 silly gunzTarPerm extractEntry package.json
+197 silly gunzTarPerm extractEntry README.md
+198 silly gunzTarPerm extractEntry LICENSE-MIT
+199 silly gunzTarPerm extractEntry tasks/nodeunit.js
+200 verbose read json /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/package/package.json
+201 silly lockFile 330de96f-36844-0-5459038908593357-package /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/package
+202 verbose from cache /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/package/package.json
+203 verbose tar pack [ '/Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz',
+203 verbose tar pack   '/Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/package' ]
+204 verbose tarball /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz
+205 verbose folder /Users/cmitchell/tmp/npm-14517/1404599936844-0.5459038908593357/package
+206 silly lockFile 97fa3c36-ntrib-nodeunit-0-3-3-package-tgz /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz
+207 verbose lock /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz /Users/cmitchell/.npm/97fa3c36-ntrib-nodeunit-0-3-3-package-tgz.lock
+208 silly lockFile 97fa3c36-ntrib-nodeunit-0-3-3-package-tgz /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz
+209 silly lockFile d7788527-t-contrib-nodeunit-0-3-3-package /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package
+210 verbose lock /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package /Users/cmitchell/.npm/d7788527-t-contrib-nodeunit-0-3-3-package.lock
+211 silly lockFile d7788527-t-contrib-nodeunit-0-3-3-package /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package
+212 verbose tar unpack /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz
+213 silly lockFile d7788527-t-contrib-nodeunit-0-3-3-package /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package
+214 verbose lock /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package /Users/cmitchell/.npm/d7788527-t-contrib-nodeunit-0-3-3-package.lock
+215 silly gunzTarPerm modes [ '755', '644' ]
+216 silly gunzTarPerm extractEntry package.json
+217 silly gunzTarPerm extractEntry README.md
+218 silly gunzTarPerm extractEntry LICENSE-MIT
+219 silly gunzTarPerm extractEntry tasks/nodeunit.js
+220 verbose read json /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package/package.json
+221 silly lockFile d7788527-t-contrib-nodeunit-0-3-3-package /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package
+222 silly shasum updated bytes 5667
+223 info shasum 25ec39acedd1d58f9b8dade37c13fdbd6f0ff129
+223 info shasum /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz
+224 verbose from cache /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package/package.json
+225 verbose chmod /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz 644
+226 verbose chown /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz [ 0, 20 ]
+227 silly lockFile 2ee36828-grunt-contrib-nodeunit-0-3-3-tgz https://registry.npmjs.org/grunt-contrib-nodeunit/-/grunt-contrib-nodeunit-0.3.3.tgz
+228 silly lockFile 40ca0d7d-grunt-contrib-nodeunit-0-3-3 grunt-contrib-nodeunit@0.3.3
+229 silly lockFile 7215ca9b-grunt-contrib-nodeunit-0-3-3 grunt-contrib-nodeunit@~0.3.3
+230 silly resolved [ { name: 'grunt-contrib-uglify',
+230 silly resolved     description: 'Minify files with UglifyJS.',
+230 silly resolved     version: '0.4.0',
+230 silly resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-uglify',
+230 silly resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+230 silly resolved     repository:
+230 silly resolved      { type: 'git',
+230 silly resolved        url: 'git://github.com/gruntjs/grunt-contrib-uglify.git' },
+230 silly resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-uglify/issues' },
+230 silly resolved     licenses: [ [Object] ],
+230 silly resolved     engines: { node: '>=0.10.0' },
+230 silly resolved     scripts: { test: 'grunt test' },
+230 silly resolved     dependencies: { 'uglify-js': '^2.4.0', chalk: '^0.4.0', maxmin: '^0.1.0' },
+230 silly resolved     devDependencies:
+230 silly resolved      { 'grunt-contrib-jshint': '^0.8.0',
+230 silly resolved        'grunt-contrib-nodeunit': '^0.3.2',
+230 silly resolved        'grunt-contrib-clean': '^0.5.0',
+230 silly resolved        'grunt-contrib-internal': '^0.4.2',
+230 silly resolved        grunt: '^0.4.2' },
+230 silly resolved     peerDependencies: { grunt: '^0.4.0' },
+230 silly resolved     keywords: [ 'gruntplugin' ],
+230 silly resolved     files: [ 'tasks', 'LICENSE-MIT' ],
+230 silly resolved     readme: '# grunt-contrib-uglify v0.4.0 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-uglify.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-uglify)\n\n> Minify files with UglifyJS.\n\n\n\n## Getting Started\nThis plugin requires Grunt `^0.4.0`\n\nIf you haven\'t used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you\'re familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-contrib-uglify --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks(\'grunt-contrib-uglify\');\n```\n\n\n\n\n## Uglify task\n_Run this task with the `grunt uglify` command._\n\nTask targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.\n\n### Migrating from 2.x to 3.x\n\nVersion `3.x` introduced changes to configuring source maps. Accordingly, if you don\'t use the source map options you should be able to upgrade seamlessly. If you do use source maps, see below.\n\n#### Removed options\n\n`sourceMapRoot` - The location of your sources is now calculated for you when `sourceMap` is set to `true`  \n`sourceMapPrefix` - No longer necessary for the above reason  \n`sourceMappingURL` - Once again, this is calculated automatically\n\n#### Changed options\n\n`sourceMap` - Only accepts a `Boolean` value. Generates a map with a default name for you  \n\n#### New options\n\n`sourceMapName` - Accepts a string or function to change the location or name of your map\n`sourceMapIncludeSources` - Embed the content of your source files directly into the map\n\n### Options\n\nThis task primarily delegates to [UglifyJS2][], so please consider the [UglifyJS documentation][] as required reading for advanced configuration.\n\n[UglifyJS2]: https://github.com/mishoo/UglifyJS2\n[UglifyJS documentation]: http://lisperator.net/uglifyjs/\n\n#### mangle\nType: `Boolean` `Object`  \nDefault: `{}`\n\nTurn on or off mangling with default options. If an `Object` is specified, it is passed directly to `ast.mangle_names()` *and* `ast.compute_char_frequency()` (mimicking command line behavior).\n\n#### compress\nType: `Boolean` `Object`  \nDefault: `{}`\n\nTurn on or off source compression with default options. If an `Object` is specified, it is passed as options to `UglifyJS.Compressor()`.\n\n#### beautify\nType: `Boolean` `Object`  \nDefault: `false`\n\nTurns on beautification of the generated source code. An `Object` will be merged and passed with the options sent to `UglifyJS.OutputStream()`\n\n#### report\nChoices: `\'min\'`, `\'gzip\'`  \nDefault: `\'min\'`\n\nEither report only minification result or report minification and gzip results.\nThis is useful to see exactly how well clean-css is performing but using `\'gzip\'` will make the task take 5-10x longer to complete. [Example output](https://github.com/sindresorhus/maxmin#readme).\n\n#### sourceMap\nType: `Boolean`  \nDefault: `false`\n\nIf `true`, a source map file will be generated in the same directory as the `dest` file. By default it will have the same basename as the `dest` file, but with a `.map` extension.\n\n#### sourceMapName\nType: `String`  `Function`  \nDefault: `undefined`\n\nTo customize the name or location of the generated source map, pass a string to indicate where to write the source map to. If a function is provided, the uglify destination is passed as the argument and the return value will be used as the file name.\n\n#### sourceMapIn\nType: `String`  `Function`  \nDefault: `undefined`\n\nThe location of an input source map from an earlier compilation, e.g. from CoffeeScript. If a function is provided, the\nuglify source is passed as the argument and the return value will be used as the sourceMap name. This only makes sense\nwhen there\'s one source file.\n\n#### sourceMapIncludeSources\nType: `Boolean`\nDefault: `false`\n\nPass this flag if you want to include the content of source files in the source map as sourcesContent property.\n\n###### enclose\nType: `Object`  \nDefault: `undefined`\n\nWrap all of the code in a closure with a configurable arguments/parameters list.\nEach key-value pair in the `enclose` object is effectively an argument-parameter pair.\n\n#### wrap\nType: `String`  \nDefault: `undefined`\n\nWrap all of the code in a closure, an easy way to make sure nothing is leaking.\nFor variables that need to be public `exports` and `global` variables are made available.\nThe value of wrap is the global variable exports will be available as.\n\n#### exportAll\nType: `Boolean`  \nDefault: `false`\n\nWhen using `wrap` this will make all global functions and variables available via the export variable.\n\n#### preserveComments\nType: `Boolean` `String` `Function`  \nDefault: `undefined`  \nOptions: `false` `\'all\'` `\'some\'`\n\nTurn on preservation of comments.\n\n- `false` will strip all comments\n- `\'all\'` will preserve all comments in code blocks that have not been squashed or dropped\n- `\'some\'` will preserve all comments that start with a bang (`!`) or include a closure compiler style directive (`@preserve` `@license` `@cc_on`)\n- `Function` specify your own comment preservation function. You will be passed the current node and the current comment and are expected to return either `true` or `false`\n\n#### banner\nType: `String`  \nDefault: empty string\n\nThis string will be prepended to the minified output.  Template strings (e.g. `<%= config.value %>` will be expanded automatically.\n\n#### footer\nType: `String`  \nDefault: empty string\n\nThis string will be appended to the minified output.  Template strings (e.g. `<%= config.value %>` will be expanded automatically.\n\n### Usage examples\n\n#### Basic compression\n\nThis configuration will compress and mangle the input files using the default options.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input1.js\', \'src/input2.js\']\n      }\n    }\n  }\n});\n```\n\n#### No mangling\n\nSpecify `mangle: false` to prevent changes to your variable and function names.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    options: {\n      mangle: false\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Reserved identifiers\n\nYou can specify identifiers to leave untouched with an `except` array in the `mangle` options.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    options: {\n      mangle: {\n        except: [\'jQuery\', \'Backbone\']\n      }\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Source maps\n\nGenerate a source map by setting the `sourceMap` option to `true`. The generated\nsource map will be in the same directory as the destination file. Its name will be the\nbasename of the destination file with a `.map` extension. Override these\ndefaults with the `sourceMapName` attribute.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      options: {\n        sourceMap: true,\n        sourceMapName: \'path/to/sourcemap.map\'\n      },\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Advanced source maps\n\nSet the `sourceMapIncludeSources` option to `true` to embed your sources directly into the map. To include\na source map from a previous compilation pass it as the value of the `sourceMapIn` option.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      options: {\n        sourceMap: true,\n        sourceMapIncludeSources: true,\n        sourceMapIn: \'example/coffeescript-sourcemap.js\', // input sourcemap from a previous compilation\n      },\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\'],\n      },\n    },\n  },\n});\n```\n\nRefer to the [UglifyJS SourceMap Documentation](http://lisperator.net/uglifyjs/codegen#source-map) for more information.\n\n\n#### Discard console.* functions\n\nSpecify `drop_console: true` as part of the `compress` options to discard calls to `console.*` functions.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    options: {\n      compress: {\n        drop_console: true\n      }\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Beautify\n\nSpecify `beautify: true` to beautify your code for debugging/troubleshooting purposes.\nPass an object to manually configure any other output options passed directly to `UglifyJS.OutputStream()`.\n\nSee [UglifyJS Codegen documentation](http://lisperator.net/uglifyjs/codegen) for more information.\n\n_Note that manual configuration will require you to explicitly set `beautify: true` if you want traditional, beautified output._\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      options: {\n        beautify: true\n      },\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    },\n    my_advanced_target: {\n      options: {\n        beautify: {\n          width: 80,\n          beautify: true\n        }\n      },\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Banner comments\n\nIn this example, running `grunt uglify:my_target` will prepend a banner created by interpolating the `banner` template string with the config object. Here, those properties are the values imported from the `package.json` file (which are available via the `pkg` config property) plus today\'s date.\n\n_Note: you don\'t have to use an external JSON file. It\'s also valid to create the `pkg` object inline in the config. That being said, if you already have a JSON file, you might as well reference it._\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  pkg: grunt.file.readJSON(\'package.json\'),\n  uglify: {\n    options: {\n      banner: \'/*! <%= pkg.name %> - v<%= pkg.version %> - \' +\n        \'<%= grunt.template.today("yyyy-mm-dd") %> */\'\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Conditional compilation\n\nYou can also enable UglifyJS conditional compilation. This is commonly used to remove debug code blocks for production builds.\n\nSee [UglifyJS global definitions documentation](http://lisperator.net/uglifyjs/compress#global-defs) for more information.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    options: {\n      compress: {\n        global_defs: {\n          "DEBUG": false\n        },\n        dead_code: true\n      }\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n#### Compiling all files in a folder dynamically\n\nThis configuration will compress and mangle the files dynamically.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      files: [{\n          expand: true,\n          cwd: \'src/js\',\n          src: \'**/*.js\',\n          dest: \'dest/js\'\n      }]\n    }\n  }\n});\n```\n\n\n## Release History\n\n * 2014-02-27   v0.3.3   remove unnecessary calls to `grunt.template.process`\n * 2014-01-22   v0.3.2   fix handling of `sourceMapIncludeSources` option.\n * 2014-01-20   v0.3.1   fix relative path issue in sourcemaps\n * 2014-01-16   v0.3.0   refactor sourcemap support\n * 2013-11-09   v0.2.7   prepending banner if sourceMap option not set, addresses\n * 2013-11-08   v0.2.6   merged 45, 53, 85 (105 by way of duping 53) Added support for banners in uglified files with sourcemaps Updated docs\n * 2013-10-28   v0.2.5   Added warning for banners when using sourcemaps\n * 2013-09-02   v0.2.4   updated sourcemap format via /83\n * 2013-06-10   v0.2.3   added footer option\n * 2013-05-31   v0.2.2   Reverted /56 due to /58 until [chrome/239660](https://code.google.com/p/chromium/issues/detail?id=239660&q=sourcemappingurl&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified) [firefox/870361](https://bugzilla.mozilla.org/show_bug.cgi?id=870361) drop\n * 2013-05-22   v0.2.1   Bumped uglify to ~2.3.5 /55 /40 Changed sourcemappingUrl syntax /56 Disabled sorting of names for consistent mangling /44 Updated docs for sourceMapRoot /47 /25\n * 2013-03-14   v0.2.0   No longer report gzip results by default. Support `report` option.\n * 2013-01-30   v0.1.2   Added better error reporting Support for dynamic names of multiple sourcemaps\n * 2013-02-15   v0.1.1   First official release for Grunt 0.4.0.\n * 2013-01-18   v0.1.1rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.\n * 2013-01-09   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching back to this.files api.\n * 2012-11-28   v0.1.0   Work in progress, not yet officially released.\n\n---\n\nTask submitted by ["Cowboy" Ben Alman](http://benalman.com)\n\n*This file was generated on Sat Mar 01 2014 20:36:24.*\n',
+230 silly resolved     readmeFilename: 'README.md',
+230 silly resolved     _id: 'grunt-contrib-uglify@0.4.0',
+230 silly resolved     dist: { shasum: '1e5ef637dd0e15195c208964f7414acd28ce9a34' },
+230 silly resolved     _from: 'grunt-contrib-uglify@~0.4.0',
+230 silly resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.4.0.tgz' },
+230 silly resolved   { name: 'grunt-contrib-jshint',
+230 silly resolved     description: 'Validate files with JSHint.',
+230 silly resolved     version: '0.10.0',
+230 silly resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-jshint',
+230 silly resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+230 silly resolved     repository:
+230 silly resolved      { type: 'git',
+230 silly resolved        url: 'git://github.com/gruntjs/grunt-contrib-jshint.git' },
+230 silly resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-jshint/issues' },
+230 silly resolved     licenses: [ [Object] ],
+230 silly resolved     engines: { node: '>= 0.8.0' },
+230 silly resolved     scripts: { test: 'grunt test' },
+230 silly resolved     dependencies: { jshint: '~2.5.0', hooker: '~0.2.3' },
+230 silly resolved     devDependencies:
+230 silly resolved      { 'grunt-contrib-nodeunit': '~0.3.1',
+230 silly resolved        'grunt-contrib-internal': '~0.4.8',
+230 silly resolved        grunt: '~0.4.0' },
+230 silly resolved     peerDependencies: { grunt: '~0.4.0' },
+230 silly resolved     keywords: [ 'gruntplugin' ],
+230 silly resolved     files: [ 'tasks', 'LICENSE-MIT' ],
+230 silly resolved     readme: '# grunt-contrib-jshint v0.10.0 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-jshint.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-jshint)\n\n> Validate files with JSHint.\n\n\n\n## Getting Started\nThis plugin requires Grunt `~0.4.0`\n\nIf you haven\'t used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you\'re familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-contrib-jshint --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks(\'grunt-contrib-jshint\');\n```\n\n\n\n\n## Jshint task\n_Run this task with the `grunt jshint` command._\n\nTask targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.\n\nFor more explanations of the lint errors JSHint will throw at you please visit [jslinterrors.com](http://jslinterrors.com/).\n\n### Options\n\nAny specified option will be passed through directly to [JSHint][], thus you can specify any option that JSHint supports. See the [JSHint documentation][] for a list of supported options.\n\n[JSHint]: http://www.jshint.com/\n[JSHint documentation]: http://www.jshint.com/docs/\n\nA few additional options are supported:\n\n\n#### globals\n\nType: `Object`  \nDefault: `null`\n\nA map of global variables, with keys as names and a boolean value to determine if they are assignable. This is not a standard JSHint option, but is passed into the `JSHINT` function as its third argument. See the [JSHint documentation][] for more information.\n\n\n#### jshintrc\n\nType: `String` or `true`  \nDefault: `null`\n\nIf set to `true`, no config will be sent to jshint and jshint will search for `.jshintrc` files relative to the files being linted.\n\nIf a filename is specified, options and globals defined therein will be used. The `jshintrc` file must be valid JSON and looks something like this:\n\n```json\n{\n  "curly": true,\n  "eqnull": true,\n  "eqeqeq": true,\n  "undef": true,\n  "globals": {\n    "jQuery": true\n  }\n}\n```\n\n*Be aware that `jshintrc` settings are not merged with your Grunt options.*\n\n\n#### extensions\n\nType: `String`  \nDefault: `\'\'`\n\nA list of non-dot-js extensions to check.\n\n\n#### ignores\n\nType: `Array`  \nDefault: `null`\n\nA list of files and dirs to ignore. This will override your `.jshintignore` file if set and does not merge.\n\n\n#### force\n\nType: `Boolean`  \nDefault: `false`\n\nSet `force` to `true` to report JSHint errors but not fail the task.\n\n\n#### reporter\n\nType: `String`  \nDefault: `null`\n\nAllows you to modify this plugins output. By default it will use a built-in Grunt reporter. Set the path to your own custom reporter or to one of the built-in JSHint reporters: `jslint` or `checkstyle`.\n\nSee also: [Writing your own JSHint reporter.](http://jshint.com/docs/reporters/)\n\nYou can also use an external reporter. For example [jshint-stylish](https://github.com/sindresorhus/jshint-stylish):\n\n```\n$ npm install --save-dev jshint-stylish\n```\n\n```js\noptions: {\n    reporter: require(\'jshint-stylish\')\n}\n```\n\n#### reporterOutput\n\nType: `String`  \nDefault: `null`\n\nSpecify a filepath to output the results of a reporter. If `reporterOutput` is specified then all output will be written to the given filepath instead of printed to stdout.\n\n### Usage examples\n\n#### Wildcards\nIn this example, running `grunt jshint:all` (or `grunt jshint` because `jshint` is a [multi task](http://gruntjs.com/configuring-tasks#task-configuration-and-targets)) will lint the project\'s Gruntfile as well as all JavaScript files in the `lib` and `test` directories and their subdirectores, using the default JSHint options.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  jshint: {\n    all: [\'Gruntfile.js\', \'lib/**/*.js\', \'test/**/*.js\']\n  }\n});\n```\n\n#### Linting before and after concatenating\nIn this example, running `grunt jshint` will lint both the "beforeconcat" set and "afterconcat" sets of files. This is not ideal, because `dist/output.js` may get linted before it gets created via the [grunt-contrib-concat plugin](https://github.com/gruntjs/grunt-contrib-concat) `concat` task.\n\nIn this case, you should lint the "beforeconcat" files first, then concat, then lint the "afterconcat" files, by running `grunt jshint:beforeconcat concat jshint:afterconcat`.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  concat: {\n    dist: {\n      src: [\'src/foo.js\', \'src/bar.js\'],\n      dest: \'dist/output.js\'\n    }\n  },\n  jshint: {\n    beforeconcat: [\'src/foo.js\', \'src/bar.js\'],\n    afterconcat: [\'dist/output.js\']\n  }\n});\n```\n\n#### Specifying JSHint options and globals\n\nIn this example, custom JSHint options are specified. Note that when `grunt jshint:uses_defaults` is run, those files are linted using the default options, but when `grunt jshint:with_overrides` is run, those files are linted using _merged_ task/target options.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  jshint: {\n    options: {\n      curly: true,\n      eqeqeq: true,\n      eqnull: true,\n      browser: true,\n      globals: {\n        jQuery: true\n      },\n    },\n    uses_defaults: [\'dir1/**/*.js\', \'dir2/**/*.js\'],\n    with_overrides: {\n      options: {\n        curly: false,\n        undef: true,\n      },\n      files: {\n        src: [\'dir3/**/*.js\', \'dir4/**/*.js\']\n      },\n    }\n  },\n});\n```\n\n#### Ignoring specific warnings\n\nIf you would like to ignore a specific warning:\n\n```shell\n[L24:C9] W015: Expected \'}\' to have an indentation at 11 instead at 9.\n```\n\nYou can toggle it by prepending `-` to the warning id as an option:\n\n```js\ngrunt.initConfig({\n  jshint: {\n    ignore_warning: {\n      options: {\n        \'-W015\': true,\n      },\n      src: [\'**/*.js\'],\n    },\n  },\n});\n```\n\n\n## Release History\n\n * 2014-04-02   v0.10.0   Update to JSHint 2.5.0.\n * 2014-03-12   v0.9.2   Fixes a bug where reporterOutput was still passed to jshint.\n * 2014-03-12   v0.9.1   Don\'t pass reporterOutput option to jshint.\n * 2014-03-12   v0.9.0   Replace deprecated grunt.util._.clone with Object.create() Replace deprecated grunt.util.hooker with hooker lib Enhancing the readability of the output. Reporter output is relative to the output file. Pass jshint options to the external reporter.\n * 2013-12-25   v0.8.0   Update to jshint 2.4.0.\n * 2013-11-16   v0.7.2   Only print file name once per error.\n * 2013-10-31   v0.7.1   Ability to set jshintrc option to true to use jshint\'s native ability for finding .jshintrc files relative to the linted files.\n * 2013-10-23   v0.7.0   Update to jshint 2.3.0.\n * 2013-10-23   v0.6.5   Fix output when maxerr is low.\n * 2013-08-29   v0.6.4   jshintrc now loaded by jshint allowing comments.\n * 2013-08-15   v0.6.3   Fix module location for jshint 2.1.10.\n * 2013-07-29   v0.6.2   Update to jshint 2.1.7.\n * 2013-07-27   v0.6.1   Peg jshint to 2.1.4 until breaking changes in 2.1.5 are fixed.\n * 2013-06-02   v0.6.0   Dont always succeed the task when using a custom reporter. Bump jshint to 2.1.3.\n * 2013-05-22   v0.5.4   Fix default reporter to show offending file.\n * 2013-05-19   v0.5.3   Performance: Execute the reporter once rather than per file.\n * 2013-05-18   v0.5.2   Fix printing too many erroneous ignored file errors.\n * 2013-05-17   v0.5.1   Fix for when only 1 file is lint free.\n * 2013-05-17   v0.5.0   Bump to jshint 2.0. Add support for .jshintignore files and ignores option Add support for extensions option. Add support for custom reporters and output report to a file.\n * 2013-04-08   v0.4.3   Fix evaluation of predef option when it\'s an object.\n * 2013-04-08   v0.4.2   Avoid wiping force option when jshintrc is used.\n * 2013-04-06   v0.4.1   Fix to allow object type for deprecated predef.\n * 2013-04-04   v0.4.0   Revert task level options to override jshintrc files.\n * 2013-03-13   v0.3.0   Bump to JSHint 1.1.0. Add force option to report JSHint errors but not fail the task. Add error/warning code to message. Allow task level options to override jshintrc file.\n * 2013-02-26   v0.2.0   Bump to JSHint 1.0\n * 2013-02-15   v0.1.1   First official release for Grunt 0.4.0.\n * 2013-01-18   v0.1.1rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.\n * 2013-01-09   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.\n * 2012-10-18   v0.1.0   Work in progress, not yet officially released.\n\n---\n\nTask submitted by ["Cowboy" Ben Alman](http://benalman.com/)\n\n*This file was generated on Wed Apr 02 2014 09:05:43.*\n',
+230 silly resolved     readmeFilename: 'README.md',
+230 silly resolved     _id: 'grunt-contrib-jshint@0.10.0',
+230 silly resolved     dist: { shasum: 'b8f550c7dc6d524684546708c6271d729965f790' },
+230 silly resolved     _from: 'grunt-contrib-jshint@~0.10.0',
+230 silly resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-jshint/-/grunt-contrib-jshint-0.10.0.tgz' },
+230 silly resolved   { name: 'grunt-contrib-nodeunit',
+230 silly resolved     description: 'Run Nodeunit unit tests.',
+230 silly resolved     version: '0.3.3',
+230 silly resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-nodeunit',
+230 silly resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+230 silly resolved     repository:
+230 silly resolved      { type: 'git',
+230 silly resolved        url: 'git://github.com/gruntjs/grunt-contrib-nodeunit.git' },
+230 silly resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-nodeunit/issues' },
+230 silly resolved     licenses: [ [Object] ],
+230 silly resolved     engines: { node: '>= 0.8.0' },
+230 silly resolved     scripts: { test: 'grunt test' },
+230 silly resolved     dependencies: { nodeunit: '~0.8.0' },
+230 silly resolved     devDependencies:
+230 silly resolved      { 'grunt-contrib-jshint': '~0.8.0',
+230 silly resolved        'grunt-contrib-internal': '~0.4.6',
+230 silly resolved        'grunt-contrib-clean': '~0.5.0',
+230 silly resolved        grunt: '~0.4.0',
+230 silly resolved        tap: '~0.4.6' },
+230 silly resolved     peerDependencies: { grunt: '~0.4.0' },
+230 silly resolved     keywords: [ 'gruntplugin' ],
+230 silly resolved     files: [ 'tasks', 'LICENSE-MIT' ],
+230 silly resolved     readme: '# grunt-contrib-nodeunit v0.3.3 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-nodeunit.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-nodeunit)\n\n> Run Nodeunit unit tests.\n\n\n\n## Getting Started\nThis plugin requires Grunt `~0.4.0`\n\nIf you haven\'t used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you\'re familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-contrib-nodeunit --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks(\'grunt-contrib-nodeunit\');\n```\n\n\n\n\n## Nodeunit task\n_Run this task with the `grunt nodeunit` command._\n\nTask targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.\n\nThis plugin provides server-side JavaScript unit testing via [nodeunit](https://github.com/caolan/nodeunit/). If you\'re looking to test JavaScript that uses `window` or the DOM, please use the [grunt-contrib-qunit plugin](https://github.com/gruntjs/grunt-contrib-qunit)`qunit` task.\n\n### Settings\n\n#### options.reporter\n* Type: `String`  \n* Default: `\'grunt\'`  \n\nSpecifies the reporter you want to use. For example, `default`, `verbose` or `tap`.\n\n#### options.reporterOutput\n* Type: `Boolean`  \n* Default: `false`  \n\nSpecifies the file the `reporter`\'s output should be saved to. For example, `tests.tap`.\n\n#### options.reporterOptions\n* Type: `Object`\n* Default: `{}`\n\nSpecifies the options passed to the `reporter`.  For example, the `junit` reporter requires the `output` option\nto be set:\n\n```js\ngrunt.initConfig({\n  nodeunit: {\n    all: [\'test/*_test.js\'],\n    options: {\n      reporter: \'junit\',\n      reporterOptions: {\n        output: \'outputdir\'\n      }\n    }\n  }\n});\n```\n\n### Usage examples\n\n#### Wildcards\n\nIn this example, `grunt nodeunit:all` or `grunt nodeunit` will test all files ending with `_test.js` in the `test` directory.\n\n```js\ngrunt.initConfig({\n  nodeunit: {\n    all: [\'test/*_test.js\']\n  }\n});\n```\n\nWith a slight modification, `grunt nodeunit:all` will test files matching the same pattern in the `test` directory _and all subdirectories_.\n\n```js\ngrunt.initConfig({\n  nodeunit: {\n    all: [\'test/**/*_test.js\']\n  }\n});\n```\n\n#### Using Other Reporters\n\nTo use a reporter other than the default one, you can specify the `reporter` and `reporterOutput` parameters.\n\n```js\ngrunt.initConfig({\n  nodeunit: {\n    all: [\'test/*_test.js\'],\n    options: {\n      reporter: \'tap\',\n      reporterOutput: \'tests.tap\',\n      reporterOptions: {\n        output: \'outputdir\'\n      }\n    }\n  }\n});\n```\n\n\n## Release History\n\n * 2014-01-26   v0.3.0   Adds \'reporter\' and \'reporterOutput\' options.\n * 2013-10-19   v0.2.2   Allow missing operators on error object.\n * 2013-09-24   v0.2.1   Fix error display.\n * 2013-05-23   v0.2.0   Bump nodeunit to v0.8.0\n * 2013-02-15   v0.1.2   First official release for Grunt 0.4.0.\n * 2013-01-18   v0.1.2rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.\n * 2013-01-09   v0.1.2rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.\n * 2012-11-13   v0.1.1   Switch to this.file api internally.\n * 2012-11-04   v0.1.0   Work in progress, not yet officially released.\n\n---\n\nTask submitted by ["Cowboy" Ben Alman](http://benalman.com)\n\n*This file was generated on Tue Mar 11 2014 18:48:11.*\n',
+230 silly resolved     readmeFilename: 'README.md',
+230 silly resolved     _id: 'grunt-contrib-nodeunit@0.3.3',
+230 silly resolved     dist: { shasum: '25ec39acedd1d58f9b8dade37c13fdbd6f0ff129' },
+230 silly resolved     _from: 'grunt-contrib-nodeunit@~0.3.3',
+230 silly resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-nodeunit/-/grunt-contrib-nodeunit-0.3.3.tgz' } ]
+231 info install grunt-contrib-uglify@0.4.0 into /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful
+232 info install grunt-contrib-jshint@0.10.0 into /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful
+233 info install grunt-contrib-nodeunit@0.3.3 into /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful
+234 info installOne grunt-contrib-uglify@0.4.0
+235 warn engine grunt-contrib-uglify@0.4.0: wanted: {"node":">=0.10.0"} (current: {"node":"v0.8.18","npm":"1.2.2"})
+236 info installOne grunt-contrib-jshint@0.10.0
+237 info installOne grunt-contrib-nodeunit@0.3.3
+238 verbose from cache /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package/package.json
+239 verbose from cache /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package/package.json
+240 verbose from cache /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package/package.json
+241 info /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify unbuild
+242 verbose read json /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify/package.json
+243 info /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-jshint unbuild
+244 verbose read json /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-jshint/package.json
+245 info /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-nodeunit unbuild
+246 verbose read json /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-nodeunit/package.json
+247 verbose tar unpack /Users/cmitchell/.npm/grunt-contrib-uglify/0.4.0/package.tgz
+248 verbose tar unpack /Users/cmitchell/.npm/grunt-contrib-jshint/0.10.0/package.tgz
+249 verbose tar unpack /Users/cmitchell/.npm/grunt-contrib-nodeunit/0.3.3/package.tgz
+250 silly lockFile d72ea38c-ode-modules-grunt-contrib-uglify /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify
+251 verbose lock /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify /Users/cmitchell/.npm/d72ea38c-ode-modules-grunt-contrib-uglify.lock
+252 silly lockFile b98bd707-ode-modules-grunt-contrib-jshint /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-jshint
+253 verbose lock /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-jshint /Users/cmitchell/.npm/b98bd707-ode-modules-grunt-contrib-jshint.lock
+254 silly lockFile 04ad5374-e-modules-grunt-contrib-nodeunit /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-nodeunit
+255 verbose lock /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-nodeunit /Users/cmitchell/.npm/04ad5374-e-modules-grunt-contrib-nodeunit.lock
+256 silly gunzTarPerm modes [ '755', '644' ]
+257 silly gunzTarPerm modes [ '755', '644' ]
+258 silly gunzTarPerm modes [ '755', '644' ]
+259 silly gunzTarPerm extractEntry package.json
+260 silly gunzTarPerm extractEntry package.json
+261 silly gunzTarPerm extractEntry package.json
+262 silly gunzTarPerm extractEntry README.md
+263 silly gunzTarPerm extractEntry LICENSE-MIT
+264 silly gunzTarPerm extractEntry README.md
+265 silly gunzTarPerm extractEntry LICENSE-MIT
+266 silly gunzTarPerm extractEntry README.md
+267 silly gunzTarPerm extractEntry LICENSE-MIT
+268 silly gunzTarPerm extractEntry tasks/jshint.js
+269 silly gunzTarPerm extractEntry tasks/lib/jshint.js
+270 silly gunzTarPerm extractEntry tasks/nodeunit.js
+271 silly gunzTarPerm extractEntry tasks/uglify.js
+272 silly gunzTarPerm extractEntry tasks/lib/uglify.js
+273 verbose read json /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-nodeunit/package.json
+274 silly lockFile 04ad5374-e-modules-grunt-contrib-nodeunit /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-nodeunit
+275 verbose read json /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-jshint/package.json
+276 info preinstall grunt-contrib-nodeunit@0.3.3
+277 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-nodeunit/package.json
+278 verbose readDependencies using package.json deps
+279 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-nodeunit/package.json
+280 verbose read json /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify/package.json
+281 silly lockFile b98bd707-ode-modules-grunt-contrib-jshint /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-jshint
+282 verbose readDependencies using package.json deps
+283 verbose cache add [ 'nodeunit@~0.8.0', null ]
+284 verbose cache add name=undefined spec="nodeunit@~0.8.0" args=["nodeunit@~0.8.0",null]
+285 verbose parsed url { pathname: 'nodeunit@~0.8.0',
+285 verbose parsed url   path: 'nodeunit@~0.8.0',
+285 verbose parsed url   href: 'nodeunit@~0.8.0' }
+286 verbose cache add name="nodeunit" spec="~0.8.0" args=["nodeunit","~0.8.0"]
+287 verbose parsed url { pathname: '~0.8.0', path: '~0.8.0', href: '~0.8.0' }
+288 verbose addNamed [ 'nodeunit', '~0.8.0' ]
+289 verbose addNamed [ null, '>=0.8.0- <0.9.0-' ]
+290 silly lockFile d220e1f3-nodeunit-0-8-0 nodeunit@~0.8.0
+291 verbose lock nodeunit@~0.8.0 /Users/cmitchell/.npm/d220e1f3-nodeunit-0-8-0.lock
+292 info preinstall grunt-contrib-jshint@0.10.0
+293 silly lockFile d72ea38c-ode-modules-grunt-contrib-uglify /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify
+294 silly addNameRange { name: 'nodeunit', range: '>=0.8.0- <0.9.0-', hasData: false }
+295 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-jshint/package.json
+296 verbose url raw nodeunit
+297 verbose url resolving [ 'https://registry.npmjs.org/', './nodeunit' ]
+298 verbose url resolved https://registry.npmjs.org/nodeunit
+299 info trying registry request attempt 1 at 16:38:57
+300 http GET https://registry.npmjs.org/nodeunit
+301 verbose readDependencies using package.json deps
+302 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-jshint/package.json
+303 verbose readDependencies using package.json deps
+304 info preinstall grunt-contrib-uglify@0.4.0
+305 verbose cache add [ 'jshint@~2.5.0', null ]
+306 verbose cache add name=undefined spec="jshint@~2.5.0" args=["jshint@~2.5.0",null]
+307 verbose parsed url { pathname: 'jshint@~2.5.0',
+307 verbose parsed url   path: 'jshint@~2.5.0',
+307 verbose parsed url   href: 'jshint@~2.5.0' }
+308 verbose cache add name="jshint" spec="~2.5.0" args=["jshint","~2.5.0"]
+309 verbose parsed url { pathname: '~2.5.0', path: '~2.5.0', href: '~2.5.0' }
+310 verbose addNamed [ 'jshint', '~2.5.0' ]
+311 verbose addNamed [ null, '>=2.5.0- <2.6.0-' ]
+312 silly lockFile 0b5a3cd2-jshint-2-5-0 jshint@~2.5.0
+313 verbose lock jshint@~2.5.0 /Users/cmitchell/.npm/0b5a3cd2-jshint-2-5-0.lock
+314 verbose cache add [ 'hooker@~0.2.3', null ]
+315 verbose cache add name=undefined spec="hooker@~0.2.3" args=["hooker@~0.2.3",null]
+316 verbose parsed url { pathname: 'hooker@~0.2.3',
+316 verbose parsed url   path: 'hooker@~0.2.3',
+316 verbose parsed url   href: 'hooker@~0.2.3' }
+317 verbose cache add name="hooker" spec="~0.2.3" args=["hooker","~0.2.3"]
+318 verbose parsed url { pathname: '~0.2.3', path: '~0.2.3', href: '~0.2.3' }
+319 verbose addNamed [ 'hooker', '~0.2.3' ]
+320 verbose addNamed [ null, '>=0.2.3- <0.3.0-' ]
+321 silly lockFile 2bcd1457-hooker-0-2-3 hooker@~0.2.3
+322 verbose lock hooker@~0.2.3 /Users/cmitchell/.npm/2bcd1457-hooker-0-2-3.lock
+323 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify/package.json
+324 silly addNameRange { name: 'jshint', range: '>=2.5.0- <2.6.0-', hasData: false }
+325 silly addNameRange { name: 'hooker', range: '>=0.2.3- <0.3.0-', hasData: false }
+326 verbose readDependencies using package.json deps
+327 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify/package.json
+328 verbose readDependencies using package.json deps
+329 verbose url raw hooker
+330 verbose url resolving [ 'https://registry.npmjs.org/', './hooker' ]
+331 verbose url resolved https://registry.npmjs.org/hooker
+332 info trying registry request attempt 1 at 16:38:57
+333 verbose etag "AN4YLJQRT6XSCVFEC6PSGV8IK"
+334 http GET https://registry.npmjs.org/hooker
+335 verbose cache add [ 'uglify-js@^2.4.0', null ]
+336 verbose cache add name=undefined spec="uglify-js@^2.4.0" args=["uglify-js@^2.4.0",null]
+337 verbose parsed url { pathname: 'uglify-js@^2.4.0',
+337 verbose parsed url   path: 'uglify-js@^2.4.0',
+337 verbose parsed url   href: 'uglify-js@^2.4.0' }
+338 verbose cache add name="uglify-js" spec="^2.4.0" args=["uglify-js","^2.4.0"]
+339 verbose parsed url { pathname: '^2.4.0', path: '^2.4.0', href: '^2.4.0' }
+340 verbose addNamed [ 'uglify-js', '^2.4.0' ]
+341 verbose addNamed [ null, null ]
+342 silly lockFile 0517be62-uglify-js-2-4-0 uglify-js@^2.4.0
+343 verbose lock uglify-js@^2.4.0 /Users/cmitchell/.npm/0517be62-uglify-js-2-4-0.lock
+344 verbose cache add [ 'chalk@^0.4.0', null ]
+345 verbose cache add name=undefined spec="chalk@^0.4.0" args=["chalk@^0.4.0",null]
+346 verbose parsed url { pathname: 'chalk@^0.4.0',
+346 verbose parsed url   path: 'chalk@^0.4.0',
+346 verbose parsed url   href: 'chalk@^0.4.0' }
+347 verbose cache add name="chalk" spec="^0.4.0" args=["chalk","^0.4.0"]
+348 verbose parsed url { pathname: '^0.4.0', path: '^0.4.0', href: '^0.4.0' }
+349 verbose addNamed [ 'chalk', '^0.4.0' ]
+350 verbose addNamed [ null, null ]
+351 silly lockFile b2f4396d-chalk-0-4-0 chalk@^0.4.0
+352 verbose lock chalk@^0.4.0 /Users/cmitchell/.npm/b2f4396d-chalk-0-4-0.lock
+353 info addNameTag [ 'uglify-js', '^2.4.0' ]
+354 info addNameTag [ 'chalk', '^0.4.0' ]
+355 verbose url raw jshint
+356 verbose url resolving [ 'https://registry.npmjs.org/', './jshint' ]
+357 verbose url resolved https://registry.npmjs.org/jshint
+358 info trying registry request attempt 1 at 16:38:57
+359 verbose etag "B0JN54J1CH8YD9YFHNEL4OKJM"
+360 http GET https://registry.npmjs.org/jshint
+361 verbose cache add [ 'maxmin@^0.1.0', null ]
+362 verbose cache add name=undefined spec="maxmin@^0.1.0" args=["maxmin@^0.1.0",null]
+363 verbose parsed url { pathname: 'maxmin@^0.1.0',
+363 verbose parsed url   path: 'maxmin@^0.1.0',
+363 verbose parsed url   href: 'maxmin@^0.1.0' }
+364 verbose cache add name="maxmin" spec="^0.1.0" args=["maxmin","^0.1.0"]
+365 verbose parsed url { pathname: '^0.1.0', path: '^0.1.0', href: '^0.1.0' }
+366 verbose addNamed [ 'maxmin', '^0.1.0' ]
+367 verbose addNamed [ null, null ]
+368 silly lockFile c75f66b7-maxmin-0-1-0 maxmin@^0.1.0
+369 verbose lock maxmin@^0.1.0 /Users/cmitchell/.npm/c75f66b7-maxmin-0-1-0.lock
+370 info addNameTag [ 'maxmin', '^0.1.0' ]
+371 verbose url raw chalk
+372 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+373 verbose url resolved https://registry.npmjs.org/chalk
+374 info trying registry request attempt 1 at 16:38:57
+375 verbose etag "9Q8BQPJ0UTH3JF5RDUAJW0NJK"
+376 http GET https://registry.npmjs.org/chalk
+377 verbose url raw uglify-js
+378 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+379 verbose url resolved https://registry.npmjs.org/uglify-js
+380 info trying registry request attempt 1 at 16:38:57
+381 verbose etag "6LEU1RMD4WWQJ35F29VBNYIRR"
+382 http GET https://registry.npmjs.org/uglify-js
+383 verbose url raw maxmin
+384 verbose url resolving [ 'https://registry.npmjs.org/', './maxmin' ]
+385 verbose url resolved https://registry.npmjs.org/maxmin
+386 info trying registry request attempt 1 at 16:38:57
+387 verbose etag "BKCDAJ25CF7UAXNQ3GZ3DFBZ6"
+388 http GET https://registry.npmjs.org/maxmin
+389 http 304 https://registry.npmjs.org/hooker
+390 silly registry.get cb [ 304,
+390 silly registry.get   { date: 'Sat, 05 Jul 2014 22:38:57 GMT',
+390 silly registry.get     server: 'Apache',
+390 silly registry.get     via: '1.1 varnish',
+390 silly registry.get     'last-modified': 'Sat, 05 Jul 2014 22:38:57 GMT',
+390 silly registry.get     'cache-control': 'max-age=30',
+390 silly registry.get     etag: '"AN4YLJQRT6XSCVFEC6PSGV8IK"',
+390 silly registry.get     'x-served-by': 'cache-dfw1831-DFW',
+390 silly registry.get     'x-cache': 'HIT',
+390 silly registry.get     'x-cache-hits': '1',
+390 silly registry.get     'x-timer': 'S1404599937.481204,VS0,VE0',
+390 silly registry.get     vary: 'Accept',
+390 silly registry.get     'content-length': '0',
+390 silly registry.get     'keep-alive': 'timeout=10, max=50',
+390 silly registry.get     connection: 'Keep-Alive' } ]
+391 verbose etag hooker from cache
+392 silly addNameRange number 2 { name: 'hooker', range: '>=0.2.3- <0.3.0-', hasData: true }
+393 silly addNameRange versions [ 'hooker', [ '0.2.3' ] ]
+394 verbose addNamed [ 'hooker', '0.2.3' ]
+395 verbose addNamed [ '0.2.3', '0.2.3' ]
+396 silly lockFile 97e6505f-hooker-0-2-3 hooker@0.2.3
+397 verbose lock hooker@0.2.3 /Users/cmitchell/.npm/97e6505f-hooker-0-2-3.lock
+398 verbose read json /Users/cmitchell/.npm/hooker/0.2.3/package/package.json
+399 silly lockFile 97e6505f-hooker-0-2-3 hooker@0.2.3
+400 silly lockFile 2bcd1457-hooker-0-2-3 hooker@~0.2.3
+401 http 200 https://registry.npmjs.org/chalk
+402 silly registry.get cb [ 200,
+402 silly registry.get   { date: 'Sat, 05 Jul 2014 22:38:57 GMT',
+402 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+402 silly registry.get     etag: '"59CSOUKL3SN8SI68RJFYBH9Z7"',
+402 silly registry.get     'content-type': 'application/json',
+402 silly registry.get     'cache-control': 'max-age=30',
+402 silly registry.get     'content-length': '14809',
+402 silly registry.get     'accept-ranges': 'bytes',
+402 silly registry.get     via: '1.1 varnish',
+402 silly registry.get     age: '229',
+402 silly registry.get     'x-served-by': 'cache-dfw1827-DFW',
+402 silly registry.get     'x-cache': 'HIT',
+402 silly registry.get     'x-cache-hits': '1',
+402 silly registry.get     'x-timer': 'S1404599937.496769,VS0,VE0',
+402 silly registry.get     vary: 'Accept',
+402 silly registry.get     'keep-alive': 'timeout=10, max=50',
+402 silly registry.get     connection: 'Keep-Alive' } ]
+403 silly lockFile b2f4396d-chalk-0-4-0 chalk@^0.4.0
+404 verbose about to build /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify
+405 info /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify unbuild
+406 verbose from cache /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules/grunt-contrib-uglify/package.json
+407 info preuninstall grunt-contrib-uglify@0.4.0
+408 info uninstall grunt-contrib-uglify@0.4.0
+409 verbose true,/Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules,/Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful/node_modules unbuild grunt-contrib-uglify@0.4.0
+410 info postuninstall grunt-contrib-uglify@0.4.0
+411 error Error: No compatible version found: chalk@'^0.4.0'
+411 error Valid install targets:
+411 error ["0.1.0","0.1.1","0.2.0","0.2.1","0.3.0","0.4.0","0.5.0"]
+411 error     at installTargetsError (/usr/local/Cellar/node/0.8.18/lib/node_modules/npm/lib/cache.js:674:10)
+411 error     at /usr/local/Cellar/node/0.8.18/lib/node_modules/npm/lib/cache.js:589:10
+411 error     at saved (/usr/local/Cellar/node/0.8.18/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+411 error     at /usr/local/Cellar/node/0.8.18/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:218:7
+411 error     at Object.oncomplete (fs.js:297:15)
+412 error If you need help, you may report this log at:
+412 error     <http://github.com/isaacs/npm/issues>
+412 error or email it to:
+412 error     <npm-@googlegroups.com>
+413 error System Darwin 13.2.0
+414 error command "/usr/local/Cellar/node/0.8.18/bin/node" "/usr/local/bin/npm" "install"
+415 error cwd /Applications/XAMPP/xamppfiles/htdocs/cmitchell/AssureOffice/1derful
+416 error node -v v0.8.18
+417 error npm -v 1.2.2
+418 verbose exit [ 1, true ]

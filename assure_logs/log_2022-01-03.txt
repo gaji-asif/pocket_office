@@ -1,0 +1,9 @@
+2022-01-03 9:42:23 - NOTICE -->D:\xampp\htdocs\ums\xactbid\login.php at Line 20:  Try database - assure - localhost
+2022-01-03 9:51:13 - NOTICE -->D:\xampp\htdocs\ums\xactbid\includes\ajax\add_user.php at Line 61:  emailFromTemplate - Failed: Could not instantiate mail function.; array (
+  0 => 'new_user',
+  1 => '270',
+)
+2022-01-03 9:51:47 - NOTICE -->D:\xampp\htdocs\ums\xactbid\login.php at Line 20:  Try database - assure - localhost
+2022-01-03 9:51:47 - NOTICE -->D:\xampp\htdocs\ums\xactbid\login.php at Line 44:  Failed login - Invalid credentials: , , 
+2022-01-03 9:51:59 - NOTICE -->D:\xampp\htdocs\ums\xactbid\login.php at Line 20:  Try database - assure - localhost
+2022-01-03 9:52:22 - NOTICE -->D:\xampp\htdocs\ums\xactbid\login.php at Line 20:  Try database - assure - localhost

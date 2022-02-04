@@ -1,0 +1,1 @@
+INSERT INTO charges VALUES (0, '8', '66', 's\'ss', now())

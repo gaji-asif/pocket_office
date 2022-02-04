@@ -1,0 +1,145 @@
+﻿<div class="pages ">
+    <form class="searchbar searchbar-init" data-search-list=".list-block-search" data-search-in=".item-title" data-found=".searchbar-found" data-not-found=".searchbar-not-found">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+    <div data-page="job-tabs" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <input type="hidden" id="hdnoffset" value="0">
+            <input type="hidden" id="hdntotalrecord" value="0">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">
+                    Jobs
+                </div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+
+                <input id="hdnJobid" type="hidden" value="0" />
+                <div class="main_contact Demo-table-container" style="clear: both;">
+                    <div class="contactform">
+
+                        <div class="title_no">
+                            <a id="lnkjobtabback" class="editback_btn" href="javascript:;"></a>
+                            <span class="headjobno">content</span>
+                            <a href="#" data-popup=".popup-submenu" class="open-popup btn btn-blue btn-small btn-drop-down"><i class="icon-pencil"></i></a>
+                        </div>
+                        <div class="bar">
+                            <div class="percentage" style="width: 0">60%</div>
+                        </div>
+                        <div class="demo-select job_tabs_top">
+                            <span id="lblstgedrd" style="display:none;">Jump to Stage:</span>
+                            <div id="divjobheadprogess" class="headjobprgressbar Jobs_headselect">
+                            </div>
+                            <span>
+                                <input type="submit" name="GO" style="display:none;" class="form_submit bulebtn_comn btnJumoToStage jobs_tabs_blk" id="btnJumoToStage" value="GO" /></span>
+                            <div class="headjobstatus"></div>
+                        </div>
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <a class="item-link" href="#" data-rel="back" onclick="GetJobSection('Details');">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Details</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item-link" href="#" onclick="GetJobSection('Journals');">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Journals</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="item-link" href="#" onclick="GetJobSection('Subscribers');">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Subscribers</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item-link" href="#" onclick="GetJobSection('Uploads');">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Uploads</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item-link" href="#" onclick="GetJobSection('Stages');">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Stages</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item-link" href="#" onclick="GetJobSection('Contacts');">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Contacts</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item-link" href="#" onclick="GetJobSection('Invoice');">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Invoice</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="item-link" href="#" id="aUpdatebookmark">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">
+                                                    <img src="images/bookmark_16.png" />
+                                                    <span id="sbookmarkLinkText"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=""></div>
+                    </div>
+                    <div style="display: none;">
+                        <a id="alinkAddAppt" class="alinkAddAppt" href="javascript:;">Add Appointment&nbsp;|&nbsp;</a>
+                        <a id="alinkAddMatSheet" class="alinkAddMatSheet" href="javascript:;">Add Material Sheet&nbsp;|&nbsp;</a>
+                        <a id="alinkAddRepair" class="alinkAddRepair" href="javascript:;">Add Repair</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+        </script>
+    </div>
+
+
+</div>

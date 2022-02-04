@@ -1,0 +1,140 @@
+<div class="pages">
+    <div data-page="addUpdateAccount" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divOfficeHeaderText"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div id="divAddUpdateAccount">
+                        <label id="lblAddUpdateAccount" style="display: none; color: Red; font-weight: bold;"></label>
+                        <div class="Demo-table-container ">
+                                <div class="contactform" id="divAddAccount">
+                                    <div>
+                                        <label>
+                                            Company Name: *</label>
+                                        <input type="text" id="txtAcctTitle" name="txtAcctTitle" class="form_input form-control validation validate[required[Enter Name]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Primary Contact: *</label>
+                                        <input type="text" id="txtAcctPriContact" maxlength="50" name="txtAcctPriContact"  class="form_input form-control validation validate[required[Enter Primary Contact]] "/>
+                                    </div>
+                                    <div id="divAccFN" style="display:block;">
+                                        <label>
+                                            First Name: *</label>
+                                        <input type="text" id="txtAcctFirstName" name="txtAcctFirstName"  class="form_input form-control validation validate[required[Enter Name]]"/>
+                                    </div>
+                                    <div id="divAccLN" style="display:block;">
+                                        <label>
+                                            Last Name: *</label>
+                                        <input type="text" id="txtAcctLastName" name="txtAcctLastName"  class="form_input form-control validation validate[required[Enter Name]]"/>
+                                    </div>
+                                    <div id="divAccUC" style="display:block;">
+                                        <label>
+                                            Username: *</label>
+                                        <input type="text" id="txtAcctUserName" name="txtAcctUserName"  class="form_input form-control validation validate[required[Enter Name]]"/>
+                                    </div>
+                                    <div id="divAccPWD" style="display:block;">
+                                        <label>
+                                            Password: *</label>
+                                        <input type="password" id="txtAcctPwd" name="txtAcctPwd" class="form_input form-control validation validate[required[Enter Password]],validate[length[7,20]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Email: *</label>
+                                        <input type="text" id="txtAcctEmail" name="txtAcctEmail" class="form_input form-control validation validate[required[Enter Email]] validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Phone: *</label>
+                                        <input type="text" id="txtAcctPhone" name="txtAcctPhone" class="masked-phone form_input form-control validation validate[required[Enter Phone Number]]  validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Address: *</label>
+                                        <input type="text" id="txtAcctAddress" name="txtAcctAddress" class="form_input form-control validation validate[required[Enter Address]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            City: *</label>
+                                        <input type="text" id="txtAcctCity" name="txtAcctCity" class="form_input form-control validation validate[required[Enter City]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            State: *</label>
+                                        <select id="ddlAcctState" name="ddlAcctState" class=" validation validate[funcCall[selectval[Select State]]]">
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Zip: *</label>
+                                        <input type="text" id="txtAcctZip" name="txtAcctZip" class="form_input form-control validation validate[required[Enter Zip Code]] validate[funcCall[Onlydigitsex0[Enter numbers only]]] validate[funcCall[validateZipCode[Invalid Zip]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Job Unit: *</label>
+                                        <input type="text" id="txtAcctJobUnit" name="txtAcctJobUnit" class="form_input form-control validation validate[required[Enter Job Unit]] " />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            License Limit: *</label>
+                                        <input type="text" id="txtLicenseLimit" name="txtLicenseLimit" class="form_input form-control validation validate[funcCall[Onlydigitsex0[Enter numbers only]]]" />
+                                    </div>
+                                    <!--<div>
+                                        <div>
+                                        <span>
+                                            Update Logo:  &nbsp;<label id="lblAcctLogo" ></label>
+                                            <button id="lnkcapturegallery">Upload from Gallery</button>
+                                        </span>
+                                            
+                                            </div>
+                                        
+                                        <input name="hdnAcctLogo" type="hidden" id="hdnAcctLogo" />
+                                        
+                                      
+                                    </div>-->
+                                    <div style="margin-top: 0px;">
+                                          <!--<form enctype='multipart/form-data' action='?' method="post">
+                                                <input type="file" id="fluAcctLogo" name="fluAcctLogo" class="form_input form-control  validation validate[funcCall[OnlyImage[Upload must be an image]]]" />
+                                        </form>-->
+                                        <div class="upload_link">
+                                           <span class="upload_link_teax">
+                                                <span>Upload Logo:&nbsp;  </span>
+                                               <label id="lblAcctLogo" ></label>
+                                                <span id="spnUserAcctImg"></span>
+                                               
+                                            <input name="hdnAcctLogo" type="hidden" id="hdnAcctLogo" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                            <!--<button id="lnkcapturegallery">Upload from Gallery</button>-->
+                                            <form enctype='multipart/form-data' action='?' method="post">
+                                                  <input type="file" id="fluSysLogo" name="fluSysLogo" class="form_input form-control  validation validate[funcCall[OnlyImage[Upload must be an image]]]" />
+                                                  <!--<input type="submit" value="Save" id="btnSysLogoUpload" class="form_submit bulebtn_comn" name="btnSysLogoUpload">-->
+                                            </form>
+                                        </div>
+                                    <div style="display: inline-block; width:100%;">
+                                        <input type="submit" name="Save" class="form_submit bulebtn_comn" id="btnAddAccount" value="Save" />
+                                        <input type="submit" name="Cancel" class="form_submit greybtn_comn" id="btnCancelAddAccount" value="Cancel" />
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+

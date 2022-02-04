@@ -1,0 +1,63 @@
+<div class="pages">
+    <div data-page="editsupplier" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a></div>
+                <div class="navbar_page_center">
+                    Edit Suppliers</div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a></div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div>
+                        <div id="divEditSupplier">
+                           
+                            <div class="Demo-table-container table-responsive">
+                                <label id="lblEditSupplier" style="display: none; color: Red;">
+                                </label>
+                                <div class="contactform">
+                                    <div>
+                                        <label>
+                                            Supplier<span class="red">*</span>:</label>
+                                        <input type="text" id="txtSupplier" name="txtSupplier" maxlength="45" class="form_input form-control validation validate[required[Enter Supplier]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Contact:</label>
+                                        <input type="text" id="txtContact" name="txtContact" class="form_input form-control" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Phone<span class="red">*</span>:</label>
+                                        <input type="text" id="txtPhone" name="txtPhone" class="form_input form-control validation validate[required[Enter Phone Number]], validate[funcCall[Onlydigitsex0[Enter numbers only]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Fax:</label>
+                                        <input type="text" id="txtFax" name="txtFax" class="form_input form-control validation validate[funcCall[Onlydigitsex0[Enter numbers only]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Email<span class="red">*</span>:</label>
+                                        <input type="text" id="txtEmail" name="txtEmail" class="form_input form-control validation validate[required[Enter Email]],validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" />
+                                    </div>
+                                    <div>
+                                        <input type="submit" name="Submit" class="form_submit"
+                                            id="btnUpdateSupplier" value="Submit" />
+                                        <input type="submit" name="Delete" class="form_submit"
+                                            id="btndelete" value="Delete" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>

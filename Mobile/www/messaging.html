@@ -1,0 +1,139 @@
+﻿<div class="pages">
+    <div data-page="messaging" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <input type="hidden" id="hdnoffset" value="0">
+            <input type="hidden" id="hdntotalrecord" value="0">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divMainHeaderForMessaging">Messaging</div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div id="divMessagingList" style="display: block;">
+                <div id="divBack" style="display: none;" >
+                            <a id="aBack" class="back_btn"></a>
+                        </div>
+                    <div>
+                        <table border="0" cellspacing="0" cellpadding="0" class="main-view-table" width="100%">
+                           <!-- <tr valign='middle'>
+                                <td class="mese_width">&nbsp;</td>
+                                <td class="text-right list-search ">
+                                    <span>
+                                        <input type="text" id="txt_Search" class="list-filter-input" value="">
+                                        <i class="icon-search search_mesege"></i>
+                                    </span>
+                                </td>
+                            </tr>-->
+                            <tr valign='middle'>
+                                <td class="mese_width">
+                                    <div>
+                                        <span>
+                                            <input type="button" value="Inbox" class="reset-list-btn bulebtn_comn" id="btnInbox">
+                                        </span>
+                                        <span>
+                                            <input type="button" value="Sent" class="reset-list-btn bulebtn_comn" id="btnSent">
+                                        </span>
+                                        <span>
+                                            <input type="button" value="Trash" class="reset-list-btn bulebtn_comn" id="btnTrash">
+                                        </span>
+                                        <span>
+                                            <input type="button" value="Compose" class="reset-list-btn bulebtn_comn" id="btnCompose">
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="text-right list-search list_mes_search">
+                                    <span>
+                                        <input type="text" id="txt_Search" class="list-filter-input" value="" placeholder="Search message here">
+                                        <i class="icon-search search_mesege"></i>
+                                    </span>
+                                </td>
+                                <td class="text-right mese_search">
+                                    
+                                    <span>
+                                        <input type="button" value="Inbox" class="reset-list-btn bulebtn_comn" id="btnSrchInbox">
+                                    </span>
+                                    <span>
+                                        <input type="button" value="Sent" class="reset-list-btn bulebtn_comn" id="btnSrchSent">
+                                    </span>
+                                    <span>
+                                        <input type="button" value="Trash" class="reset-list-btn bulebtn_comn" id="btnSrchTrash">
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="Demo-table-container table-responsive table_hight">
+                        <div>
+                            <label id="lblMessage" style="display: none;"></label>
+                        </div>
+                        <div id="divBindAllMessages">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="divMsgCompose" style="display: none;">
+                    <div class="contactform">
+                        <div>
+                            <label id="lblSendMailMsg" style="display: none; color:red; font-weight:bold;"></label>
+                        </div>
+                        <!--<div>
+                            <a class="button_full">Compose Message </a>
+                        </div>-->
+                        <div>
+                            <label>
+                                To User:</label>
+                            <select id="ddlUser">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div><label>&nbsp;</label>OR</div>
+                        <div>
+                            <label>
+                                To Group: 	
+                            </label>
+                            <select id="ddlGroup">
+                                <option value=""></option>
+                                <option value='ALL'>All Users</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>
+                                Subject:*</label>
+                            <input type="text" id="txtSubject" name="txtSubject" class="form_input form-control validation validate[required[Enter Subject]]" />
+                        </div>
+                        <div>
+                            <label>
+                                Message:*</label>
+                            <!--<input type="text" id="txtMessage" name="txtMessage" class="form_input form-control validation validate[required[Enter Message]]" />-->
+                            <textarea id="txtMessage" class="edit_txtNotes validation  validate[funcCall[validateTextArea[Enter Message]]]" rows="5" name="txtMessage"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" name="Send" class="form_submit bulebtn_comn" id="btnMsgSend" value="Send" />
+                            <input type="submit" name="Cancel" class="form_submit greybtn_comn" id="btnMsgCancel" value="Cancel" />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div><label id="lblMsgDetail" style="display: none; color:red; font-weight:bold;"></label></div>
+                    <div id="divDetailBack" class="messaging_blk" style="display: none;">
+                           <a id="adetailBack" class="back_btn"></a>
+                    </div>
+                    <div id="divMessageDetail" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+

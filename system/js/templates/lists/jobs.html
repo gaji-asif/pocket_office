@@ -1,0 +1,42 @@
+<div class="box">
+	<div class="box-header">
+		<h2><i class="halflings-icon user"></i><span class="break"></span>Jobs</h2>
+	</div>
+	<div class="box-content">
+		<table id="jobs-list" class="table table-bordered table-striped table-hover table-condensed bootstrap-datatable datatable">
+			<thead>
+				<tr>
+					<th>Job Number</th>
+					<th>Customer</th>
+					<th>Salesman</th>
+					<th>Last Action</th>
+					<th>Stage</th>
+					<th>Type</th>
+					<th>Age</th>
+					<th>DAS</th>
+				</tr>
+			</thead>
+			<tbody>
+			{{#each jobs}}
+				<tr rel="view-job" data-job-id="{{job_id}}" class="clickable-row">
+					<td>{{job_number}}</td>
+					<td>{{customer.lname}}, {{getInitial customer.fname}}</td>
+					<td>
+						{{#if salesman}}
+							{{salesman.lname}}, {{getInitial salesman.fname}}
+						{{/if}}
+					</td>
+					<td>{{{last_action.action}}}</td>
+					<td>{{stages}}</td>
+					<td>{{job_type}}</td>
+					<td>{{age}}</td>
+					<td><span class="label label-{{getStageAgeLabelClass days_at_stage stage_duration}}">{{days_at_stage}}</span></td>
+				</tr>
+			{{/each}}
+			{{#unless jobs}}
+			<tr><td colspan="8">No Jobs Found</td></tr>
+			{{/unless}}
+			</tbody>
+		</table>
+	</div>
+</div>

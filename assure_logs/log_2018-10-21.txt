@@ -1,0 +1,42 @@
+2018-10-21 2:40:39 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 5:06:58 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 6:21:59 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - www.xactbid.com
+2018-10-21 6:21:59 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database connection - Invalid connection variables: localhost, root, 
+2018-10-21 6:21:59 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2018-10-21 6:25:13 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 7:12:55 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 8:06:55 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 10:11:34 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/quick_add_journal.php at Line 43:  emailFromTemplate - Failed: You must provide at least one recipient email address.; array (
+  0 => 'journal_posted',
+  1 => 'null',
+  2 => '120',
+  3 => 
+  array (
+    'job_id' => '520',
+    'journal_id' => '12956',
+  ),
+  4 => false,
+)
+2018-10-21 10:34:05 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 11:22:16 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 11:56:01 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 12:35:30 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 14:39:16 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 17:27:28 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 19:42:44 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com
+2018-10-21 21:49:18 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - www.xactbid.com
+2018-10-21 21:49:18 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database connection - Invalid connection variables: localhost, root, 
+2018-10-21 21:49:18 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2018-10-21 22:10:21 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - www.xactbid.com
+2018-10-21 22:10:21 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database connection - Invalid connection variables: localhost, root, 
+2018-10-21 22:10:21 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2018-10-21 22:10:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - www.xactbid.com
+2018-10-21 22:10:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database connection - Invalid connection variables: localhost, root, 
+2018-10-21 22:10:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2018-10-21 22:11:48 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - www.xactbid.com
+2018-10-21 22:11:48 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database connection - Invalid connection variables: localhost, root, 
+2018-10-21 22:11:48 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2018-10-21 22:16:27 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - www.xactbid.com
+2018-10-21 22:16:27 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database connection - Invalid connection variables: localhost, root, 
+2018-10-21 22:16:27 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2018-10-21 22:19:10 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - assure - xactbid.com

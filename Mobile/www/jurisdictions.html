@@ -1,0 +1,83 @@
+    <div class="pages">
+        <div data-page="jurisdiction" class="page toolbar-through no-navbar">
+            <div class="page-content">
+                <div class="navbarpages">
+                    <div class="navbar_home_link">
+                        <a href="#" data-panel="left" class="open-panel">
+                            <img src="images/icons/white/user.png" alt="" title="" /></a></div>
+                    <div class="navbar_page_center" id="divJuryHeaderText"></div>
+                    <div class="menu_open_icon_white">
+                        <a href="home.html">
+                            <img src="images/menu_open.png" alt="" title="" /></a></div>
+                </div>
+                <div id="pages_maincontent">
+                <div>
+                    <a id="aAddJurisdiction"  class="add_job" href="javascript:;" style="display:block; font-weight:bold; float:right; ">  Add Jurisdiction</a>
+                </div>
+                  <div class="page_single">
+                        <div>
+                            <div id="divJurisdiction" style="display:block;">
+                                <div>
+                                    <a id="aJurisdictionBack" class="back_btn"></a>
+                                </div>
+                                <div class=" table-responsive table_hight">
+                                    <label id="lblJurisdiction" style="display: none;">
+                                    </label>
+                                    <div id="lstJurisdiction">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="divModifyJurisdiction" style="display:none;">
+                                <label id="lblJuryMsgMainLbl" style="display: none; color:Red; font-weight:bold;"></label>
+                                <input id="hdnJurisdictionID" type="hidden" value="0" />
+                                <div id="divAddJurisdiction">
+                                    <div class="Demo-table-container ">
+                                    <div class="contactform">
+                                       <!-- <div>
+                                            <label id="lblAddJurisdiction" style="display: none; color:Red; font-weight:bold;"></label>
+                                        </div>-->
+                                        <div>
+                                            <label>
+                                                Title <span class="red">*</span>:</label>                              
+                                            <input type="text" id="txtJuryTitle" name="txtJuryTitle" class="form_input form-control validation validate[required[Enter Title]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Mid Inspection:</label>
+                                            <input type="text" id="txtMidInspection" name="txtMidInspection" class="form_input form-control" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                               Min Ladder Req:</label>
+                                                <select id="ddlMinLadderReq">
+                                                </select>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Length <span class="red">*</span>:&nbsp;&nbsp;[days]</label>
+                                            <input type="text" id="txtJuryLength" name="txtJuryLength" class="form_input form-control validation validate[required[Enter Length]] validate[funcCall[GreaterValue0[Length must be greater then zero]]]  validate[funcCall[Onlydigitsex0[Length must be a number]]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                URL:</label>
+                                            <input type="text" id="txtJuryURL" name="txtJuryURL" class="form_input form-control" />
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                id="btnSaveJurisdiction" value="Save" />
+                                            <input type="button" name="Cancel" class="form_submit greybtn_comn" id="btnCancelJurisdiction"
+                                                value="Cancel" />
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+

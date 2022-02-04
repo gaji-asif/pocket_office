@@ -1,0 +1,508 @@
+2017-04-13 5:02:11 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:02:11 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:02:11 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-04-13 5:02:23 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:02:23 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:02:23 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-04-13 5:05:13 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:05:14 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:05:14 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-04-13 5:08:52 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:08:52 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:08:52 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-04-13 5:09:30 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:09:30 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:09:30 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-04-13 5:11:33 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:11:33 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:11:33 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-04-13 5:13:54 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:13:55 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 19:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:13:55 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-04-13 5:17:34 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:17:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:17:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 45:  Failed login - Invalid credentials: , , 
+2017-04-13 5:19:02 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:19:03 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:19:03 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 45:  Failed login - Invalid credentials: , , 
+2017-04-13 5:21:28 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:21:28 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:21:28 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 45:  Failed login - Invalid credentials: , , 
+2017-04-13 5:21:47 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:22:40 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:23:01 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:23:01 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:24:15 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:25:13 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:25:13 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:27:16 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:27:16 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:27:47 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 21:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:30:08 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:30:09 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:30:09 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-04-13 5:33:29 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:33:29 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:33:47 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 5:33:47 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 5:33:47 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-04-13 6:26:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:26:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:26:35 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-04-13 6:26:42 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:26:42 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:26:42 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-04-13 6:26:46 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:26:47 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:26:47 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-04-13 6:26:51 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:26:51 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:26:51 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-04-13 6:31:53 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:31:53 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:34:09 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:37:46 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:38:16 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:39:11 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:40:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:43:00 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:43:01 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:45:33 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:48:18 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:48:37 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:48:38 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:50:10 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:50:10 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:50:56 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:52:34 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:56:28 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:57:30 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:57:31 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:57:51 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 6:57:51 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Failed database query -  - No database selected - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-04-13 6:57:51 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-04-13 7:00:18 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 7:01:04 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 7:02:07 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 7:02:39 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 7:07:14 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 7:07:45 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 7:08:03 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 7:23:48 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-04-13 7:53:03 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com

@@ -1,0 +1,1 @@
+2018-12-26 12:20:36 - NOTICE -->D:\xampp\htdocs\ums\xactimate\login.php at Line 22:  Try database - assure - localhost

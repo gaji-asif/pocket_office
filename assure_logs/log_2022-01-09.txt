@@ -1,0 +1,2 @@
+2022-01-09 0:50:14 - NOTICE -->D:\xampp\htdocs\ums\xactbid\login.php at Line 20:  Try database - assure - localhost
+2022-01-09 2:34:14 - NOTICE -->D:\xampp\htdocs\ums\xactbid\login.php at Line 20:  Try database - assure - localhost

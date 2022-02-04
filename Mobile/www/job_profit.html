@@ -1,0 +1,318 @@
+<div class="pages">
+    <div data-page="job_profit" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divHeadForJobProfit">Job Profitability</div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div>
+                        <div class="contactform job_pro_blk">
+                                <a id="lnkjobProfitback" class="back_btn" href="javascript:;"></a>
+                        </div>
+                        <label id="lblJobProfitErrMsg"></label>
+                         <div class="contactform job_table_pad">
+                        <div id="divJobCommission" style="display: block;">
+                       
+                             <div class="Demo-table-container comiss_pad">
+                               
+                                    <span  class="commission_wid">
+                                        <label>Commission %:</label>
+                                    </span>
+                                    <span class="commission_wid2">
+                                        <span id="lstCommissionPerc"></span>
+                                    </span>
+                                    <span  class="job_profit_button">
+                                        <input type="submit" name="Save" class="bulebtn_comn btn_doc job_profit_input" id="btnSaveJobComm" value="Save" />
+                                    </span>
+                           
+                            </div>
+                            </div>
+                            </div>
+                 
+                        <div id="divAddJobInvProfit" style="display: block;">
+                            <div class="Demo-table-container">
+                            <div class="contactform ">
+                                <div class="edit_table ">
+                                
+                                    <div class="user_inf">Add Item</div>
+                                    <div class="job_profit ">
+                                <label id="lblAddJobProfit" style="display: none; color: Red;">
+                                </label>
+                                 
+                             
+                                    <div>
+                                        <label>
+                                            Description:</label>
+                                        <input type="text" id="txtJobProfitDesc" maxlength="60" name="txtJobProfitDesc" class="form_input form-control validation validate[required[Enter Description]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Amount:</label>
+                                        <input type="text" id="txtJobProfitAmt" maxlength="10" name="txtJobProfitAmt" class="form_input form-control validation validate[required[Enter Amount]] validate[funcCall[GreaterValue0wtihDecimalPoint[Amount should be greater than 0]]] validate[funcCall[Amount10digit[Allow only 10 digit and 2 decimal point number]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Type:</label>
+                                        <select id="lstJobProfitType">
+                                            <option value='charge'>Charge</option>
+                                            <option value='credit'>Credit</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <input type="submit" name="Add" class="form_submit bulebtn_comn" id="btnAddJobProfit" value="Add" />
+                                        <input type="submit" name="Cancel" class="form_submit greybtn_comn" id="btnCancelJobProfit" value="Cancel" />
+                                    </div>
+                              </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="divListJobProfit">
+                            <div class="Demo-table-container">
+                             <div class="contactform ">
+                                <label id="lblListJobProfit" style="display: none; color: Red;">
+                                </label>
+                                <div id="lstBindJobProfit"></div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+            </div>
+        </div>
+        <script>
+            var jobId = page.query.JId;
+            BindJobInvProfitForAll('MethodName=GetJobInvProfitForAll&JobID=' + jobId);
+            BindCommissionList('MethodName=GetCommissionList&JobID=' + jobId);
+            
+            $("#btnSaveJobComm").unbind().click(function () {
+                ReBindJobProfitComm('MethodName=AddUpdateJobProfitComm&JobId=' + jobId + '&Commission=' + $('select[name=ddlcommission]').val());
+            });
+
+            function ReBindJobProfitComm(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+
+                        if (data.status == "1") {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"Successful","Done"             
+                            );
+                            BindJobInvProfitForAll('MethodName=GetJobInvProfitForAll&JobID=' + jobId);
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            //$('#lblJobProfitErrMsg').html(data.message);
+                            //$("#lblJobProfitErrMsg").css("display", "block");
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                             errorMessage, alertDismissed,"An error occured","Done"             
+                         );
+                    }
+                })
+                return false;
+            }
+
+            $("#btnAddJobProfit").unbind().click(function () {
+                var retval = false;
+                var ans = check_itemsvalidate('#divAddJobInvProfit input');
+
+                if (ans) {
+                    ReBindAllJobInvProfit('MethodName=AddNewJobInvProfit&JobId=' + jobId + '&PrfDesc=' + $("#txtJobProfitDesc").val() + '&PrfAmt=' + $("#txtJobProfitAmt").val() + '&PrfType=' + $("#lstJobProfitType").val());
+                }
+                return false;
+            });
+
+            function ReBindAllJobInvProfit(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+
+                        if (data.status == "1") { 
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"Successful","Done"             
+                            );
+                            $("#txtJobProfitDesc").val('');
+                            $("#txtJobProfitAmt").val('');
+                            $("#lstJobProfitType").val('charge')
+                            BindJobInvProfitForAll('MethodName=GetJobInvProfitForAll&JobID=' + jobId);
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            //$('#lblJobProfitErrMsg').html(data.message);
+                            //$("#lblJobProfitErrMsg").css("display", "block");
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                       navigator.notification.alert(
+                             errorMessage, alertDismissed,"An error occured","Done"             
+                         );
+                    }
+                })
+                return false;
+            }
+
+            $("#btnCancelJobProfit").click(function () {
+                jQuery(".formError").remove();
+                mainView.loadPage("jobdetails.html?JId=" + jobId);
+                return false;
+            });
+
+            $("#lnkjobProfitback").click(function () {
+                mainView.loadPage("jobdetails.html?JId=" + jobId);
+                return false;
+            });
+
+            function BindJobInvProfitForAll(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+                        var items = [];
+                        var items2 = [];
+                        
+                        if (data.status == "1") {
+                            if (data.strJobInvProfit != null) {
+                                $('#lstBindJobProfit').empty();
+                                $('#lstBindJobProfit').append(data.strJobInvProfit);
+
+                                $(".aDelJobInvProfitChargeItem").click(function () {
+                                    if (confirm('Are you sure?')) {
+                                        var splits_id = this.id.split('_');
+                                        var InvTypeID = splits_id[1];
+                                        BindJobInvProfitAfterDelete('MethodName=DeleteJobInvProfitByTypeID&JobID=' + jobId + '&InvType=charge&InvTypeID=' + InvTypeID);
+                                        return false;
+                                    }
+                                    else { return false; }
+                                });
+                                $(".aDelJobInvProfitCreditItem").click(function () {
+                                    var splits_id = this.id.split('_');
+                                    var InvTypeID = splits_id[1];
+                                    BindJobInvProfitAfterDelete('MethodName=DeleteJobInvProfitByTypeID&JobID=' + jobId + '&InvType=credit&InvTypeID=' + InvTypeID);
+                                    return false;
+                                });
+                                return false;
+                            }
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            $('#lblListJobProfit').html(data.message);
+                            $('#lblListJobProfit').css("display", "block");
+                            
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                             errorMessage, alertDismissed,"An error occured","Done"             
+                         );
+                    }
+                })
+                return false;
+            }
+
+            function BindJobInvProfitAfterDelete(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+
+                        if (data.status == "1") {
+                            //alert(data.message);
+                            BindJobInvProfitForAll('MethodName=GetJobInvProfitForAll&JobID=' + jobId);
+                        }
+                        else {
+                            //alert(data.message);
+                            $("#lblListJobProfit").html(data.message);
+                            $("#lblListJobProfit").css("display","block");
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                             errorMessage, alertDismissed,"An error occured","Done"             
+                         );
+                    }
+                })
+                return false;
+            }
+
+            function BindCommissionList(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+                        
+                        
+                        if (data.status == "1") {
+                            
+                            if (data.strCommissionLst != null) {
+                                $('#lstCommissionPerc').empty();
+                                $("#lstCommissionPerc").append(data.strCommissionLst);
+                                return false;
+                            }
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                             errorMessage, alertDismissed,"An error occured","Done"             
+                         );
+                    }
+                })
+                return false;
+            }
+        </script>
+
+    </div>
+</div>
+
+
+

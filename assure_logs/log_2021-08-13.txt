@@ -1,0 +1,6 @@
+2021-08-13 0:05:55 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-08-13 0:08:19 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-08-13 0:10:12 - NOTICE -->/home/pocketoffice/public_html/xactbid7/index.php at Line 5:  Failed database connection - Invalid connection variables: , , 
+2021-08-13 0:10:13 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 2:  Failed database connection - Invalid connection variables: , , 
+2021-08-13 0:10:15 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - pocketoffice_xactbid - xactbid.pocketofficepro.com
+2021-08-13 0:48:35 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - pocketoffice_xactbid - xactbid.pocketofficepro.com

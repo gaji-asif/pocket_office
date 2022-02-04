@@ -1,0 +1,4 @@
+2020-09-02 11:10:12 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-09-02 12:37:35 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-09-02 13:20:42 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-09-02 13:21:20 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com

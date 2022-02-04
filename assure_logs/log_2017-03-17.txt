@@ -1,0 +1,174 @@
+2017-03-17 3:16:12 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 3:16:12 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-03-17 3:16:23 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 3:16:23 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-03-17 3:31:05 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 3:31:06 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:31:33 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:34:52 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:36:13 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:41:07 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:46:28 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 3:46:29 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:46:46 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-17 3:49:21 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:50:07 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:53:07 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:54:29 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:57:32 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 3:59:47 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:01:35 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 4:01:35 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:02:23 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 93:  Failed database query - assure -  - SELECT messages.message_id, messages.subject, users.fname, users.lname, message_link.timestamp as user_id, messages.timestamp, '' AS journal_id, '' AS job_id, '' AS job_number from messages, users, message_link where message_link.delete=0 and messages.message_id=message_link.message_id and messages.user_id=users.user_id and message_link.user_id='110' UNION SELECT '' AS message_id, journals.text, users.fname, users.lname,journals.user_id, journals.timestamp, journals.journal_id, journals.job_id, jobs.job_number FROM journals,users, jobs WHERE (recipientid LIKE '%,110%' or recipientid=110) and journals.user_id=users.user_id AND jobs.job_id=journals.job_id AND journals.flag=1 ORDER BY timestamp DESC LIMIT 0, 5
+2017-03-17 4:02:23 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure - Query was empty - 
+2017-03-17 4:03:09 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:03:18 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:04:41 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #16
+2017-03-17 4:07:52 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #16
+2017-03-17 4:08:10 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:11:10 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #16
+2017-03-17 4:13:49 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #16
+2017-03-17 4:14:07 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #16
+2017-03-17 4:14:51 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #16
+2017-03-17 4:16:18 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:17:17 - NOTICE -->C:\xampp\htdocs\workflow\index.php at Line 9:  Failed database query - assure -  - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 9
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-03-17 4:17:17 - NOTICE -->C:\xampp\htdocs\workflow\index.php at Line 9:  Failed database query - assure -  - SELECT username
+                    FROM users
+                    WHERE user_id = '110'
+                        AND username = 'Upwork'
+                    LIMIT 1
+2017-03-17 4:17:17 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 7:  Failed database query - assure -  - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 9
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-03-17 4:17:17 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 7:  Failed database query - assure -  - SELECT username
+                    FROM users
+                    WHERE user_id = '110'
+                        AND username = 'Upwork'
+                    LIMIT 1
+2017-03-17 4:17:19 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 4:17:19 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Failed database query -  -  - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-03-17 4:17:19 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-03-17 4:17:27 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 4:17:27 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Failed database query -  -  - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-03-17 4:17:27 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-03-17 4:17:28 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 4:17:28 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Failed database query -  -  - SELECT users.user_id AS ao_userid, users.username AS ao_username, users.fname AS ao_fname, users.lname AS ao_lname, users.dba AS ao_dba,
+                DATE_FORMAT(access.timestamp, '%c/%e %k:%i') AS ao_lastvisit, users.level AS ao_level, users.is_active, users.is_deleted,
+                accounts.account_name AS ao_accountname, users.account_id AS ao_accountid, users.founder AS ao_founder, settings.num_results AS ao_numresults,
+                settings.browsing_results AS ao_browsingresults, settings.refresh AS ao_refresh, settings.widget_today AS ao_widget_today,
+                settings.widget_announcements AS ao_widget_announcements, settings.widget_documents AS ao_widget_documents,
+                settings.widget_bookmarks AS ao_widget_bookmarks, settings.widget_urgent AS ao_widget_urgent, settings.widget_inbox AS ao_widget_inbox,
+                settings.widget_journals AS ao_widget_journals, accounts.logo AS ao_logo, accounts.job_unit AS ao_jobunit, accounts.is_active AS account_is_active,
+                users.office_id AS ao_officeid, levels.level as ao_levelname
+                FROM accounts, levels, users
+                LEFT JOIN settings ON users.user_id = settings.user_id
+                LEFT JOIN access ON access.user_id = users.user_id
+                WHERE users.username = 'Upwork'
+                        AND users.password = 'uppassword123'
+                        AND accounts.account_name ='Testing'
+                        AND accounts.account_id = users.account_id
+                        AND levels.level_id = users.level
+                ORDER BY access.access_id DESC LIMIT 1
+2017-03-17 4:17:28 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 42:  Failed login - Invalid credentials: , , 
+2017-03-17 4:17:39 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 4:17:40 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:17:47 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 4:17:47 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:18:03 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:19:46 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 93:  Failed database query - assure -  - SELECT messages.message_id, messages.subject, users.fname, users.lname, message_link.timestamp as user_id, messages.timestamp, '' AS journal_id, '' AS job_id, '' AS job_number from messages, users, message_link where message_link.delete=0 and messages.message_id=message_link.message_id and messages.user_id=users.user_id and message_link.user_id='110' UNION SELECT '' AS message_id, journals.text, users.fname, users.lname,journals.user_id, journals.timestamp, journals.journal_id, journals.job_id, jobs.job_number FROM journals,users, jobs WHERE (recipientid LIKE '%,110%' or recipientid=110) and journals.user_id=users.user_id AND jobs.job_id=journals.job_id AND journals.flag=1 ORDER BY timestamp DESC LIMIT 0, 5
+2017-03-17 4:19:46 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure - Query was empty - 
+2017-03-17 4:20:22 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure - Query was empty - 
+2017-03-17 4:21:09 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 93:  Failed database query - assure -  - SELECT messages.message_id, messages.subject, users.fname, users.lname, message_link.timestamp as user_id, messages.timestamp, '' AS journal_id, '' AS job_id, '' AS job_number from messages, users, message_link where message_link.delete=0 and messages.message_id=message_link.message_id and messages.user_id=users.user_id and message_link.user_id='110' UNION SELECT '' AS message_id, journals.text, users.fname, users.lname,journals.user_id, journals.timestamp, journals.journal_id, journals.job_id, jobs.job_number FROM journals,users, jobs WHERE (recipientid LIKE '%,110%' or recipientid=110) and journals.user_id=users.user_id AND jobs.job_id=journals.job_id AND journals.flag=1 ORDER BY timestamp DESC LIMIT 0, 5
+2017-03-17 4:21:09 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure - Query was empty - 
+2017-03-17 4:24:08 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 93:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'journals,users, jobs' at line 1 - SELECT * journals,users, jobs
+2017-03-17 4:24:08 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure - Query was empty - 
+2017-03-17 4:24:44 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:28:05 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:29:31 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:32:08 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:33:48 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 4:36:49 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:37:22 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:50:50 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 4:55:33 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:55:34 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:56:33 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 4:57:49 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-17 5:37:11 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 6:37:29 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 6:37:38 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\send_credentials.php at Line 12:  emailFromTemplate - Invalid template: new_user
+2017-03-17 6:48:54 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\send_credentials.php at Line 12:  emailFromTemplate - Invalid template: new_user
+2017-03-17 6:48:59 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\send_credentials.php at Line 12:  emailFromTemplate - Invalid template: new_user
+2017-03-17 6:52:43 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 7:08:53 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 7:08:59 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\send_credentials.php at Line 12:  emailFromTemplate - Invalid template: new_user
+2017-03-17 7:14:56 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\send_credentials.php at Line 12:  emailFromTemplate - Invalid template: new_user
+2017-03-17 7:15:10 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\send_credentials.php at Line 12:  emailFromTemplate - Invalid template: new_user
+2017-03-17 7:15:17 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\send_credentials.php at Line 12:  emailFromTemplate - Invalid template: new_user
+2017-03-17 7:21:04 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\send_credentials.php at Line 12:  emailFromTemplate - Invalid template: new_user
+2017-03-17 7:30:07 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 7:46:00 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 8:01:35 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 8:34:54 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 8:50:32 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 9:05:40 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 9:35:15 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 9:50:48 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 10:07:09 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 10:23:16 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 11:03:22 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 11:20:47 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 11:44:50 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-17 11:45:13 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-17 11:52:24 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-03-17 12:00:42 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost

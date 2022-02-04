@@ -1,0 +1,189 @@
+<div class="pages">
+    <div data-page="assign_jobsalesman" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divHeadForAssignSalesman">Assign Salesman</div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div>
+                        <label id="lblAssignJobSalesmanErrMsg"></label>
+                        <div class="contactform ">
+                            <div class="Demo-table-container table-responsive">
+                                <div class="contactform">
+                                    <span style="float: left; width: 15%;">
+                                        <label>User:</label>
+                                    </span>
+                                    <span style="float: left; width: 24%;">
+                                        <span id="lstJobSalesman"></span>
+                                    </span>
+                                    <span style="float: left; width: 20%; margin-top: 9px;">
+                                        <span id="salesjobstotal"></span>
+                                    </span>
+                                    <span style="float: left; width: 25%; margin-top: -20px;">
+                                        <input type="submit" name="Save" class="form_submit bulebtn_comn btn_doc" id="btnSaveJobSalesman" value="Save" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="dvMap" style="width: 500px; height: 500px"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var jobId = page.query.JId;
+            BindJobSalesmanList('MethodName=GetJobSalesmanList&JobID=' + jobId);
+            BindCustomersJobForMap('MethodName=GetCustomersJobForMap&JobID=' + jobId);
+
+            $("#btnSaveJobSalesman").unbind().click(function () {
+                ReBindUpdatedJobDetails('MethodName=UpdateJobSalesmanInfo&JobId=' + jobId + '&SalesmanID=' + $('select[name=salesman]').val());
+            });
+
+            function BindJobSalesmanList(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+
+                        if (data.status == "1") {
+                            if (data.jobsTotal > 0) {
+                                $("#salesjobstotal").html("<b>" + data.jobsTotal + "</b> YTD job(s)");
+                            }
+                            else {
+                                $("#salesjobstotal").html("<b>0</b> YTD job(s)");
+                            }
+                            if (data.strJobSalesmanList != null) {
+                                $('#lstJobSalesman').empty();
+                                $("#lstJobSalesman").append(data.strJobSalesmanList);
+                                return false;
+                            }
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                       navigator.notification.alert(
+                            errorMessage, alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+                return false;
+            }
+            function ReBindUpdatedJobDetails(data) {
+                var $ = jQuery.noConflict();
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+                        if (data.status == "1") {
+                            if (data.strJobSalesmanList != null) {
+                                BindJobSalesmanList('MethodName=GetJobSalesmanList&JobID=' + jobId);
+                                return false;
+                            }
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                            errorMessage, alertDismissed,"An error occured","Done"             
+                        );
+                    }
+                })
+                return false;
+            }
+
+            function BindCustomersJobForMap(data) {
+                var $ = jQuery.noConflict();
+              
+                $.ajax({
+                    url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+                    type: 'POST',
+                    data: data,
+                    cache: false,
+                    success: function (data, textStatus, jqxhr) {
+                        var data = $.parseJSON(data);
+                        var map = $('#dvMap');
+                        document.getElementById("dvMap").innerHTML = "";
+                        if (data.status == "1") {
+                            if (data.mapContent.length > 0) {
+
+
+
+                                document.getElementById("dvMap").innerHTML = "";
+
+                                for (var i = 0; i < data.mapContent.length; i++) {
+
+                                    var data1 = data.mapContent[i];
+
+
+                                    var contentHtml = "";
+                                    contentHtml = "<div><ul><li>Job #: <a title=Go to job target=main href=https://xactbid.pocketofficepro.com/jobs.php?id=" +
+data1.job_id + ">" + data1.job_number + "</a></li>";
+                                    contentHtml = contentHtml + "<li>Salesman: <a title=View User target=mainhref=https://xactbid.pocketofficepro.com/users.php?id=" + data1.user_id + ">" + data1.fname + " " + data1.lname + "</a></li>";
+                                    contentHtml = contentHtml + "<div><ul><li>Customer: <a title=Go to job target=mainhref=https://xactbid.pocketofficepro.com/customers.php?id=" + data1.customer_id + ">" + data1.fname + " " + data1.lname + "</a></li>";
+                                    contentHtml = contentHtml + "<br />" + data1.address + ", " + data1.city + ", " + data1.state + " " + data1.zip + "";
+                                    contentHtml = contentHtml + "<li>DOB: " + data1.timestamp + "</li><li>" + data1.distance + " miles</li></ul></div>";
+                                    data1.cross_street = contentHtml;
+                                    map.jHERE('marker', [data1.lat, data1.long], {
+                                        icon: '../../icons/map/nearby-marker.png',
+                                        anchor: { x: 12, y: 12 },
+                                        click: function (event) {
+                                            map.jHERE('bubble', [data1.lat, data1.long], {
+                                                content: contentHtml
+                                            });
+                                        }
+                                    });
+                                }
+                                return false;
+                            }
+                        }
+                        else {
+                            navigator.notification.alert(
+                                data.message, alertDismissed,"An error occured","Done"             
+                            );
+                            return false;
+                        }
+                    },
+                    error: function (jqxhr, textStatus, errorMessage) {
+                        navigator.notification.alert(
+                                errorMessage, alertDismissed,"An error occured","Done"             
+                            );
+                    }
+                })
+                return false;
+            }
+
+        </script>
+
+    </div>
+</div>
+
+
+

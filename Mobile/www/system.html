@@ -1,0 +1,192 @@
+﻿<div class="pages">
+    <div data-page="system" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <input type="hidden" id="hdnoffset" value="0">
+            <input type="hidden" id="hdntotalrecord" value="0">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divMainHeaderForSystem"></div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div class="Demo-table-container">
+                        <label id="lblMsgForSysDetail" style="display: none;"></label>
+                        <div id="divSystemDetails">
+                            <div class="contactform table-responsive">
+                                <div id="divSysCompanyProfile" class="table-responsive">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <div class="user_inf">Company Profile</div>
+                                            </td>
+                                            <td>
+                                                <a title="Edit Company Profile" id="aEditCompanyProfile" class="aEditCompanyProfile" href="javascript:;">
+                                                    <i class="icon-pencil"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <span id="spnSystemLogo"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <table>
+                                                    <tr>
+                                                        <td>Company:
+                                                        </td>
+                                                        <td>
+                                                            <label id="lblSysCompanyTitle"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Address:
+                                                        </td>
+                                                        <td>
+                                                            <label id="lblSysAddress"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Phone:
+                                                        </td>
+                                                        <td>
+                                                            <label id="lblSysPhone"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Email:
+                                                        </td>
+                                                        <td>
+                                                            <label id="lblSysEmail"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Primary Contact:
+                                                        </td>
+                                                        <td>
+                                                            <label id="lblSysPrimaryContact"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Account DOB:
+                                                        </td>
+                                                        <td>
+                                                            <label id="lblSysAcctDOB"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Users:
+                                                        </td>
+                                                        <td>
+                                                            <label id="lblSysTotalUsers"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>License Limit:
+                                                        </td>
+                                                        <td>
+                                                            <label id="lblSysLicenseLimit"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Change Logo:
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                <form enctype='multipart/form-data' action='?' method="post">
+                                                                        <input type="file" id="fluSysLogo" name="fluSysLogo" class="form_input form-control  validation validate[funcCall[OnlyImage[Upload must be an image]]]" />
+                                                                        <input type="submit" value="Save" id="btnSysLogoUpload" class="form_submit bulebtn_comn" name="btnSysLogoUpload">
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="divSysConfiguration">
+                                </div>
+                                <div id="divSysSecurityLevels">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divEditCompanyProfile" style="display:none;">
+                            <div class="Demo-table-container">
+                                    <div class="contactform job_profit">
+                                        <label id="lblErrMsgEditCProfile" style="display: none;">
+                                        </label>
+                                        <div>
+                                                <label>
+                                                    Company Name: *</label>
+                                                <input type="text" id="txtEditComTitle" name="txtEditComTitle" class="form_input form-control validation validate[required[Enter Company Name]]" />
+                                        </div>
+                                        <div>
+                                                <label>
+                                                    Primary Contact: *</label>
+                                                <input type="text" id="txtEditComPriContact" name="txtEditComPriContact" class="form_input form-control validation validate[required[Enter Primary Contact]]" />
+                                        </div>
+                                        <div>
+                                                <label>
+                                                    Email: *</label>
+                                                <input type="text" id="txtEditComEmail" name="txtEditComEmail" class="form_input form-control validation validate[required[Enter Email]] validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" />
+                                        </div>
+                                        <div>
+                                                <label>
+                                                    Phone: *</label>
+                                                <input type="text" id="txtEditComPhone" name="txtEditComPhone" class="masked-phone form_input form-control validation validate[required[Enter Phone Number]] validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                        </div>
+                                        <div>
+                                                <label>
+                                                    Address: *</label>
+                                                <input type="text" id="txtEditComAddress" name="txtEditComAddress" class="form_input form-control validation validate[required[Enter Address]]" />
+                                        </div>
+                                        <div>
+                                                <label>
+                                                    City: *</label>
+                                                <input type="text" id="txtEditComCity" name="txtEditComCity" class="form_input form-control validation validate[required[Enter City]]" />
+                                        </div>
+                                        <div>
+                                                <label>
+                                                State: *</label>
+                                                <select id="ddlEditComState" class=" validation validate[funcCall[selectval[Select State]]]">
+                                                </select>
+                                        </div>
+                                        <div>
+                                                <label>
+                                                    Zip: *</label>
+                                                <input type="text" id="txtEditComZip" name="txtEditComZip" class="form_input form-control validation validate[required[Enter Zip Code]] validate[funcCall[Onlydigitsex0[Enter numbers only]]] validate[funcCall[validateZipCode[Invalid Zip]]]" />
+                                        </div>
+                                        <div>
+                                                <label>
+                                                    Job Unit: *</label>
+                                                <input type="text" id="txtEditComJobUnit" name="txtEditComJobUnit" class="form_input form-control validation validate[required[Enter Job Unit]] " />
+                                        </div>
+                                        <div>
+                                                 
+                                                <input type="submit" name="Save" class="form_submit bulebtn_comn"
+                                                    id="btnUpdateCompanyProfile" value="Save" />
+                                                <input type="submit" name="Cancel" class="form_submit greybtn_comn"
+                                                    id="btnCancelCompanyProfile" value="Cancel" />
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

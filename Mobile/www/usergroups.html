@@ -1,0 +1,57 @@
+﻿<div class="pages">
+    <div data-page="usergroups" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">
+                    <label id="lblUserGroupMainHeader"></label>
+                </div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="Demo-table-container">
+                    <div class="contactform ">
+                        <label id="lblModifyUserGroup" style="display: none; color: Red;"></label>
+                        <div id="divmodifyUserGroups" style="display: block;">
+                            <div>
+                                <a id="aUserGroupBack" class="back_btn"></a>
+                            </div>
+                            <div id="divAddUserGroup">
+                                <table>
+                                    <tr>
+                                        <td class="add_user_text">
+                                            <label>Add User Group: <span class="red">*</span></label>
+                                        </td>
+                                        <td width="40%" class="wid_docinp">
+                                            <input type="text" id="txtAddUserGroupTitle" name="txtAddUserGroupTitle" class="form_input form-control validation validate[required[User Group cannot be empty]]" />
+                                        </td>
+                                        <td width="15%" class="doct_widbt">
+                                            <input type="submit" name="btnAddUserGroup" class="form_submit bulebtn_comn btn_doc" id="btnAddUserGroup" value="Add" />
+                                        </td>
+                                        <td width="15%" class="doct_widbt">
+                                            <input type="button" name="btnCancelUserGroup" class="greybtn_comn btn_doc" id="btnCancelUserGroup" value="Cancel" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="divUserGroupList" class="table-responsive table_hight"></div>
+                        </div>
+                        <div id="divAssignUserToUserGroup" style="display: none;">
+                            <input id="hdnUserGroupId" type="hidden" value="0" />
+                            <input id="aBackLinkUserGroupList" type="button"  class="back_btn"/>
+                            <div id="divmodifyUserGroupList"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,94 @@
+﻿<div class="pages">
+    <div data-page="documents" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <input type="hidden" id="hdnoffset" value="0">
+            <input type="hidden" id="hdntotalrecord" value="0">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">Documents</div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div id="dvDocumentList">
+                    <div id="divEditGroup_AddDoc" style="text-align: right;  clear: both; ">
+
+                        <a id="aEditGroup" href="javascript:;" style="font-weight: bold;"><span class="btn" title="Edit document groups">Edit Groups    </span></a>
+
+
+                        <a id="aAddDocument" href="javascript:;" style="font-weight: bold;">
+                            <span class="btn" title="Add document">Add Document </span>
+
+                        </a>
+
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0" class="main-view-table" width="100%">
+
+
+                        <tr valign='middle'>
+                            <td class="filter_tag document_filter_tag" colspan="2">
+                                <select id="sort" class="list-filter-input document-filter-input">
+                                    <option value="">Group</option>
+                                </select>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="button" value="Clear Filters" class="reset-list-btn greybtn_comn" id="btnClearFilter">
+                            </td>
+                            <td class="text-right list-search document_list_search" colspan="2">
+                                <input type="text" id="txt_Search" class="list-filter-input" value="" placeholder="Search document here">
+                                <i class="icon-search search_ments"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=" table-responsive table_hight">
+                    <label id="lblMsgForDocumentListMainLabel" style="display: none;"></label>
+                    <div id="divDocumentList" class="next_privcenter">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            //if (Checkaccess('upload_document')) {
+            //    $("#divEditGroup_AddDoc").css("display", "block");
+            //}
+            //if (!Checkaccess('view_documents')) {
+            //    $("#sort").css("display", "none");
+            //    $("#divDocumentList").css("display", "none");
+            //    $("#lblMsgForDocumentListMainLabel").html("Insufficient Rights");
+            //    $("#lblMsgForDocumentListMainLabel").css("display", "block");
+            //}
+            //else {
+            //    $("#sort").css("display", "block");
+            //    $("#divDocumentList").css("display", "block");
+            //    $("#lblMsgForDocumentListMainLabel").html("");
+            //    $("#lblMsgForDocumentListMainLabel").css("display", "none");
+            //}
+
+            //Below Check Access for the Edit Detail and View Detail of Documents
+            //if(!ModuleUtil::checkAccess('view_documents'))
+            //die("Insufficient Rights");
+
+            //$("#aEditGroup").click(function () {
+            //    $("#aEditGroup").attr("href", "#");
+            //    mainView.loadPage("documentGroup.html?action=modifygroup");
+            //    return false;
+            //});
+            //$("#aAddDocument").click(function () {
+            //    $("#aAddDocument").attr("href", "#");
+            //    mainView.loadPage("documentGroup.html?action=uploadgroup");
+            //    return false;
+            //});
+        </script>
+    </div>
+</div>
+
+
+

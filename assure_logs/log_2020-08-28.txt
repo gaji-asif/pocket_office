@@ -1,0 +1,8 @@
+2020-08-28 0:20:41 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-08-28 2:18:06 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-08-28 2:20:12 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-08-28 6:09:10 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-08-28 6:09:10 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2020-08-28 6:09:22 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2020-08-28 6:09:22 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2020-08-28 6:09:31 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com

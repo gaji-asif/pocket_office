@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap:;font-src 'self' data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src *; img-src * filesystem: data:">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/validationEngine.jquery.css" />
+    <link rel="stylesheet" href="css/framework7.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/swipebox.css" type="text/css"  />
+    <link rel="stylesheet" href="css/uploader.css"  />
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' type='text/css'>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.css" />
+</head>
+
+<body id="mobile_wrap">
+    <div class="modalloader">
+        <!-- Place at bottom of page -->
+    </div>
+    <div class="statusbar-overlay"></div>
+
+    <div class="panel-overlay"></div>
+
+    <div class="panel panel-left panel-cover">
+        <script src="js/uploader.js"></script>
+        <div class="user_login_info">
+            <div class="user_thumb">
+                <span id="spnSidePanelLogo"></span>
+                <!--<img src="images/photos/photo8.jpg" alt="" title="" />-->
+            </div>
+            <h2 id="headerUserName"></h2>
+            <p>Edit your account settings</p>
+            <nav class="list-nav-small">
+                <ul>
+                    <li id="liUserProfile" class="about-icon-small"><a id="alinkUserProfile" href="#" class="close-panel">Profile</a></li>
+                    <li class="tools-icon-small"><a onclick="callPage()" href="javascript:;" class="close-panel">Settings</a></li>
+                    <li id="liSwitchUser" style="display: none;" class="lock-icon-small"><a href="#" id="lnkswitchuser" class="close-panel">Switch User</a></li>
+                    <li class="logout-icon-small"><a href="javascript:;" onclick="logout();" class="close-panel">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="views">
+
+        <div class="view view-main">
+
+            <div class="navbar dashboardbg">
+                <div class="navbar-inner">
+                    <div class="center sliding">
+                        <div class="logo_title">
+                            <img src="images/logo_workfolw1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="logout_icon">
+                        <a href="javascript:;" onclick="logout();" id="lnkoutmenu"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pages navbar-through toolbar-through">
+
+                <div data-page="home" class="page homepage">
+                    <div class="page-content">
+                        <!-- Slider -->
+                        <div class="swiper-container swiper-init" data-effect="slide" data-pagination=".swiper-pagination">
+                            <div class="swiper-wrapper" id="divmainmenus">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                    <ul class="toolbar_icons icons_4row">
+                        <li>
+                            <a href="jobs.html" title="Jobs">
+                                <img src="images/icons/white/bag.png" alt="Jobs" title="Jobs" /></a>
+                        </li>
+                        <li>
+                            <!--<a href="#" data-panel="left" class="open-panel">-->
+                            <a href="documents.html" title="Jobs">
+                                <img height="60px" src="images/icons/white/Documents.png" alt="" title="" /></a>
+                        </li>
+                        <li>
+                            <a href="schedule.html">
+                                <img height="60px" src="images/icons/white/Schedule.png" alt="" title="" /></a>
+                        </li>
+                        <li>
+                            <a href="journals.html">
+                                <img src="images/icons/white/envelope.png" alt="" title="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- About Popup -->
+    <div class="popup popup-search" id="divjobfilter">
+        <div class="content-block">
+            <h4>Filter/Sort:</h4>
+            <div class="loginform">
+                <table border="0" cellspacing="10" cellpadding="10" class="table">
+                    <tr>
+                        <td>Sort:</td>
+                        <td>
+                            <select id="drd_job_sort">
+                                <option value='j.timestamp desc'>Newest First</option>
+                                <option value='j.timestamp asc'>Oldest First</option>
+                                <option value='(datediff(curdate(),j.stage_date)-t.duration) desc'>Urgent First</option>
+                                <option value='j.job_number asc'>ID Number Asc</option>
+                                <option value='j.job_number desc'>ID Number Desc</option>
+                                <option value='c.lname asc'>Last Name A-Z</option>
+                                <option value='c.lname desc'>Last Name Z-A</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2">Filter:
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <select id="drd_ser_salesman">
+                                <option value='order by c.lname asc'>Customer</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="drd_ser_stages">
+                                <option value='order by c.lname asc'>Stages/Status</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <select id="drd_ser_type">
+                                <option value='order by c.lname asc'>Type</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="drd_ser_task">
+                                <option value='order by c.lname asc'>Task</option>
+
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <select id="drd_ser_canvasser">
+                                <option value='order by c.lname asc'>Canvasser</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="drd_ser_referral">
+                                <option value='order by c.lname asc'>Referral</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <select id="drd_ser_creator">
+                                <option value='order by c.lname asc'>Creator</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="drd_ser_age">
+                                <option value=' ' selected>Age</option>
+                                <option value='and datediff(curdate(), j.stage_date) = 0'>Today</option>
+                                <option value='and datediff(curdate(), j.stage_date)<=15'>0-15</option>
+                                <option value='and (datediff(curdate(), j.stage_date)>=16 and datediff(curdate(), j.stage_date)<=30)'>16-30</option>
+                                <option value='and (datediff(curdate(), j.stage_date)>=31 and datediff(curdate(), j.stage_date)<=45)'>31-45</option>
+                                <option value='and (datediff(curdate(), j.stage_date)>=46 and datediff(curdate(), j.stage_date)<=60)'>46-60</option>
+                                <option value='and datediff(curdate(), j.stage_date)>60'>60+</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <select id="drd_ser_juridiction">
+                                <option value='order by c.lname asc'>Juridiction</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="drd_ser_permit">
+                                <option value=' ' selected>Permit Exp</option>
+                                <option value="0">Today</option>
+                                <option value="7">Within 7 Days</option>
+                                <option value="30">Within 30 Days</option>
+                                <option value="30">Within 60 Days</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="drd_ser_provider">
+                                <option value='order by c.lname asc'>Provider</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="display: none;" id="drd_ser_warranty">
+                                <option value='order by c.lname asc'>Warranty</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </div>
+            <div class="close_popup_button">
+                <!--<a href="#" id="btnsearchjob" class="close-popup filter_btn">Filter</a>-->
+                <a href="#" id="lnkresetjobs" class="close-popup filter_btn">reset</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Job Action Menu -->
+
+    <div class="popup popup-submenu" id="divjobsubmenu">
+        <div class="content-block">
+            <div>
+                <div id="lstsubmenu">
+                </div>
+            </div>
+            <div class="close_popup_button popupbtn_cancel">
+                <!--<a href="#" id="btnsearchjob" class="close-popup filter_btn">Filter</a>-->
+                <a href="#" id="btnclosejobmenu" class="close-popup greybtn_comn">Cancel</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- Report Filter Menu -->
+    <div class="popup popup-filter" id="divreportfilter">
+        <div class="content-block">
+            <div>
+                <ul class="tabs" id="lstfiltertab">
+                </ul>
+                <div id="divfilterfields"></div>
+            </div>
+            <div class="close_popup_button popupbtn_cancel">
+                <!--  <a href="#" id="btnsearchjob" class="close-popup filter_btn">Filter</a>-->
+                <a href="#" id="btnclosereportfilter" class="close-popup greybtn_comn">Cancel</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Settings Change Password Popup -->
+    <div class="popup popup-password" id="divchangepassword">
+        <div class="content-block">
+            <div>
+                <table border="0" width="100%" align="left" cellpadding="0" cellspacing="0" class="table">
+                    <tr>
+                        <th colspan="2" align="center">Change Password</th>
+                    </tr>
+
+                    <tr>
+                        <td class="listitem">
+                            <b>Current Password:</b>
+                        </td>
+                        <td class="listrow">
+                            <input type="password" name="current_password" id="txtcurpassword"></td>
+                    </tr>
+                    <tr>
+                        <td class="listitem">
+                            <b>New Password:</b>
+                        </td>
+                        <td class="listrow">
+                            <input type="password" name="password" id="txtnewpassword"><br />
+                            <span class="smallnote">New Password must be at least 7 characters.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="listitem">
+                            <b>Confirm New Password:</b>
+                        </td>
+                        <td class="listrow">
+                            <input type="password" name="password_confirm" id="txtconfirmpassword"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <div class="close_popup_button popupbtn_cancel">
+                                <a href="#" id="btnchangepassword" class="filter_btn">Save</a>
+                                <a href="#" class="close-popup greybtn_comn">Cancel</a>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Services Popup -->
+    <div class="popup popup-social">
+        <div class="content-block">
+            <h4>Social Share</h4>
+            <p>Share icons solution that allows you share and increase your social popularity.</p>
+            <ul class="social_share">
+                <li>
+                    <a href="#">
+                        <img src="images/icons/white/twitter.png" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/white/facebook.png" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/white/googleplus.png" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/white/dribbble.png" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/white/linkedin.png" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/white/pinterest.png" alt="" title="" /></a>
+                </li>
+            </ul>
+            <div class="close_popup_button"><a href="#" class="close-popup">Close</a></div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="cordova.js" charset="utf-8" ></script> -->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/uploader.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
+    <script type="text/javascript" src="js/jquery.validationEngine-en.js"></script>
+    <script type="text/javascript" src="js/jquery.validationEngine.js"></script>
+    <script type="text/javascript" src="js/User.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.tablednd.0.7.min.js"></script>
+    <script type="text/javascript" src="js/aviary.js" charset="utf-8" ></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript">
+        if (window.localStorage.getItem("sessLoginId") != undefined && window.localStorage.getItem("sessLoginId") != null)
+            AjaxCall('MethodName=BindMenu');
+        else
+            logout();
+
+        function setframework() {
+            var mainView = myApp.addView('.view-main', {
+                dynamicNavbar: true,
+            });
+            return false;
+        }
+        
+        function callPage() {
+            mainView.loadPage('settings.html');
+            return false;
+        }
+
+        function AjaxCall(data) {
+
+            var $ = jQuery.noConflict();
+            jQuery(".formError").remove();
+            $body = $("body");
+            // $body.addClass("loading");
+            $.ajax({
+                url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                type: "POST",
+                data: data,
+                cache: false,
+                success: function(data, textStatus, jqxhr) {
+                    var obj = $.parseJSON(data);
+                    if (obj.lstMenu.length > 0) {
+
+                        $("#divmainmenus").empty();
+
+                        if (obj.lstMenu.length > 12) {
+                            $("#divmainmenus").append('<div class="swiper-slide"><nav class="list-nav"><ul id="lstmenupage1"><li class="myicon-dashboard" ><a href="dashboard.html"  >Dashboard</a></li></ul></nav></div> <div class="swiper-slide"><nav class="list-nav"><ul id="lstmenupage2"></ul></nav></div>');
+                        } else {
+                            $("#divmainmenus").append('<div class="swiper-slide"><nav class="list-nav"><ul id="lstmenupage1"><li class="myicon-dashboard"><a href="dashboard.html">Dashboard</a></li></ul></nav></div>');
+                        }
+
+                        for (var i = 0; i < obj.lstMenu.length; i++) {
+                            var menu = obj.lstMenu[i];
+
+                            var pageurl = menu.source.replace('.php', '.html');
+                            if (pageurl == "stages.html") {
+                                pageurl = "stages.html?flag=1";
+                            }
+                            var navigation_id = menu.navigation_id;
+                            if (navigation_id != 27 && navigation_id != 7 && navigation_id != 25 && navigation_id != 29) {
+                                
+                                if (i < 12)
+                                    $("#lstmenupage1").append("<li class='myicon-" + menu.icon + "'><a href=" + pageurl + ">" + menu.title + "</a></li>");
+                                else
+                                    $("#lstmenupage2").append("<li class='myicon-" + menu.icon + "'><a href=" + pageurl + ">" + menu.title + "</a></li>");
+                            }
+
+                        }
+
+                        if (obj.userDetail.length > 0) {
+                            // if (obj.userDetail[0].level == "1") {
+
+                            if (obj.userDetail[0].founder == "1") {
+                                if (obj.lstMenu.length > 12) {
+                                    $("#lstmenupage2").append('<li class="myicon-system" ><a href="system.html"  >System</a></li>');
+                                } else {
+                                    $("#lstmenupage1").append('<li class="myicon-system" ><a href="system.html"  >System</a></li>');
+                                }
+                            }
+                            //  }
+                        }
+                        if (obj.userDetail.length > 0) {
+                            if (obj.userDetail[0].user_id == "2") {
+
+                                $('#liSwitchUser').css("display", "block");
+                                if (obj.lstMenu.length > 12) {
+                                    $("#lstmenupage2").append('<li class="myicon-system" ><a href="systemadmin.html"  >Admin Panel</a></li>');
+                                } else {
+                                    $("#lstmenupage1").append('<li class="myicon-system" ><a href="systemadmin.html"  >Admin Panel</a></li>');
+                                }
+                            }
+                        }
+                        var myApp = new Framework7();
+                        // Init slider and store its instance in mySwiper variable
+                        var mySwiper = myApp.swiper('.swiper-container', {
+                            pagination: '.swiper-pagination',
+                            paginationClickable: true,
+                        });
+
+                        //Bind Side Panel Image Logo
+                        $("#spnSidePanelLogo").empty();
+                        if (obj.userAcctDetail.length > 0) {
+                            if (obj.userAcctDetail[0].logo != null && obj.userAcctDetail[0].logo != '')
+                                $("#spnSidePanelLogo").append("<img height=125 width=280 id=imgSysCompanyLogo src='https://xactbid.pocketofficepro.com/logos/" + obj.userAcctDetail[0].logo + "' />");
+                            else
+                                $("#spnSidePanelLogo").append("<img height=125 width=280 id=imgSysCompanyLogo src='https://xactbid.pocketofficepro.com/images/icons/user_64.png' />");
+                        }
+
+                    } else {
+                        if (window.localStorage.getItem("sessLoginId") != undefined && window.localStorage.getItem("sessLoginId") != null) {
+                            if (window.localStorage.getItem("sessUserName") != null && window.localStorage.getItem("ao_password") != null)
+                                ResetSession('MethodName=Login&username=' + window.localStorage.getItem("sessUserName") + '&password=' + window.localStorage.getItem("ao_password") + '&account=');
+                            else
+                                logout();
+                        } else
+                            logout();
+                    }
+                    // $body.removeClass("loading");
+                },
+                error: function(jqxhr, textStatus, errorMessage) {
+                    // $body.removeClass("loading");
+                    navigator.notification.alert(
+                        "There was an error. Try again please!", alertDismissed, "An error occured", "Done"
+                    );
+                }
+            })
+
+        }
+
+        function ResetSession(data) {
+            var $ = jQuery.noConflict();
+            $.ajax({
+                url: "https://xactbid.pocketofficepro.com/workflowservice.php",
+                type: "POST",
+                data: data,
+                cache: false,
+                success: function(data, textStatus, jqxhr) {
+
+
+                    var obj = $.parseJSON(data);
+
+                    if (obj.status == "1") {
+
+
+                        window.localStorage.setItem("sessLoginId", obj.User.ao_userid);
+                        window.localStorage.setItem("sessUserName", obj.User.ao_username);
+                        window.localStorage.setItem("sessLevel", obj.User.ao_level);
+                        window.localStorage.setItem("sessAccountId", obj.User.ao_accountid);
+                        window.localStorage.setItem("sessFname", obj.User.ao_fname);
+                        window.localStorage.setItem("sessLname", obj.User.ao_lname);
+                        window.localStorage.setItem("ao_founder", obj.User.ao_founder);
+                        window.localStorage.setItem("ao_password", obj.User.ao_password);
+
+                        if (obj.modules != "0") {
+                            window.localStorage.setItem("ao_module_access", JSON.stringify(obj.modules));
+                        }
+                        if (obj.navigations != "0") {
+                            window.localStorage.setItem("ao_nav_access", JSON.stringify(obj.navigations));
+                        }
+
+                        AjaxCall('MethodName=BindMenu');
+                    } else
+                        logout();
+
+                },
+                error: function(jqxhr, textStatus, errorMessage) {
+                    navigator.notification.alert(
+                        "There was an error. Try again please!", alertDismissed, "An error occured", "Done"
+                    );
+                }
+            })
+        }
+        var $ = jQuery.noConflict();
+        $('#lnkswitchuser').click(function() {
+            mainView.loadPage('switch-user.html');
+        });
+        $('#lnkoutmenu').click(function() {
+            logout();
+        });
+        $('#alinkUserProfile').click(function() {
+            var loginuserid = window.localStorage.getItem("sessLoginId");
+            mainView.loadPage("get_user.html?UserID=" + loginuserid + "");
+        });
+        
+    </script>
+
+</body>
+
+</html>

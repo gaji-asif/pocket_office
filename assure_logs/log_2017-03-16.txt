@@ -1,0 +1,55 @@
+2017-03-16 9:28:30 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Try database - assure - localhost
+2017-03-16 9:28:30 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Failed database connection - Invalid connection variables: localhost, elagoond_workflo, %z?Sr^=X4RwM
+2017-03-16 9:28:30 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 38:  Failed login - Invalid credentials: , , 
+2017-03-16 9:28:41 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Try database - assure - localhost
+2017-03-16 9:28:41 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Failed database connection - Invalid connection variables: localhost, elagoond_workflo, %z?Sr^=X4RwM
+2017-03-16 9:28:41 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 38:  Failed login - Invalid credentials: , , 
+2017-03-16 9:29:39 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Try database - assure - localhost
+2017-03-16 9:29:39 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Failed database connection - Invalid connection variables: localhost, elagoond_workflo, %z?Sr^=X4RwM
+2017-03-16 9:29:39 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 38:  Failed login - Invalid credentials: , , 
+2017-03-16 9:30:08 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Try database - assure - localhost
+2017-03-16 9:30:08 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Failed database connection - Invalid connection variables: localhost, elagoond_workflo, %z?Sr^=X4RwM
+2017-03-16 9:30:08 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 38:  Failed login - Invalid credentials: , , 
+2017-03-16 9:30:13 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Try database - assure - localhost
+2017-03-16 9:30:13 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Failed database connection - Invalid connection variables: localhost, elagoond_workflo, %z?Sr^=X4RwM
+2017-03-16 9:30:13 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 38:  Failed login - Invalid credentials: , , 
+2017-03-16 9:32:19 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Try database - assure - localhost
+2017-03-16 9:32:19 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 38:  Failed login - Invalid credentials: , , 
+2017-03-16 9:32:36 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 15:  Try database - assure - localhost
+2017-03-16 10:13:48 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:13:56 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:22:03 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 17:  Try database - assure - localhost
+2017-03-16 10:22:04 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:25:04 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:26:36 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-16 10:26:36 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:27:41 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:28:05 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:30:54 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:31:36 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:32:28 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:33:58 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:38:32 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:42:25 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-16 10:42:25 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:44:11 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:46:38 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:49:39 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:51:03 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:53:45 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure - Query was empty - 
+2017-03-16 10:55:56 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 10:58:56 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:01:35 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-16 11:01:35 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:02:08 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:02:34 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:06:24 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:08:52 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:17:05 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-16 11:17:06 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:24:30 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:27:30 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:28:59 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 119:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:29:53 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15
+2017-03-16 11:33:15 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-03-16 11:33:15 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\widget_inbox.php at Line 117:  Failed database query - assure -  - Resource id #15

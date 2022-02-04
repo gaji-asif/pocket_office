@@ -1,0 +1,28 @@
+<div class="box">
+	<div class="box-header">
+		<h2><i class="halflings-icon user"></i><span class="break"></span>Users</h2>
+	</div>
+	<div class="box-content">
+		<table id="users-list" class="table table-bordered table-striped table-hover table-condensed bootstrap-datatable datatable">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>DBA</th>
+					<th>Added</th>
+				</tr>
+			</thead>
+			<tbody>
+			{{#each users}}
+				<tr rel="view-user" data-job-id="{{user_id}}" class="clickable-row">
+					<td>{{lname}}, {{fname}}</td>
+					<td>{{dba}}</td>
+					<td>{{getDateFromTimestamp reg_date}}</td>
+				</tr>
+			{{/each}}
+			{{#unless users}}
+			<tr><td colspan="3">No Users Found</td></tr>
+			{{/unless}}
+			</tbody>
+		</table>
+	</div>
+</div>

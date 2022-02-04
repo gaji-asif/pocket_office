@@ -1,0 +1,7 @@
+Admission
+SFM
+Examination
+Inventory
+Payroll
+Finance
+Report

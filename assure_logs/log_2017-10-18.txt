@@ -1,0 +1,37 @@
+2017-10-18 13:52:02 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-18 13:52:02 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-10-18 13:52:20 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-18 13:52:20 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-10-18 13:52:29 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-18 13:52:29 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-10-18 13:52:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-18 13:52:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-10-18 13:53:29 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Attempting to connect to database 'workflow_performance'
+2017-10-18 13:53:29 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Connected to database 'workflow_performance'
+2017-10-18 13:53:29 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Attempt to retrieve creds failed (0): SELECT users.user_id, users.username, users.password as pw, users.fname, users.lname, accounts.account_name as account
+                FROM users, accounts
+                WHERE users.email='darin@xactbid.com'
+                    AND accounts.account_name = 'Xactbid'
+                    AND accounts.account_id = users.account_id
+                    AND users.is_active = 1
+                    AND users.is_deleted <> 1
+                LIMIT 1
+2017-10-18 13:53:29 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Failed password recovery - empty database array
+2017-10-18 13:53:29 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 31:  Failed password recovery - Invalid credentials: Xactbid, darin@xactbid.com
+2017-10-18 13:53:37 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Attempting to connect to database 'workflow_performance'
+2017-10-18 13:53:37 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Connected to database 'workflow_performance'
+2017-10-18 13:53:37 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Attempt to retrieve creds failed (0): SELECT users.user_id, users.username, users.password as pw, users.fname, users.lname, accounts.account_name as account
+                FROM users, accounts
+                WHERE users.email='darin@xactbid.com'
+                    AND accounts.account_name = 'Xactbid.com'
+                    AND accounts.account_id = users.account_id
+                    AND users.is_active = 1
+                    AND users.is_deleted <> 1
+                LIMIT 1
+2017-10-18 13:53:37 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Failed password recovery - empty database array
+2017-10-18 13:53:37 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 31:  Failed password recovery - Invalid credentials: Xactbid.com, darin@xactbid.com
+2017-10-18 13:55:12 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-10-18 13:55:12 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 46:  Failed login - Invalid credentials: , , 
+2017-10-18 13:55:45 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Attempting to connect to database 'workflow_performance'
+2017-10-18 13:55:45 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/lost_password.php at Line 7:  Connected to database 'workflow_performance'
+2017-10-18 13:56:30 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com

@@ -1,0 +1,196 @@
+2017-11-02 3:29:26 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+   ' at line 9 - SELECT distinct n.navigation_id,CASE WHEN n.title =  'Leads & Jobs' THEN  'Jobs' ELSE n.title END AS title, n.source, n.icon
+
+                FROM navigation n, nav_access na
+
+                WHERE 
+
+                    na.account_id = 
+
+                    AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+                    ANd n.title!='Announcements' and n.title!='Customers' and n.title !='Reports'
+
+                ORDER BY n.order_num ASC
+2017-11-02 3:29:27 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-02 3:34:29 - NOTICE -->/home/xactbid/public_html/workflow/index.php at Line 9:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 3:34:29 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 10:07:10 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+   ' at line 9 - SELECT distinct n.navigation_id,CASE WHEN n.title =  'Leads & Jobs' THEN  'Jobs' ELSE n.title END AS title, n.source, n.icon
+
+                FROM navigation n, nav_access na
+
+                WHERE 
+
+                    na.account_id = 
+
+                    AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+                    ANd n.title!='Announcements' and n.title!='Customers' and n.title !='Reports'
+
+                ORDER BY n.order_num ASC
+2017-11-02 10:07:10 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+   ' at line 9 - SELECT distinct n.navigation_id,CASE WHEN n.title =  'Leads & Jobs' THEN  'Jobs' ELSE n.title END AS title, n.source, n.icon
+
+                FROM navigation n, nav_access na
+
+                WHERE 
+
+                    na.account_id = 
+
+                    AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+                    ANd n.title!='Announcements' and n.title!='Customers' and n.title !='Reports'
+
+                ORDER BY n.order_num ASC
+2017-11-02 10:07:10 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-02 10:07:10 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-02 10:07:23 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-02 10:07:23 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed login - Invalid credentials: ,, 
+2017-11-02 10:09:59 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Incorrect integer value: '' for column 'account_id' at row 1 - INSERT INTO access (user_id, account_id, timestamp, ip_address)
+                VALUES ('117', '', now(), '27.251.107.42')
+2017-11-02 10:09:59 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Incorrect integer value: '' for column 'account_id' at row 1 - INSERT INTO message_history (type, to_email, subject, body, account_id, timestamp)
+				VALUES ('Email', 'aa@aa.com', 'Welcome to WorkFlow365!', 'Dear aa,<br><br>An account has been created for you by <b></b> in WorkFlow365! Your login credentials are below. Please remember to <b>change your password</b> immediately upon your first login!<br><br><b>Login Credentials:</b><br>Account: <br>Username: aa<br>Password: aa<br><br>To login, visit:<br><a href=\'http://xactbid.com/workflow\'>http://xactbid.com/workflow</a>', '', now())
+2017-11-02 10:12:28 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Incorrect integer value: '' for column 'account_id' at row 1 - INSERT INTO access (user_id, account_id, timestamp, ip_address)
+                VALUES ('118', '', now(), '27.251.107.42')
+2017-11-02 10:12:28 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Incorrect integer value: '' for column 'account_id' at row 1 - INSERT INTO message_history (type, to_email, subject, body, account_id, timestamp)
+				VALUES ('Email', 'aa@aa.com', 'Welcome to WorkFlow365!', 'Dear aa,<br><br>An account has been created for you by <b></b> in WorkFlow365! Your login credentials are below. Please remember to <b>change your password</b> immediately upon your first login!<br><br><b>Login Credentials:</b><br>Account: <br>Username: aa<br>Password: aa<br><br>To login, visit:<br><a href=\'http://xactbid.com/workflow\'>http://xactbid.com/workflow</a>', '', now())
+2017-11-02 10:15:50 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Incorrect integer value: '' for column 'account_id' at row 1 - INSERT INTO access (user_id, account_id, timestamp, ip_address)
+                VALUES ('119', '', now(), '27.251.107.42')
+2017-11-02 10:15:50 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - Incorrect integer value: '' for column 'account_id' at row 1 - INSERT INTO message_history (type, to_email, subject, body, account_id, timestamp)
+				VALUES ('Email', 'sofikul.sardar@elagoon.org', 'Welcome to WorkFlow365!', 'Dear aa,<br><br>An account has been created for you by <b></b> in WorkFlow365! Your login credentials are below. Please remember to <b>change your password</b> immediately upon your first login!<br><br><b>Login Credentials:</b><br>Account: <br>Username: aa<br>Password: aa<br><br>To login, visit:<br><a href=\'http://xactbid.com/workflow\'>http://xactbid.com/workflow</a>', '', now())
+2017-11-02 11:11:00 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-02 11:15:36 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-02 11:16:52 - NOTICE -->/home/xactbid/public_html/workflow/index.php at Line 9:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 11:16:52 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 11:16:55 - NOTICE -->/home/xactbid/public_html/workflow/index.php at Line 9:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 11:16:55 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 11:18:18 - NOTICE -->/home/xactbid/public_html/workflow/index.php at Line 9:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 11:18:19 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 11:18:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 11:18:50 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-11-02 11:22:43 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/add_user.php at Line 51:  Failed database query - workflow_performance - Incorrect integer value: '' for column 'sms_carrier' at row 1 - INSERT INTO users (username, fname, lname, password, dba, email, phone, sms_carrier, level, reg_date, account_id, founder, notes, office_id)
+                VALUES ('xactjess', 'Jessica', 'Baker', 'zePenYsu$U', '', 'jess@xactbid.com', '5555555354', '', '1', CURDATE(), '24', '1', '', NULL)
+2017-11-02 11:22:45 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 11:22:54 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+   ' at line 9 - SELECT distinct n.navigation_id,CASE WHEN n.title =  'Leads & Jobs' THEN  'Jobs' ELSE n.title END AS title, n.source, n.icon
+
+                FROM navigation n, nav_access na
+
+                WHERE 
+
+                    na.account_id = 
+
+                    AND n.navigation_id = na.navigation_id
+
+                    AND na.level = 
+
+                    ANd n.title!='Announcements' and n.title!='Customers' and n.title !='Reports'
+
+                ORDER BY n.order_num ASC
+2017-11-02 11:22:54 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-02 11:24:04 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/add_user.php at Line 51:  Failed database query - workflow_performance - Incorrect integer value: '' for column 'sms_carrier' at row 1 - INSERT INTO users (username, fname, lname, password, dba, email, phone, sms_carrier, level, reg_date, account_id, founder, notes, office_id)
+                VALUES ('xactjess', 'Jessica', 'Baker', 'YNA4ApumUh', '', 'jess@xactbid.com', '5552525565', '', '1', CURDATE(), '24', '1', '', NULL)
+2017-11-02 11:24:42 - NOTICE -->/home/xactbid/public_html/workflow/workflowservice.php at Line 13:  Try database - workflow_performance - xactbid.com
+2017-11-02 11:28:00 - NOTICE -->/home/xactbid/public_html/workflow/stages-list.php at Line 16:  Failed database query - workflow_performance - Field 'stage_num' doesn't have a default value - INSERT INTO stages (account_id,stage) VALUES ('24', 'New Lead')
+2017-11-02 11:30:11 - NOTICE -->/home/xactbid/public_html/workflow/stages-list.php at Line 16:  Failed database query - workflow_performance - Field 'stage_num' doesn't have a default value - INSERT INTO stages (account_id,stage) VALUES ('24', 'New Lead')
+2017-11-02 11:30:58 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/add_job.php at Line 89:  Failed database query - workflow_performance - Incorrect integer value: '' for column 'job_type' at row 1 - INSERT INTO jobs
+                VALUES (NULL, '59F2D979', '2', '24', 1, curdate(), 
+                    '120', NULL, NULL, NULL, NULL, NULL, NULL, 0, '',
+                    '', '', '', NULL, now(), '7f4c88f60c5181c45ea63e09d843b4e8')
+2017-11-02 11:37:48 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/add_user.php at Line 51:  Failed database query - workflow_performance - Incorrect integer value: '' for column 'sms_carrier' at row 1 - INSERT INTO users (username, fname, lname, password, dba, email, phone, sms_carrier, level, reg_date, account_id, founder, notes, office_id)
+                VALUES ('testuserx', 'Test', 'User', 'eLEGu@u6U@', '', 'testuserx@gmail.com', '1112223333', '', '1', CURDATE(), '24', '0', '', NULL)
+2017-11-02 11:45:01 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/add_user.php at Line 51:  Failed database query - workflow_performance - Incorrect integer value: '' for column 'sms_carrier' at row 1 - INSERT INTO users (username, fname, lname, password, dba, email, phone, sms_carrier, level, reg_date, account_id, founder, notes, office_id)
+                VALUES ('testuserx', 'Test', 'User', 'ENy8UVESeL', '', 'sofikul.sardar@gmail.com', '1212121211', '', '1', CURDATE(), '24', '0', '', NULL)
+2017-11-02 12:31:07 - NOTICE -->/home/xactbid/public_html/workflow/index.php at Line 9:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 12:31:07 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 12:31:11 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 7:  Failed database query -  - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND meta_key = 'user_session_timeout'
+                LIMIT 1' at line 4 - SELECT meta_value
+                FROM account_meta
+                WHERE account_id = 
+                    AND meta_key = 'user_session_timeout'
+                LIMIT 1
+2017-11-02 12:31:11 - NOTICE -->/home/xactbid/public_html/workflow/login.php at Line 22:  Try database - workflow_performance - xactbid.com
+2017-11-02 12:34:30 - NOTICE -->/home/xactbid/public_html/workflow/stages-list.php at Line 16:  Failed database query - workflow_performance - Field 'stage_num' doesn't have a default value - INSERT INTO stages (account_id,stage) VALUES ('24', 'New Lead')
+2017-11-02 12:35:42 - NOTICE -->/home/xactbid/public_html/workflow/includes/ajax/add_job.php at Line 89:  Failed database query - workflow_performance - Incorrect integer value: '' for column 'job_type' at row 1 - INSERT INTO jobs
+                VALUES (NULL, '792EDDF6', '3', '24', 1, curdate(), 
+                    '120', 120, NULL, NULL, NULL, NULL, NULL, 0, '',
+                    '', '', '', NULL, now(), 'f0b80c48e7dbcd8403e1bdf529636a41')

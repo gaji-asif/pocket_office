@@ -1,0 +1,149 @@
+<div class="pages">
+    <div data-page="addnewJob" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel"> <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center" id="divHeadForAddJob">Add New Job</div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html"> <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <label id="lblMainAddNewJob"></label>
+                    <div id="divMainAddNewJob">
+                        <table width="100%" border="0" class="user_table">
+                            <tr>
+                                <td>
+                                    <div id="divCustomerList">
+                                        <div class="user_inf">Customer</div>
+                                        <br />
+                                        <div class="contactform">
+                                            <select id="ddlCustomer"></select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" class="user_table">
+                            <tr>
+                                <td>
+                                    <div id="divAddNewCustomer">
+                                        <div class="Demo-table-container table-responsive">
+                                            <div class="user_inf">Add New Customer</div>
+                                            <label id="lblAddNewCustomer" style="display: none; color: Red;"> </label>
+                                            <div id="divNewCustomer">
+                                                <div class="contactform">
+                                                    <div>
+                                                        <label> First Name: *</label>
+                                                        <input type="text" id="txtCustFName" name="txtCustFName" maxlength="45" class="form_input form-control validation validate[required[Enter First Name]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label> Last Name: *</label>
+                                                        <input type="text" id="txtCustLName" name="txtCustLName" class="form_input form-control validation validate[required[Enter Last Name]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label> Nickname:</label>
+                                                        <input type="text" id="txtCustNickName" name="txtCustNickName" class="form_input form-control" />
+                                                    </div>
+                                                    <div>
+                                                        <label> Address: *</label>
+                                                        <input type="text" id="txtCustAddress" name="txtCustAddress" class="form_input form-control validation validate[required[Enter Address]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label> City: * </label>
+                                                        <input type="text" id="txtCustCity" name="txtCustCity" class="form_input form-control validation validate[required[Enter City]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label> State: *</label>
+                                                        <select id="ddlCustState" class=" validation validate[funcCall[selectval[Select State]]]"></select>
+                                                    </div>
+                                                    <div>
+                                                        <label> Zip: * </label>
+                                                        <input type="text" id="txtCustZip" name="txtCustZip" class="form_input form-control validation validate[required[Enter Zip]] validate[maxlength=5[Enter Only 5 Characters]] validate[funcCall[Onlydigitsex0[Enter valid Zip number]]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label> Cross Street:</label>
+                                                        <input type="text" id="txtCustCrossStreet" name="txtCustCrossStreet" class="form_input form-control" />
+                                                    </div>
+                                                    <div>
+                                                        <label> Phone:</label>
+                                                        <input type="text" id="txtCustPhone" name="txtCustPhone" class="masked-phone form_input form-control validation validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label> Secondary Phone:</label>
+                                                        <input type="text" id="txtCustSecPhone" name="txtCustSecPhone" class="masked-phone form_input form-control validation validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                                    </div>
+                                                    <div>
+                                                        <label> Email:</label>
+                                                        <input type="text" id="txtCustEmail" name="txtCustEmail" class="form_input form-control validation validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" class="user_table">
+                            <tr>
+                                <td>
+                                    <div id="divAddNewJob">
+                                        <div class="Demo-table-container table-responsive">
+                                            <label id="lblAddNewJob" style="display: none; color: Red;"> </label>
+                                            <div class="user_inf">Job Information</div>
+                                            <div class="contactform">
+                                                <div>
+                                                    <label>Job Origin:</label>
+                                                    <select id="ddlJobOrigin"></select>
+                                                </div>
+                                                <div id="divReferral">
+                                                    <label>Referral:</label>
+                                                    <select id="ddlReferral"></select>
+                                                </div>
+                                                <div id="divReferralNotes" style="display:none;">
+                                                    <label>User Notes:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="spnRefTexts"> </span></label>
+                                                </div>
+                                                <div>
+                                                    <label>Job Type:</label>
+                                                    <select id="ddlJobType"></select>
+                                                </div>
+                                                <div>
+                                                    <label> Job Type Note:</label>
+                                                    <input type="text" id="txtJobTypeNote" class="form_input" name="txtJobTypeNote" />
+                                                </div>
+                                                <div id="divSalesman">
+                                                    <label>Salesman:</label>
+                                                    <select id="ddlSalesman"></select>
+                                                    <label id="lblSalesJob"></label>
+                                                </div>
+                                                <div id="divSalesmanJobs" style="display:none;">
+                                                    <label id="lblSalesJob1"></label>
+                                                </div>
+                                                <div>
+                                                    <label>Provider:</label>
+                                                    <select id="ddlProvider"></select>
+                                                </div>
+                                                <div>
+                                                    <label>Jurisdiction:</label>
+                                                    <select id="ddlJurisdiction"></select>
+                                                </div>
+                                                <div>
+                                                    <input type="submit" name="Save" class="form_submit bulebtn_comn" id="btnSaveJob" value="Save" />
+                                                    <input type="submit" name="Cancel" class="form_submit greybtn_comn" id="btnCancelJob" value="Cancel" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,30 @@
+2017-04-05 5:17:31 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-04-05 6:53:49 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-04-05 6:53:59 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-04-05 6:54:10 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 20:  Failed database query - assure - Unknown column 'upload_id' in 'where clause' - SELECT *
+                FROM sheets
+                WHERE upload_id = ''
+                    AND account_id = '9'
+                LIMIT 1
+2017-04-05 6:54:10 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\add_material_sheet.php at Line 42:  Failed database query - assure - Unknown column 'type' in 'field list' - INSERT INTO sheets (job_id,user_id,account_id,supplier_id,type,upload_id)
+                VALUES ('3517', '110','9',
+				'','material', '-1')
+2017-04-05 7:17:42 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-04-05 9:23:37 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost
+2017-04-05 10:12:20 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_job.php at Line 107:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at desc' at line 4 - SELECT *
+                FROM measurment
+                WHERE job_id = 
+                ORDER BY created_at desc
+2017-04-05 10:13:16 - NOTICE -->C:\xampp\htdocs\workflow\includes\ajax\get_job.php at Line 107:  Failed database query - assure - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at desc' at line 4 - SELECT *
+                FROM measurment
+                WHERE job_id = 
+                ORDER BY created_at desc
+2017-04-05 11:26:30 - NOTICE -->C:\xampp\htdocs\workflow\login.php at Line 19:  Try database - assure - localhost

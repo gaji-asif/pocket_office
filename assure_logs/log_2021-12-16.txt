@@ -1,0 +1,4 @@
+2021-12-16 0:31:27 - NOTICE -->/home/pocketoffice/public_html/xactbid7/workflowservice.php at Line 11:  Failed database connection - Invalid connection variables: , , 
+2021-12-16 0:35:03 - NOTICE -->/home/pocketoffice/public_html/xactbid7/workflowservice.php at Line 11:  Failed database connection - Invalid connection variables: , , 
+2021-12-16 0:35:20 - NOTICE -->/home/pocketoffice/public_html/xactbid7/workflowservice.php at Line 11:  Failed database connection - Invalid connection variables: , , 
+2021-12-16 0:36:22 - NOTICE -->/home/pocketoffice/public_html/xactbid7/workflowservice.php at Line 11:  Failed database connection - Invalid connection variables: , , 

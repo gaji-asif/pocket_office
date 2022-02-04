@@ -1,0 +1,97 @@
+<?php
+include '../common_lib.php'; 
+echo ViewUtil::loadView('doc-head');
+
+$label = RequestUtil::get('label');
+$supplier = RequestUtil::get('supplier', 'NULL');
+$notes = RequestUtil::get('notes');
+$size = RequestUtil::get('size');
+$myJob = new Job(RequestUtil::get('id'));
+
+ModuleUtil::checkJobModuleAccess('job_material_sheet', $myJob, TRUE);
+
+$errors = array();
+if(RequestUtil::get('submit')) {
+	if(empty($label)) {
+		$errors[] = 'Label cannot be blank';
+	}
+	if(empty($size)) {
+		$errors[] = 'Size cannot be blank';
+	}
+	
+    if(!count($errors)) {
+		$sql = "INSERT INTO sheets
+                VALUES (NULL, '{$myJob->job_id}', '{$_SESSION['ao_userid']}', '{$_SESSION['ao_accountid']}', {$supplier}, '$label', '$size', '$notes', NULL, NULL, now())";
+		DBUtil::query($sql);
+		$newSheetId = DBUtil::getInsertId();
+
+		JobModel::saveEvent($myJob->job_id, "Added New Material Sheet");
+		NotifyUtil::notifySubscribersFromTemplate('add_job_sheet', $_SESSION['ao_userid'], array('job_id' => $myJob->job_id));
+?>
+<script>
+    Request.makeModal('<?=AJAX_DIR?>/get_job.php?id=<?=$myJob->job_id?>', 'jobscontainer', false, true, false, function(){
+        window.location = '<?=AJAX_DIR?>/job_materials.php?sheet_id=<?=$newSheetId?>&job_id=<?=$myJob->job_id?>';
+    });
+</script>
+<?php
+        die();
+	}
+}
+
+?>
+<form action="?id=<?=$myJob->job_id?>" method="post" name="newsheet">
+<table class="data-table-header" cellpadding="0" cellspacing="0" border="0">
+    <tr valign="center">
+        <td>Create Material Sheet</td>
+        <td align="right">
+            <i class="icon-remove grey btn-close-modal"></i>
+        </td>
+    </tr>
+</table>
+<?=AlertUtil::generate($errors, 'error', TRUE)?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" align="center" class="infocontainernopadding">
+    <tr>
+        <td width="25%" class="listitemnoborder">
+            <b>Label:</b>&nbsp;<span class="red">*</span>
+        </td>
+        <td class="listrownoborder">
+            <input type="text" name="label" value="<?=$label?>">
+        </td>
+    </tr>
+    <tr>
+        <td class="listitem"><b>Job Size:</b>&nbsp;<span class="red">*</span></td>
+        <td class="listrow">
+            <input type="text" name="size" value="<?=$size?>"> <?=$_SESSION['ao_jobunit']?>
+        </td>
+    </tr>
+    <tr>
+        <td class="listitem"><b>Supplier:</b></td>
+        <td class="listrow">
+            <select name="supplier">
+                <option value="">None Chosen</option>
+<?php
+$suppliers = MaterialModel::getAllSuppliers();
+foreach($suppliers as $supplier) {
+?>
+                    <option value="<?=MapUtil::get($supplier, 'supplier_id')?>"><?=MapUtil::get($supplier, 'supplier')?></option>
+<?php
+}
+?>
+            </select>
+        </td>
+    </tr>
+    <tr valign="top">
+        <td class="listitem"><b>Notes:</b></td>
+        <td class="listrow">
+            <textarea name="notes" rows="7" style="width: 100%;"><?=$notes?></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="right" class="listrow">
+            <input name="submit" type="submit" value="Save">
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

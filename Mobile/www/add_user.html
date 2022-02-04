@@ -1,0 +1,101 @@
+<div class="pages">
+    <div data-page="adduser" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">Add New User </div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="page_single">
+                    <div>
+                        <div id="divAddUser" style="display: block;">
+                            <div class="Demo-table-container">
+                                <label id="lblAddUser" style="display: none; color: Red;">
+                                </label>
+                                <div class="contactform">
+                                    <div>
+                                        <label>
+                                            First Name:*</label>
+                                        <input type="text" id="txtFirstName" name="txtFirstName" class="form_input form-control validation validate[required[Enter First Name]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Last Name:*</label>
+                                        <input type="text" id="txtLastName" name="txtLastName" class="form_input form-control validation validate[required[Enter Last Name]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Username:*</label>
+                                        <input type="text" id="txtUserName" name="txtUserName" class="form_input form-control validation validate[required[Enter Username]]" /> 
+                                        <span class="pull-left" >Letters and numbers and at least 6 characters</span>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            DBA:</label>
+                                        <input type="text" id="txtDBA" name="txtDBA" class="form_input form-control" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Email:*</label>
+                                        <input type="text" id="txtEmail" name="txtEmail" class="form_input form-control validation validate[required[Enter Email]], validate[funcCall[validateCustomEmailAddress[Invalid E-mail]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Phone:*</label>
+                                        <input type="text" id="txtPhone" name="txtPhone" class="masked-phone form_input form-control validation validate[required[Enter Phone]] validate[funcCall[validatePhoneORFaxNumberWithFormat[Invalid Phone]]]" />
+                                    </div>
+                                    <div>
+                                        <label>
+                                            SMS Carrier:</label>
+                                        <select id="ddlSmsCarrier">
+                                            <option value="">NO SMS</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Notes:
+                                        </label>
+                                        <textarea name="txtNotes" class="edit_txtNotes" id="txtNotes" rows="5"></textarea>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Access Level:</label>
+                                        <select id="ddlAccessLevel">
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Office:</label>
+                                        <select id="ddlOffice">
+                                            <option value="">Default</option>
+                                        </select>
+                                    </div>
+                                    <div class="modify_ins">
+                                        <label>
+                                            Founder:</label>
+                                        <input type="checkbox" name="chkFounder" id="chkFounder">
+                                    </div>
+                                    <div>
+                                        <input type="submit" name="Save" class="form_submit bulebtn_comn" id="btnSaveUser" value="Save" />
+                                        <input type="submit" name="Cancel" class="form_submit greybtn_comn" id="btnCancelUser" value="Cancel" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+

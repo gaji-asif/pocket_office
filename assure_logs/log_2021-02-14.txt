@@ -1,0 +1,48 @@
+2021-02-14 16:53:59 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 16:53:59 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 16:53:59 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:02:57 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:02:57 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:02:57 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:03:03 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:03:03 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:03:03 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:05:01 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:05:01 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:05:01 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:05:10 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:05:10 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:05:10 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:11:07 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:11:07 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:11:07 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:11:19 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:11:19 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:11:19 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:22:56 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:22:56 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:22:56 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:24:06 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:24:06 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:24:06 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:27:05 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:27:05 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:27:05 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:33:44 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:35:56 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:38:08 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:40:53 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:44:50 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:45:41 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:48:11 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:49:50 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:49:50 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 22:49:50 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 22:51:21 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 22:53:39 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 23:07:39 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 23:07:39 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 23:07:39 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 
+2021-02-14 23:12:09 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - assure - xactbid.pocketofficepro.com
+2021-02-14 23:12:09 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Failed database connection - Invalid connection variables: xactbid.com, xactbid_webapp, o&ZX!f5]z-lf
+2021-02-14 23:12:09 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 44:  Failed login - Invalid credentials: , , 

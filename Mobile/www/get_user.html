@@ -1,0 +1,134 @@
+<div class="pages">
+    <div data-page="get-user" class="page toolbar-through no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" data-panel="left" class="open-panel">
+                        <img src="images/icons/white/user.png" alt="" title="" /></a>
+                </div>
+                <div class="navbar_page_center">
+                    Users
+                </div>
+                <div class="menu_open_icon_white">
+                    <a href="home.html">
+                        <img src="images/menu_open.png" alt="" title="" /></a>
+                </div>
+            </div>
+              
+            <div id="pages_maincontent">
+               <div class="page_single">
+                    <div>
+                        <div id="divUserSection" style="display: block;">
+                        
+                            <div class="Demo-table-container">
+                            <div class="contactform ">
+                          <div class="backbtn_usr">
+                                   <a id="aBackUser" class="back_btn"></a>
+                                </div>
+                                        
+                                <div id="divUserDetail">
+                                </div>
+                                <div id="divUserCompose" style="display: none;">
+                                    <div>
+                                            <label id="lblSendMailMsg" style="display: none; color: red; font-weight: bold;"></label>
+                                        </div>
+                                        <div>
+                                            <a class="button_full bulebtn_comn">Compose Message </a>
+                                        </div>
+                                        <div>
+                                            <label>To User:<label id="lblComposeUserName"></label></label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Subject:*</label>
+                                            <input type="text" id="txtUserSubject" name="txtUserSubject" class="form_input form-control validation validate[required[Enter Subject]]" />
+                                        </div>
+                                        <div>
+                                            <label>
+                                                Message:*</label>
+                                            <!--<input type="text" id="txtUserMessage" name="txtUserMessage" class="form_input form-control validation validate[required[Enter Message]]" />-->
+                                            <textarea id="txtUserMessage" class="edit_txtNotes validation  validate[funcCall[validateTextArea[Enter Message]]]" rows="5" name="txtUserMessage"></textarea>
+                                        </div>
+                                        <div>
+                                            <input type="button" name="Send" onclick="SendUserComposeMsg();" class="form_submit bulebtn_comn" id="btnUserMsgSend" value="Send" />
+                                            <input type="button" name="Cancel" onclick="closeUserComposediv();" class="form_submit greybtn_comn" id="btnUserMsgCancel" value="Cancel" />
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+           
+            //$('#aBackUser').click(function () {
+            //    mainView.loadPage("users.html");
+            //});
+            //function ShowComposeDive(Id,fname,lname)
+            //{
+            //    alert("ShowComposeDive Click");
+            //    alert(Id);
+            //    alert(fname);
+            //    alert(lname);
+            //    $('#lblComposeUserName').html(fname + ' ' + lname);
+            //    $('#divUserCompose').css("display", "block");
+            //    return false;
+            //}
+            //function SendUserComposeMsg()
+            //{
+            //    alert("SendUserComposeMsg Click");
+            //    var retval = false;
+            //    var ans = check_itemsvalidate('#divUserCompose input');
+            //    if (ans) {
+            //        SendUserComposeMail('MethodName=SendUserComposeEMail&User=' + $('#lblComposeUserName').val() + '&Subject=' + $('#txtUserSubject').val() + '&Message=' + $('#txtUserMessage').val());
+            //        return false;
+            //    }
+            //    else { return false; }
+            //    return false;
+            //}
+            //function closeUserComposediv()
+            //{
+            //    alert("closeUserComposediv Click");
+            //    $('#divUserCompose').css("display", "none");
+            //    return false; 
+            //}
+           //function SendUserComposeMail(data) {
+
+           //     var $ = jQuery.noConflict();
+
+           //     $.ajax({
+           //         url: "https://xactbid.pocketofficepro.com/VIRworkflowservice.php",
+           //         type: "POST",
+           //         data: data,
+           //         cache: false,
+           //         success: function (data, textStatus, jqxhr) {
+           //             var data = $.parseJSON(data);
+
+           //             if (data.status == "1") {
+           //                 alert(data.message);
+           //                 $('#divUserCompose').css("display", "none");
+           //                 return false;
+           //             }
+           //             else {
+           //                 alert(data.message);
+           //                 $("#lblSendMailMsg").css('display', 'block');
+           //                 $("#lblSendMailMsg").text(data.message);
+           //                 $('#divUserCompose').css("display", "block");
+           //                 return false;
+           //             }
+           //         },
+           //         error: function (jqxhr, textStatus, errorMessage) {
+           //             alert("There was an error. Try again please!");
+           //         }
+           //     })
+           // }
+        </script>
+    </div>
+</div>
+
+

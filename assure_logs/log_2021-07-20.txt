@@ -1,0 +1,2 @@
+2021-07-20 8:04:44 - NOTICE -->/home/pocketoffice/public_html/xactbid7/login.php at Line 20:  Try database - xactbid_sofikul - xactbid.pocketofficepro.com
+2021-07-20 8:37:13 - NOTICE -->/home/pocketoffice/public_html/xactbid7/workflowservice.php at Line 7:  Failed database connection - Invalid connection variables: , , 
